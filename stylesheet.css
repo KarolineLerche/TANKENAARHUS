@@ -181,74 +181,110 @@ p{
     
 
 
-
 /* MODALVINDUE */ 
-    #modalButton{
-        
-        height: 12%;
-        display: none; /* Hidden by default */
-        position: fixed;
-        background-color: #EB7C30;
-        margin-top: 40%;
-        font-family: bebas-neue, sans-serif;
-        font-weight: 400;
-        font-style: normal; 
-        color: white;
-        text-align: left;
-        padding-left: 1%;
-        font-size: 140%;   
-        width: 20%;
-        margin-left: 80%;
-        
-    }
+
+
+#modalContainer>div{
+    display: none;
+}
+
+#modalContainer>#hoverbox{
+    display: block;
+}
+
+#modalContainer:hover>#modalButton{
+    display: block;
+}
+
+#hoverbox{
+    width: 3%;
+    z-index: 1;
+    position: fixed;
+    background-color: #EB7C30;
+    height: 6%;
     
-    .modal{
-        display: none;
-        position: fixed;
-        z-index: 999;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        overflow: auto;
-        background-color: rgb(0,0,0);
-        background-color: rgb(0,0,0,0.4);
-    }
-    
-    .modal-content{
-        background-color: #EB7C30;
-        margin: 15% auto;
-        padding: 20px;
-        border: 1px solid #888;
-        width: 40%;
-        text-align: center;
-        height: 60%;
-    }
-    
-    #btnBeer{
-        width: 30%;
-        height: 7%;
-        font-size: 14px;
-    }
-    
-    #yourBeer{
-        font-size: 30px;
-        margin-top: 10%;
-    }
-    
-    .close{
-        color: #aaa;
-        float: right;
-        font-size: 28px;
-        font-weight: bold;
-    }
-    
-    .close:hover,
-    .close:focus{
-        color: black;
-        text-decoration: none;
-        cursor: pointer;
-    }    
+    margin-top: 40%;
+    padding-left: 1%;
+}
+
+
+
+
+#modalButton{
+    display: none;
+    height: 12%;
+    z-index: 1;
+    position: fixed;
+    background-color: #EB7C30;
+    margin-top: 40%;
+    font-family: bebas-neue, sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+    color: white;
+    text-align: left;
+    padding-left: 1%;
+    font-size: 140%;   
+    width: 20%;
+}
+
+#modalButton img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgb(0,0,0,0.4);
+}
+
+.modal-content{
+    background-color: #EB7C30;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%;
+    text-align: center;
+    height: 60%;
+}
+
+#btnBeer{
+    width: 30%;
+    height: 7%;
+    font-size: 14px;
+}
+
+#yourBeer{
+    font-size: 30px;
+    margin-top: 10%;
+}
+
+.close{
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
 
 
 
@@ -347,27 +383,25 @@ nav a{
     text-decoration: none;
     color: black;
     font-size: 150%;
-    margin-left: 3%; 
-    padding-right: 6%;
-    padding-left: 2%; 
+    margin-left: 7.5%; 
 }
 
 nav{
     position: fixed;
     width: 100%;
     background-color: #ffffff;
-    width: 20%;
-    margin-left: 80%;
+    width: 24%;
+    margin-left: 76%;
     z-index: 1;    
-    padding-top: 1%;
-    padding-bottom: 1%;
+    padding-top: 11px;
+    padding-bottom: 12px;
 }
 
 header img{
     position: absolute;
-    width: 6%;
-    margin-left: 2%;
-    margin-top: 2%;
+    width: 5%;
+    margin-left: 1.5%;
+    margin-top: 1.5%;
 }
 
 
@@ -402,74 +436,67 @@ header img{
 
 /* INDEX */ 
 /* Index første sektion */
-/* - højre side - */  
-
-#index_top div:last-child{
-    width: 45%;
-    padding-bottom: 2%;  
-    width: 45%;
-}
-
-#index_top div:last-child img{
-    margin-top: 9%;
-    width: 97%;  
-    margin-bottom: 1%;
-}
-
-/* - venstre side - */
-#index_top div:first-child{
+/* - Venstre side - */
+#index_left{
     text-align: right;
-    padding-right: 3%;
+    padding-right: 2%;
     width: 55%;
-    padding-bottom: 15%;
+    padding-bottom: 10%;
+      margin-bottom: 15.5%;
 }
 
+/* - forside font - */
+#overskrift_forside{
+    padding-top: 10%;
+    font-size: 450%;
+    line-height: 140%;
+    letter-spacing: 5px;
+    padding-bottom: 10%;
+    padding-right: 3%;
+      
+}
 
+/* - højre side - */  
+#index_right{
+    width: 45%;
+    margin-right: 4%;
+    margin-top: 4%;
+    text-align: right;
 
+}
+
+#index_right div:first-child{
+    width: 565px;
+}
+
+#index_right div:last-child{
+    float: right;
+}
+
+#index_right p{
+    font-family: ff-dagny-web-pro, sans-serif;
+    font-weight: 900;
+    font-size: 150%;
+    padding-bottom: 4px;
+    padding-top: 4px;
+}
 
 /* Åben / lukket */ 
 #openNow{
-    font-size: 25px;
     color: rgb(57, 215, 57);
     display: none;
 }
 
 #closed{
-    font-size: 25px;
     color: rgb(215, 40, 40);
     display: none;
 }
 
 
 
-/* - forside font - */
-#overskrift_forside{
-    padding-top: 18%;
-    font-size: 450%;
-    line-height: 130%;
-    letter-spacing: 5px;
-    padding-bottom: 10%;
-    text-align: right;
-    padding-right: 3%;
-}
 
-#index_top p{
-    text-align: right;
-    padding-right: 3%;
-}
 
-#index_top div:last-child h1{
-    margin-right: 3%;
-    width: 215%;
-}
 
-#index_top div:last-child h6{
-    width: 215%;
-    font-family: ff-dagny-web-pro, sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 130%;
-}
 
 
 
@@ -479,14 +506,12 @@ header img{
 /* Index PIZZA sektion */
 /* Nyhed overskrift */ 
 #overskrift_nyhed{
-    margin-right: 8%;
-    margin-top: 5%;
+    margin-right: 4%;
 }
 
 /* - højre side - */ 
 #pizzanews div{
-    margin-top: 6%;
-    
+    margin-top: 7%;
 }
 
 #pizzanews div:last-child{
@@ -496,7 +521,7 @@ header img{
 /* - venstre side - */ 
 #pizzanews div:first-child{
     margin-right: 10%;
-    padding-top: 5%;
+   margin-top: 9%;
 }
 
 #pizzanews div:first-child button{
@@ -525,7 +550,7 @@ header img{
 /* højre side */
 #TANKENDERTÆLLER{
     padding: 3%;
-    margin-top: 8%;
+    margin-top: 30%;
 }
 
 #TANKENDERTÆLLER div:last-child{
@@ -549,25 +574,27 @@ header img{
 /* Index Bollekort sektion */
 /* overskrift */ 
 #overskrift_bollekort{
-    margin-top: 15%;
-    margin-left: 10%;
+    margin-top: 24.5%;
+    margin-left: 6%;
 }
 
 /* højre side */
 #bollekort{
-    padding-left: 10%;
+    margin-left: 10%;
     margin-bottom: 10%;
+     margin-top: 7%;
+     position: relative;
 }
 
 #bollekort div:first-child{ 
-    width: 35%;
-    margin-top: 7%;
+    width: 400px;
+    margin-left: 5%;
 }
 
 /* venstre side */
 #bollekort div:nth-child(2){
-    margin-top: 35%;
-    width: 40%;
+    margin-top: 25%;
+    width: 43%;
     padding-top: 3%;
     padding-bottom: 4%;
     padding-left: 3%; 
@@ -576,18 +603,25 @@ header img{
 #bollekort div:last-child{
     position: absolute;
     width: 15%;
-    margin-left: 63%;
-    margin-top: 26%;
+    margin-left: 70%;
+    margin-top: 16%;
 }
 
 /* Index Instagram sektion */
 
-#instagramsection{margin-left: 10%;}
+#instagramsection{
+    margin-left: 4%;
+    margin-top: 15%;
+}
+
+#instagramsection h2{
+    line-height: 45px;
+}
 
 #img_instagram{
     justify-content: space-evenly;
     margin-bottom: 10%;
-    margin-top: 5%;
+    margin-top: 2%;
     
 }
 
@@ -626,7 +660,7 @@ font-family: bebas-neue, sans-serif;
 /* Video sektion */
  /* font */
  #videosection h1{
-    font-size: 520%;
+    font-size: 500%;
     margin-bottom: 5%;
     line-height: 120%;
 }
@@ -636,38 +670,69 @@ font-family: bebas-neue, sans-serif;
 }
 
 #videosection{
-    margin-top: 17%;
+    margin-top: 14%;
+    margin-bottom: 10%;
 }
 
 #videocontainer{
     width: 80%;
+    align-items: center;
+
 }
 
 #videocontainer div:first-child{
-    width: 60%;
-    padding-left: 5%;
-    padding-top: 5%;
-    padding-right: 15%;    
+    width: 85%;
+    padding: 5% 20% 5% 5%;   
+    
 }
 
 #video{
     position: absolute;
-    left: 48%;
-    bottom: 42%;
+    left: 50%;
+    bottom: 47%;
     width: 50%;
     height: 50%;
 }
 
 /* MERCH SEKTION */
 /* Font */
+
 #overskrift_merch{
     margin-right: 14%;
 }
+.merchsection h2{
+    line-height: 70%;
+}
+
+
+
+/* linjer */
+
+#lines_omos{
+    right: 14%;
+    top: 14%;
+    height: 96%;
+    width: 100%;
+    
+    border-top: 8px solid #1414DB;
+    border-right: 8px solid #1414DB; 
+    border-bottom: 8px solid #1414DB; 
+}
+/* linjer */
+
+
+
 
 /* T-shirt sektion */
 #tshirtcontainer{
-    padding-right: 8%;
+    margin-right: 18%;
+    margin-left: 7%;
+    margin-top: 7%;
+    justify-content:space-between;
+
+    
 }
+
 
 #størrelser{
     margin-top: 3%;
@@ -678,26 +743,31 @@ font-family: bebas-neue, sans-serif;
 }
 
 #sticker_tshirt{
-    margin-right: 10%;
+    margin-left: 5%;
+    width: 270px;
+    height: 270px;
 }
 
 /* Totebag sektion */
 #totebagcontainer{
     text-align: left;
-    margin-left: 10%;
+    margin-left: 7%;
+    margin-top: 13%;
+    margin-bottom: 5%;
+
 }
 
 #totebagcontainer p{
     text-align: left;
 }
 
-#totebagcontainer{
-    margin-bottom: 5%;
-}
 
 #sticker_totebag{
     float: right;
     margin-right: 14%;
+
+    width: 270px;
+    height: 270px;
 }
 
 
@@ -1034,31 +1104,51 @@ i{
 
 body{
     width: 100%;
-    margin: 0 auto;
     overflow-x: hidden;
 
 }
 
-
-.testline1{
-    top: 905px;
-    left: 70px;
-
-    position: absolute;
-    width: 100%;
-    height: 500px;
-    border-top: #1414DB 8px solid;
-    border-left: #1414DB 8px solid;
+.line_container{
+    position: relative;
 }
 
-.testline2{
-    top: 1405px;
-    left: 70px;
+.lines{
+    z-index: -2;
     position: absolute;
+}
+
+
+
+.blueline{
+    border: #1414DB 8px solid;
+    position: absolute;
+    z-index: -99;
+}
+
+#blueline_index1{
+    top: 945px;
+    left: 70px;
+    width: 100%;
+    height: 500px;
+    border-bottom: none;
+    border-right: none;
+}
+
+#blueline_index2{
+    top: 1445px;
+    left: 70px;
     width: 700px;
-    height: 200px;
-    border-top: #1414DB 8px solid;
-    border-right: #1414DB 8px solid;
+    height: 1200px;
+    border-left: none;
+}
+
+#blueline_index3{
+    top: 2645px;
+    left: 70px;
+    width: 100%;
+    height: 480px;
+    border-top: none;
+    border-right: none;
 }
 
 
