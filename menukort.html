@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menukort</title>
+
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://use.typekit.net/vkd2age.css">
+
+    <!--JAVASCRIPT -->
+    <script src="script.js" defer></script>
+
+        <!--ANIMATIONER-->
+
+    
+         <!-- FONTAWESOME -->
+        <script src="https://kit.fontawesome.com/69e662559e.js" crossorigin="anonymous"></script>
+</head>
+
+
+
+
+
+<body>
+<!-- ØL SPIL -->
+<button id="modalButton">Hvilken øl <br> skal jeg vælge?</button>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1>Prøv vores øl-spil</h1>
+            <button id="btnBeer">Stik mig en bajer!</button>
+            <p id="yourBeer"></p>
+        </div>
+    </div>
+
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+ 
+        <!-- HEADER -->
+        <header>
+            <a href="index.html"><img class="max_img" src="images/orange_logo.png" alt="Logo"></a>
+            <nav>
+                <a href="om.html"> Om os</a>
+                <a href="menukort.html"> Menukort </a>
+                <a href="events.html"> Events </a>
+            </nav> 
+        </header>
+
+    <section>
+
+        <div class="menu_section">
+            <div id="menu_titeltop">
+                
+                <div class="flexcontainer space_between">
+                    <h1>MENUKORT</h1>   
+                    <div >      
+                        <h6 id="openNow">Åben nu</h6>
+                        <h6 id="closed">Lukket</h6>  
+                    </div>                 
+                </div>
+                <h2>MAD</h2>
+                <div>
+                    <ul id="menu_navigation">
+                        <li><a href="#morgenmad">MORGENMAD</a></li>
+                        <li><a href="#middagaften">MIDDAG / AFTEN</a></li>
+                        <li><a href="#snacks">SNACKS</a></li>
+                        <li><a href="#pizza">PIZZA</a></li>
+                        <br>
+                        <li><a href="#koldedrikke">KOLDE DRIKKE</a></li>
+                        <li><a href="#ol">ØL</a></li>
+                        <li><a href="#vin">VIN</a></li>
+                        <li><a href="#drinks">DRINKS</a></li>
+                        <li><a href="#bobler">BOBLER</a></li>
+                        <li><a href="#varmedrikke">VARME DRIKKE</a></li>
+                    </ul>
+                </div> 
+            </div>
+
+            <div class=" flexcontainer">
+                <div class="icon">
+                    <img class="max_img" src="images/ikon.croissant.png" alt="croissant ikon">
+                </div>
+
+                <div class="menu_kategori">
+                    <h1>MORGEN</h1>
+                    <div class="menu_line flexcontainer">
+                        <div class="menu_item_width end_margin">
+                            <div class="menu_text menu_item flexcontainer">
+                                <div>
+                                    <h4>Bolle med smør</h4>
+                                    <p>Friskbagt bolle fra Bageri Berta med smør</p>                    
+                                </div>
+                                <div class="menu_price">
+                                    <h4>20,-</h4>
+                                </div>
+                            </div>     
+                        </div>
+                        <div class="menu_item_width end_margin">
+                            <div class="menu_text menu_item flexcontainer">
+                                <div>
+                                    <h4>Bolle med ost</h4>
+                                    <p>Friskbagt bolle fra Bageri Berta med smør og ost</p>                    
+                                </div>
+                                <div class="menu_price">
+                                    <h4>25,-</h4>
+                                </div>
+                            </div>     
+                        </div>
+                    </div>
+                    <div class="menu_line flexcontainer">
+                        <div class="menu_item_width end_margin">
+                            <div class="menu_text menu_item flexcontainer">
+                                <div>
+                                    <h4>Croissant</h4>
+                                    <p>Friskbagt smørcroissant fra Bageri Berta</p>                    
+                                </div>
+                                <div class="menu_price">
+                                    <h4>35,-</h4>
+                                </div>
+                            </div>     
+                        </div>
+                        <div class="menu_item_width end_margin">
+                            <div class="menu_text menu_item flexcontainer">
+                                <div>
+                                    <h4>Kage</h4>
+                                    <p>Kig forbi Tanken for at se vores lækre udvalg af kager</p>                    
+                                </div>
+                                <div class="menu_price">
+                                    <h4>25,-</h4>
+                                </div>
+                            </div>     
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="menu_section flexcontainer">
+        <div class="icon">
+            <img class="max_img" src="images/ikon.toast.png" alt="croissant ikon">
+        </div>
+        <div class="menu_kategori" id="middagaften">
+            <h1>MIDDAG / AFTEN</h1>
+            <div class="menu_line flexcontainer">
+                <div class="menu_item_width end_margin">
+                    <div class=" menu_item flexcontainer">
+                        <div class="menu_text">
+                            <h4>Chorizo sandwich</h4>
+                            <p>Chorizo, mozerella, soltørret tomater & grøn pesto</p>                    
+                        </div>
+                        <div class="menu_price">
+                            <h4>54,-</h4>
+                        </div>
+                    </div>     
+                </div>
+                <div class="menu_item_width end_margin">
+                    <div class="menu_item flexcontainer">
+                        <div class="menu_text">
+                            <h4>Serrano sandwich</h4>
+                            <p>Serrano, brie, syltede rødløg, honeymustard & mayo</p>                    
+                        </div>
+                        <div class="menu_price">
+                            <h4>54,-</h4>
+                        </div>
+                    </div>     
+                </div>
+            </div>
+            <div class="menu_line flexcontainer">
+                <div class="menu_item_width end_margin">
+                    <div class="menu_item flexcontainer">
+                        <div class="menu_text">
+                            <h4>Hummus sandwich</h4>
+                            <p>Chili hummus, feta & grillet peberfrugt</p>                    
+                        </div>
+                        <div class="menu_price">
+                            <h4>54,-</h4>
+                        </div>
+                    </div>     
+                </div>
+                <div class="menu_item_width end_margin">
+                    <div class="menu_item flexcontainer">
+                        <div class="menu_text">
+                            <h4>Toast</h4>
+                            <p>Serrano, gammelknas & japansk mayo</p>                    
+                        </div>
+                        <div class="menu_price">
+                            <h4>35,-</h4>
+                        </div>
+                    </div>     
+                </div>
+            </div>    
+        </div>
+    </section>
+
+    <section class="menu_section flexcontainer">
+        <div class="icon">
+            <img class="max_img" src="images/ikon.chips.png" alt="croissant ikon">
+        </div>
+
+        <div class="menu_kategori" id="snacks">
+            <h1>SNACKS</h1>
+            <div class="menu_line flexcontainer">
+                <div class="menu_item_width end_margin">
+                    <div class="menu_item flexcontainer">
+                        <div class="menu_text">
+                            <h4>Slikpose</h4>
+                            <p>Haribo</p>   
+                            <p>Bonbon bolcher</p> 
+                            <p>Skolekridt</p>   
+                            <p>Vingummi</p>                    
+                        </div>
+                        <div class="menu_price bottom_right">
+                            <p>30,-</p>
+                            <p>30,-</p>
+                            <p>25,-</p>
+                            <p>40,-</p>
+                        </div>
+                    </div>     
+                </div>
+                <div class="menu_item_width end_margin">
+                    <div class=" menu_item flexcontainer">
+                        <div class="menu_text">
+                            <h4>Chokolade</h4>
+                            <p>Nutella sticks</p>   
+                            <p>Nutella b-ready</p> 
+                            <p>Kinder maxi</p>   
+                            <p>Kinder choko bons</p>                       
+                        </div>
+                        <div class="menu_price bottom_right">
+                            <p>20,-</p>
+                            <p>30,-</p>
+                            <p>20,-</p>
+                            <p>35,-</p>
+                        </div>
+                    </div>     
+                </div>
+                <div class="menu_item_width">
+                    <div class=" menu_item flexcontainer">
+                        <div class="menu_text">
+                            <h4>Nødder</h4>
+                            <p>Sweet & Salty</p>   
+                            <p>Peanuts</p> 
+                            <p>Chili nuts</p>   
+                            <p>Müslibar</p>                      
+                        </div>
+                        <div class="menu_price bottom_right">
+                            <p>25,-</p>
+                            <p>25,-</p>
+                            <p>30,-</p>
+                            <p>10,-</p>
+                        </div>
+                    </div>     
+                </div>
+            </div>
+    </section>
+
+    <section class="flexcontainer menu_section center" id="pizza">
+        <div id="mefisto_img">
+        </div>
+
+        <div id="mefisto_spacing">
+            <div class="flexcontainer menu_item">
+                <div class="menu_text">
+                    <h1>PIZZA & BAR - BY MEFISTO</h1>
+                    <p>Koldhævet dej og fermenteret i mindst 48 timer</p>
+                </div>
+                <div class="icon">
+                    <img class="max_img" src="images/ikon.pizza.png" alt="pizza ikon">
+                </div>
+            </div>
+            <div class="menu_item flexcontainer">
+                <div class="menu_text">
+                    <h3>Månedens pizza</h3>
+                    <p>Rød, porchetta, kål & Szechuan-peber</p>                    
+                </div>
+                <div class="menu_price bottom_right">
+                    <p>54,-</p>
+                </div>
+            </div>  
+
+            <div class="menu_text menu_item">
+                <h4>Røde</h4>
+                <p>Serveret på bund af knuste tomater, mozzerella og grana padano</p>                   
+            </div>  
+
+            <div class="menu_item flexcontainer">
+                <div class="menu_text">
+                    <p>Klassisk margherita</p>
+                    <p>Spicy salami</p>
+                    <p>Syltede svampe, palmekål, chilli & gammel knas</p>
+                    <p>Nduja, blåskimmelost & syltede rødløg</p>                    
+                </div>
+                <div class="menu_price bottom_right">
+                    <p>95,-</p>
+                    <p>130,-</p>
+                    <p>130,-</p>
+                    <p>135,-</p>
+                </div>
+            </div> 
+            
+            <div class="menu_text menu_item">
+                <h4>Hvide</h4>
+                <p>Serveret på bund af mascarpone, mozzerella og grana padano</p>                 
+            </div> 
+
+            <div class="menu_item flexcontainer">
+                <div class="menu_text">
+                    <p>Blåskimmel, spinat, citron & chili</p>
+                    <p>Kartoffel, løg, rosmarin & sort hvidløg</p>
+                    <p>Husets salsiccia, peruviansk syltet peber & urter</p>                 
+                </div>
+                <div class="menu_price bottom_right">
+                    <p>125,-</p>
+                    <p>130,-</p>
+                    <p>145,-</p>
+                </div>
+            </div> 
+        </div>
+    </section>
+
+    <section>
+        <div class="blue_box flexcontainer" id="menu_bollekort_section">
+            <div id="menu_bollekort_img">
+                <img class="max_img" src="images/bollekort.png" alt="bollekort">
+            </div>
+            <div class="textbox">
+                <h2>#BOLLEKORT</h2>
+                <p>Hos Tanken kan du få rabat på boller og kaffe ved køb af et bollekort. <br><br>
+                    Bollekortet indløser 10 lækre surdejsboller boller med ost, og en dertilhørende friskbrygget kop kaffe. <br><br>
+                    Køb det i kiosken til 350,-
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="flexcontainer space_between">
+        <div>
+
+
+            <div class="menu_section flexcontainer">
+                <div class="icon">
+                    <img class="max_img" src="images/ikon.sodavand.png" alt="kolde drikke ikon">
+                </div>
+
+                <div class="menu_kategori" id="koldedrikke">
+                    <h1>Kolde drikke</h1>
+                    <div class="menu_line flexcontainer">
+                        <div class="menu_item_width end_margin">
+                            <div class="menu_text menu_item flexcontainer">
+                                <div>
+                                    <h4>Frem sodavand</h4>
+                                    <p>Grøn sport</p>   
+                                    <p>Energisten</p> 
+                                    <p>Blå sport</p>   
+                                    <p>Appelsin</p>
+                                    <p>Hindbær</p>                    
+                                </div>
+                                <div class="menu_price bottom_right">
+                                    <p>17,-</p>
+                                    <p>17,-</p>                      
+                                    <p>17,-</p> 
+                                    <p>17,-</p>  
+                                    <p>17,-</p>                    
+                                </div>
+                            </div>     
+                        </div>
+                        <div class="menu_item_width">
+                            <div class="menu_text menu_item flexcontainer">
+                                <div>
+                                    <h4>Tank op</h4>
+                                    <p>Faxe Kondi</p>   
+                                    <p>Pepsi Max</p> 
+                                    <br>
+                                    <p>Booster</p>   
+                                    <p>Cocio</p> 
+                                    <br>
+                                    <p>Vand</p>                    
+                                </div>
+                                <div class="menu_price bottom_right">
+                                    <p>18,-</p>
+                                    <p>18,-</p>  
+                                    <br>                 
+                                    <p>25,-</p> 
+                                    <p>25,-</p> 
+                                    <br>
+                                    <p>15,-</p>                    
+                                </div>
+                            </div>     
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu_section flexcontainer">
+                <div class="icon">
+                    <img class="max_img" src="images/ikon.øl.png" alt="øl ikon">
+                </div>
+
+                <div class="menu_kategori" id="ol">
+                    <h1>ØL</h1>
+                    <div class="menu_line flexcontainer">
+                        <div class="menu_item_width end_margin">
+                            <div class="menu_text menu_item flexcontainer">
+                                <div>
+                                    <h4>Special øl</h4>
+                                    <p>Anarkist</p>   
+                                    <p>Kings County</p> 
+                                    <p>To øl</p>   
+                                    <p>Ebeltoft bryghus</p>                     
+                                </div>
+                                <div class="menu_price">
+                                    <p>3 for 160,-</p>
+                                    <p>65,-</p>
+                                    <p>65,-</p>
+                                    <p>65,-</p>
+                                    <p>65,-</p>
+                                </div>
+                            </div>     
+                        </div>
+                        <div class="menu_item_width">
+                            <div class="menu_text menu_item flexcontainer">
+                                <div>
+                                    <h4>Fadøl</h4>
+                                    <p>Odense Classic</p>   
+                                    <p>Odense Pilsner</p> 
+                                    <p>Anarkist</p>                       
+                                </div>
+                                <div class="menu_price bottom_right">
+                                    <p>35,-</p>
+                                    <p>35,-</p>
+                                    <p>55,-</p>
+                                </div>
+                            </div>     
+                        </div>
+                    </div>
+
+                    <div class="menu_line flexcontainer">
+                        <div class="menu_item_width end_margin">
+                            <div class="menu_text menu_item flexcontainer">
+                                <div>
+                                    <h4>0% alkohol</h4>
+                                    <p>Sol</p>   
+                                    <p>Galipette</p> 
+                                    <p>Anarkist</p>                      
+                                </div>
+                                <div class="menu_price">
+                                    <p>4 for 130,-</p>
+                                    <p>40,-</p>
+                                    <p>40,-</p>
+                                    <p>40,-</p>
+                                </div>
+                            </div>     
+                        </div>
+                        <div class="menu_item_width">
+                            <div class="menu_text menu_item flexcontainer">
+                                <div>
+                                    <h4>Flaskeøl</h4>
+                                    <p>Ceres top</p>   
+                                    <p>Odense Classic</p> 
+                                    <p>Odense Pilsner</p>                        
+                                </div>
+                                <div class="menu_price">
+                                    <p>5 for 100,-</p>
+                                    <p>22,-</p>
+                                    <p>22,-</p>
+                                    <p>22,-</p>
+                                </div>
+                            </div>     
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="infographic_beer">
+            <img class="max_img" src="images/infographic.øl.png" alt="infographic øl">
+        </div>
+    </section>
+
+    <section class="two_pics flexcontainer">
+        <div>
+            <img class="max_img" src="images/mate1.jpg" alt="mate">
+        </div>
+        <div>
+            <img class="max_img" src="images/mate2.jpg" alt="mate">
+        </div>
+    </section>
+
+    <section class="menu_section flexcontainer">
+        <div class="icon">
+            <img class="max_img" src="images/ikon.vin.png" alt="croissant ikon">
+        </div>
+
+        <div class="menu_kategori" id="vin">
+            <h1>Vin</h1>
+            <div class="menu_line flexcontainer">
+                <div class="menu_item_width end_margin">
+                    <div class="menu_text menu_item flexcontainer">
+                        <div>
+                            <h4>Rødvin</h4>
+                            <h5>Make it Big</h5>   
+                            <p>Pinot noir Californien USA</p> 
+                            <br>
+                            <h5>Ezimit</h5>   
+                            <p>Syrah Nord Makedonien</p> 
+                            <br>
+                            <h5>MonteTessa</h5>   
+                            <p>Appassimento Italien</p>                    
+                        </div>
+                        <div class="menu_price">
+                            <h4>42,- / 209,-</h4>
+                        </div>
+                    </div>     
+                </div>
+                <div class="menu_item_width end_margin">
+                    <div class="menu_text menu_item flexcontainer">
+                        <div>
+                            <h4>Hvidvin</h4>
+                            <h5>CrystalBay</h5>   
+                            <p>Riesling Tyskland</p> 
+                            <br>
+                            <h5>El Castilla</h5>   
+                            <p>Chardonnay Spanien</p> 
+                            <br>
+                            <h5>Perigord</h5>   
+                            <p>Sauvignon-Blanc Frankrig</p>                       
+                        </div>
+                        <div class="menu_price">
+                            <h4>42,- / 209,-</h4>
+                        </div>
+                    </div>     
+                </div>
+                <div class="menu_item_width">
+                    <div class="menu_text menu_item flexcontainer">
+                        <div>
+                            <h4>Rosé</h4>
+                            <h5>LesDelices</h5>   
+                            <p>Rose de Prestige Frankrig</p> 
+                            <br>
+                            <h5>Poetas</h5>   
+                            <p>Rosado Spanien</p> 
+                            <br>
+                            <h5>CrystalBay</h5>   
+                            <p>Shiraz Rose Australien</p>                      
+                        </div>
+                        <div class="menu_price">
+                            <h4>42,- / 209,-</h4>
+                        </div>
+                    </div>     
+                </div>
+            </div>
+    </section>
+
+    <section class="menu_section flexcontainer">
+        <div class="icon">
+            <img class="max_img" src="images/ikon.drink.png" alt="croissant ikon">
+        </div>
+
+        <div class="menu_kategori" id="drinks">
+            <h1>Drinks</h1>
+            <div class="menu_line flexcontainer">
+                <div class="menu_item_width end_margin">
+                    <div class="menu_item flexcontainer">
+                        <div class="menu_text">
+                            <h4>Gin & tonic</h4>
+                            <p>B&T</p>   
+                            <p>Malfey</p> 
+                            <p>Engine</p>                      
+                        </div>
+                        <div class="menu_price">
+                            <h3>3 for 130,-</h4>
+                            <p>50,-</p>
+                            <p>60,-</p>
+                            <p>55,-</p>
+                        </div>
+                    </div>     
+                </div>
+                <div class="menu_item_width end_margin">
+                    <div class="menu_item flexcontainer">
+                        <div class="menu_text">
+                            <h4>Long drink</h4>
+                            <p>Sprinklervæske</p>   
+                            <p>Basil Boilerman</p> 
+                            <p>Tankman</p>   
+                        </div>
+                        <div class="menu_price bottom_right">
+                            <p>50,-</p>
+                            <p>55,-</p>
+                            <p>60,-</p>
+                        </div>
+                    </div>     
+                </div>
+                <div class="menu_item_width">
+                    <div class="menu_item flexcontainer">
+                        <div class="menu_text">
+                            <h4>Slushy cocktails</h4>
+                            <p>Mexican Bulldog</p>   
+                            <p>Tankens Dame</p> 
+                        </div>
+                        <div class="menu_price bottom_right">
+                            <p>60,-</p>
+                            <p>55,-</p>
+                        </div>
+                    </div>     
+                </div>
+            </div>
+    </section>
+
+    <section class="flexcontainer space_between">
+        <div>
+            <div class="menu_section flexcontainer">
+                <div class="icon">
+                    <img class="max_img" src="images/ikon.bobler.png" alt="bobler ikon">
+                </div>
+
+                <div class="menu_kategori" id="bobler">
+                    <h1>Bobler</h1>
+                    <div class="menu_line flexcontainer">
+                        <div class="menu_item_width">
+                            <div class=" menu_item flexcontainer">
+                                <div class="menu_text">
+                                    <h4>Mousserende vin</h4>
+                                    <h5>Bellisco</h5>   
+                                    <p>Cava fra Spanien</p> 
+                                    <br>
+                                    <h5>Hugo</h5>   
+                                    <p>Fra Italien</p>  
+                                    <br>
+                                    <h5>Reggiano</h5>   
+                                    <p>Lambrusco fra Italien</p>                    
+                                </div>
+                                <div class="menu_price">
+                                    <h3>Flaske 239,-</p>
+                                </div>
+                            </div>     
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu_section flexcontainer">
+                <div class="icon">
+                    <img class="max_img" src="images/ikon.kaffe.png" alt="varme drikke kaffe ikon">
+                </div>
+
+                <div class="menu_kategori" id="varmedrikke">
+                    <h1>Varme drikke</h1>
+                    <div class="menu_line flexcontainer">
+                        <div class="menu_item_width">
+                            <div class="menu_item flexcontainer">
+                                <div class="menu_text">
+                                    <h4>Filterkaffe</h4> 
+                                    <h4>Irish Coffee</h4>   
+                                    <br> 
+                                    <h4>Te</h4> 
+                                    <p>Kig forbi Tanken for at se vores udvalg af te</p>   
+                  
+                                </div>
+                                <div class="menu_price">
+                                    <h4>25,-</h4>
+                                    <h4>65,-</h4>
+                                    <br>
+                                    <h4>25,-</h4>                                        
+                                </div>
+                            </div>     
+                        </div>
+                    </div>
+                </div>
+             </div>
+        </div>
+        <div id="infographic_drink">
+            <img class="max_img" src="images/infographic.drink.png" alt="infographic drink">
+        </div>
+    </section>
+</body>
+</html>

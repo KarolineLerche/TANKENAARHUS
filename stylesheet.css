@@ -28,6 +28,19 @@ h3{
     color: #EB7C30;
 }
 
+h4{
+    font-family: ff-dagny-web-pro, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+h5{
+    font-family: ff-dagny-web-pro, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 100%;
+}
+
 p{
     font-family: ff-dagny-web-pro, sans-serif;
     font-weight: 300;
@@ -305,6 +318,16 @@ font-size: 300%;
     width: 24%;
 }
 
+.textbox h2{
+    font-size: 300%;
+
+}
+
+.textbox p{
+    font-size: 120%;
+    line-height: 130%;
+}
+
 
 
 
@@ -324,27 +347,25 @@ nav a{
     text-decoration: none;
     color: black;
     font-size: 150%;
-    margin-left: 3%; 
-    padding-right: 6%;
-    padding-left: 2%; 
+    margin-left: 6%; 
 }
 
 nav{
     position: fixed;
     width: 100%;
     background-color: #ffffff;
-    width: 20%;
+    width: 22%;
     margin-left: 80%;
     z-index: 1;    
-    padding-top: 1%;
     padding-bottom: 1%;
+    padding-top: 11px;
 }
 
 header img{
     position: absolute;
     width: 6%;
-    margin-left: 2%;
-    margin-top: 2%;
+    margin-left: 1%;
+    margin-top: 1%;
 }
 
 
@@ -396,7 +417,16 @@ header img{
     text-align: right;
     padding-right: 3%;
     width: 55%;
-    padding-bottom: 15%;
+}
+
+#index_top p{
+    text-align: right;
+    padding-right: 3%;
+}
+
+#index_top div:last-child h1{
+    margin-right: 3%;
+    width: 215%;
 }
 
 
@@ -404,12 +434,22 @@ header img{
 
 /* Åben / lukket */ 
 #openNow{
+    width: 215%;
+    font-family: ff-dagny-web-pro, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 130%;
     font-size: 25px;
     color: rgb(57, 215, 57);
     display: none;
 }
 
 #closed{
+    width: 215%;
+    font-family: ff-dagny-web-pro, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 130%;
     font-size: 25px;
     color: rgb(215, 40, 40);
     display: none;
@@ -428,23 +468,9 @@ header img{
     padding-right: 3%;
 }
 
-#index_top p{
-    text-align: right;
-    padding-right: 3%;
-}
 
-#index_top div:last-child h1{
-    margin-right: 3%;
-    width: 215%;
-}
 
-#index_top div:last-child h6{
-    width: 215%;
-    font-family: ff-dagny-web-pro, sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 130%;
-}
+
 
 
 
@@ -460,7 +486,7 @@ header img{
 
 /* - højre side - */ 
 #pizzanews div{
-    margin-top: 6%;  
+    margin-top: 15%;  
 }
 
 #pizzanews div:last-child{
@@ -469,7 +495,7 @@ header img{
 
 /* - venstre side - */ 
 #pizzanews div:first-child{
-    margin-right: 10%;
+    margin-right: 7%;
     padding-top: 5%;
 }
 
@@ -673,6 +699,174 @@ header img{
 
 /* MENUKORT */
 
+.menu_section{
+    margin-top: 70px;
+    margin-left: 35px;
+    margin-right: 35px;
+    flex-grow: 1;
+}
+
+.menu_kategori{
+    padding-left: 10px;
+    padding-top: 10px;    
+}
+
+.menu_line{
+    margin-top: 1%;
+    margin-bottom: 3%;
+
+}
+
+.menu_item{
+    justify-content: space-between;
+    position: relative; 
+}
+
+.menu_item h4{
+ color: #1414DB;
+ font-size: 120%;
+ padding-bottom: 1%;
+
+}
+
+
+
+.menu_price{
+    text-align: right;
+}
+
+.menu_item p{
+    padding-top: 4px;
+    padding-bottom: 3px;
+    font-size: 95%;
+}
+
+.end_margin{
+    margin-right: 85px;
+}
+
+.bottom_right{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.icon{
+    height: 55px;
+    width: 55px; 
+    flex-shrink: 0;
+}
+
+.menu_item_width{
+    width: 300px;    
+}
+
+
+#mefisto_spacing div:nth-child(3), #mefisto_spacing div:nth-child(5){
+    padding-bottom: 4%;
+}
+
+#mefisto_spacing h4{
+    padding-top: 10%;
+}
+
+#mefisto_spacing h3{
+    padding-top: 13%;
+    font-size: 150%;
+}
+
+#mefisto_spacing{
+    width: 500px;
+}
+
+#mefisto_img{
+    width: 500px;
+    height: 550px;
+    margin-right: 5%;
+    background-image: url(images/mefisto.pizza.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+
+#infographic_beer{
+    width: 400px;
+    height: 650px;
+    margin-top: 35px;
+    margin-right: 35px;
+    text-align: right;
+}
+
+#infographic_drink{
+    width: 800px;
+    height: 380px;
+    margin-top: 35px;
+    margin-right: 35px;
+    text-align: right;
+}
+
+.space_between{
+    justify-content: space-between;
+}
+
+
+
+#menu_bollekort_img{
+    width: 450px;
+    margin: 5%;
+}
+
+#menu_bollekort_section{
+    height: 400px;
+    margin-top: 15%;
+    margin-bottom: 10%;
+    outline:7px solid #1414DB;
+    outline-offset: 10px;
+    align-items: center;
+}
+
+#menu_bollekort_section div:last-child{
+    width: 40%;
+
+}
+
+
+
+#menu_titeltop{
+    margin-top: 20%;  
+    margin-bottom: 5%;
+    position: relative;  
+}
+
+#menu_titeltop h1{
+    font-size: 500%;
+}
+
+#menu_titeltop h2{
+    font-size: 200%;
+    padding-top: 4%;
+    color: #EB7C30;
+}
+
+#menu_navigation{
+    position: absolute;
+    top: 40px;
+    right: 0;
+    list-style: none;  
+    text-align: right;  
+    width: 10%;
+
+}
+
+#menu_navigation a{
+    color: black;
+    line-height: 90%;
+    font-family: bebas-neue, sans-serif;
+    font-weight: 600;
+    font-size: 150%;
+    text-decoration: none;
+}
 
 
 
@@ -816,10 +1010,34 @@ i{
 
 
 
+body{
+    width: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+
+}
 
 
+.testline1{
+    top: 905px;
+    left: 70px;
 
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    border-top: #1414DB 8px solid;
+    border-left: #1414DB 8px solid;
+}
 
+.testline2{
+    top: 1405px;
+    left: 70px;
+    position: absolute;
+    width: 700px;
+    height: 200px;
+    border-top: #1414DB 8px solid;
+    border-right: #1414DB 8px solid;
+}
 
 
 

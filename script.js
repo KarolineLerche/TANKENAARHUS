@@ -9,7 +9,7 @@ let date = new Date();
 let hour = date.getHours();
 
 /* Vi definere vores variabler */
-let open = document.getElementById("openNow");
+let openNow = document.getElementById("openNow");
 let closed = document.getElementById("closed");
 
 
@@ -24,6 +24,7 @@ function myTime(){
     closed.style.display = "block";
   }
 }
+
 
 myTime();
 setInterval(myTime,10000);
