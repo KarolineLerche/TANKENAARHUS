@@ -28,13 +28,17 @@
 
 <body>
 <!-- ØL SPIL -->
-<button id="modalButton">Hvilken øl <br> skal jeg vælge?</button>
-    <div id="myModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h1>Prøv vores øl-spil</h1>
-            <button id="btnBeer">Stik mig en bajer!</button>
-            <p id="yourBeer"></p>
+
+<div id="modalContainer">
+    <button id="hoverbox"><img src="images/arrowright.svg" alt="#"></button>
+    <button id="modalButton">Hvilken øl <br> skal jeg vælge?</button>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h1>Prøv vores øl-spil</h1>
+                <button id="btnBeer">Stik mig en bajer!</button>
+                <p id="yourBeer"></p>
+            </div>
         </div>
     </div>
 
@@ -57,17 +61,19 @@
 
  <!-- FORSIDE -->
     <section>
-        <div class="flexcontainer" id="index_top">
-            <div class="blue_box">
-                <h1 class="align_right" id="overskrift_forside"> TANKEN <br> Aarhus C <br> Graven <br> 26 </h1>
+        <div class="flexcontainer" >
+            <div class="blue_box" id="index_left">
+                <h1 id="overskrift_forside"> TANKEN<br>Aarhus C<br>Graven<br>26</h1>
                 <button class="cta_button whitebutton" id="omos_button" onclick=" window.open('om.html','_self')"> Om os </button>
             </div>
-            <div>
-                <img class="max_img" src="images/forside.jpg" alt="Forside Billede">
-                <div class="align_right">
-                    <h6 id="openNow">Åben nu</h6>
-                    <h6 id="closed">Lukket</h6>
-                    <h1 > søn - ons 09:00 - 22:00 <br> fre - lør 09:00 - sent </h1>
+            <div id="index_right">
+                <div>
+                    <img class="max_img" src="images/forside2.jpg" alt="Forside Billede">
+                </div>
+                <div>
+                    <p id="openNow">Åben nu</p>
+                    <p id="closed">Lukket</p>
+                    <h1 >SØN - ONS: 09:00 - 22:00<br>FRE - LØR: 09:00 - SENT</h1>
                 </div>
             </div>
         </div>
@@ -77,8 +83,9 @@
 
  <!-- PIZZA NYHED -->
 
-<div class="testline1"></div>
-    <div class="testline2"></div>
+<div class="blueline" id="blueline_index1"></div>
+<div class="blueline" id="blueline_index2"></div>
+<div class="blueline" id="blueline_index3"></div>
 
     <section>
         <h1 class="align_right black_headlines" id="overskrift_nyhed"> Nyhed </h1>
