@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="stylesheet.css">
 
     <!--JAVASCRIPT -->
-    <script defer src="script.js"></script>
+    <script src="script.js" defer></script>
 
      <!-- FONTAWESOME -->
     <script src="https://kit.fontawesome.com/69e662559e.js" crossorigin="anonymous"></script>
@@ -27,9 +27,24 @@
 
 <body>
 
+<!-- ØL SPIL -->
+<button id="modalButton">Hvilken øl <br> skal jeg vælge?</button>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1>Prøv vores øl-spil</h1>
+            <button id="btnBeer">Stik mig en bajer!</button>
+            <p id="yourBeer"></p>
+        </div>
+    </div>
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+
 <!-- HEADER -->
 <header>
-    <img class="max_img" src="images/orange_logo.png" alt="Forside Logo">
+    <a href="index.html"><img class="max_img" src="images/orange_logo.png" alt="Forside Logo"></a>
     <nav>
         <a href="om.html"> Om os</a>
         <a href="menukort.html"> Menukort </a>
@@ -76,14 +91,15 @@
                 <h2> Ølsmagning d. 27/06 </h2>
                 <p class="p_size">
                     På Tanken har vi en bredt <br>
-                    udvalg af forskellige øl. <br>
-                    Til vores ølsmagning har <br>
-                    du muligheden for at <br>
-                    smage på sagerne. <br>
-                    Vi serverer alt fra IPA <br>
-                    til Brown Ale, og du kan <br>
-                    være sikker på at <br>
-                    der er noget for dig. <br>
+                    udvalg af øl. Til ølsmagning<br>
+                    har du muligheden for at smage<br>
+                    på sagerne. <br> <br>
+                    Vi guider dig igennem alt fra  <br>
+                    IPA til Brown Ale, og sikrer <br>
+                    noget til enhver smag. <br> <br>
+                    Arrangementet koster 189,- <br>
+                    pr. person.
+                    
                 </p>
             </div>  
             <div>
@@ -91,38 +107,41 @@
                 <p class="p_size">
                     Tænker du at udforske dine vin <br>
                     connoisseur evner, så <br>
-                    kig forbi tanken til vinsmagning. <br>
+                    kig forbi tanken til vinsmagning. <br><br>
+                    Vi guider dig igennem forskellige <br>
+                    nøje udvalgte vine, og du kan glæde <br> 
+                    dig til smagen af alt fra Argentina <br>
+                    til New Zealand. <br> <br>
                     Arrangementet koster 200,- <br>
-                    pr. person. <br>
-                    Begrænset pladser. <br>   
+                    pr. person. <br> 
+                      
                 </p>
             </div>  
             <div>
                 <h2> Quizaften 15/07 </h2>
                 <p class="p_size">
-                    Tænker du at udforske dine vin <br>
-                    connoisseur evner, så <br>
-                    kig forbi tanken til vinsmagning. <br>
-                    Arrangementet koster 200,- <br>
-                    pr. person. <br>
-                    Begrænset pladser. <br>  
+                    Skal du være med til vores <br>
+                    første quiz-aften? <br>
+                    Kom forbi til en smadder hyggelig <br>
+                    aften, i selskab med os fra TANKEN <br>
+                    og nye venner. <br> <br>
+                    Arrangementet er helt gratis. <br>
+                    Vi disker endda op med <br> 
+                    sjove og hyggelige præmier, <br>
+                    til de heldige vindere.  
                 </p>
             </div>  
         </div>
     </section>
 
 <!-- EVENTS BILLEDER -->
-    <section >
-         <div><p>@TANKENIGRAVEN</p> </div>         
-        <div class="flexcontainer two_pics">
-            <div>
-                
-                <img class="max_img" src="images/event1.jpg" alt="Event billede 1">
-            </div>
+    <section class="flexcontainer two_pics">
+        <div>
+            <img class="max_img" src="images/event1.jpg" alt="Event billede 1">
+        </div>
 
-            <div>
-                <img class="max_img" src="images/event2.jpg" alt="Event billede 2">
-            </div>
+        <div>
+            <img class="max_img" src="images/event2.jpg" alt="Event billede 2">
         </div>
     </section>
 
@@ -151,16 +170,6 @@
         </div>
 </footer>
 
-
-
-
-
-
-
-
-
-
-    
 </main>
 
 
