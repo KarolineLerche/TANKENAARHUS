@@ -28,18 +28,22 @@
 <body>
 
 <!-- ØL SPIL -->
-<button id="modalButton">Hvilken øl <br> skal jeg vælge?</button>
-    <div id="myModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h1>Prøv vores øl-spil</h1>
-            <button id="btnBeer">Stik mig en bajer!</button>
-            <p id="yourBeer"></p>
+
+<div id="modalContainer">
+    <button id="hoverbox"><img src="images/arrowright.svg" alt="#"></button>
+    <button id="modalButton">For mange muligheder? <br> - Lad Tanken vælge din næste øl!</button>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h1>Prøv vores øl-spil</h1>
+                <button id="btnBeer">Stik mig en bajer!</button>
+                <p id="yourBeer"></p>
+            </div>
         </div>
     </div>
 
 
-<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">TIL TOP</button>
 
 
 <!-- HEADER -->
@@ -56,8 +60,13 @@
 
 
 <!-- DENNE UGE -->
-    <section >
+    <section class="line_container">
+        <div class="lines" id="lines_event"></div>
         <h1 class="black_headlines" id="overskrift_denneuge"> Denne uge </h1>
+        <div class="openclosed" id="openclosed_event">      
+            <p id="openNow">Åben nu</p>
+            <p id="closed">Åbner i morgen kl. 09:00</p>  
+        </div>  
         <div class="flexcontainer center" id="denneuge">
             <div>
                 <h2> Fars dag 5. Juni </h2>
@@ -85,10 +94,11 @@
 
 <!-- KOMMENDE EVENTS -->
     <section >
-        <h1 class="blue_box" id="overskrift_kommendeevents"> Kommende Events </h1>
-        <div class="flexcontainer blue_box center" id="kommendeevents">
-            <div>
-                <h2> Ølsmagning d. 27/06 </h2>
+        <div class="blue_box" id="events">
+                <h1 id="overskrift_kommendeevents">KOMMENDE EVENTS</h1>
+            <div class="flexcontainer"id="kommendeevents">  
+            <div >
+                <h2> ØLSMAGNING <br> 27/06 </h2>
                 <p class="p_size">
                     På Tanken har vi en bredt <br>
                     udvalg af øl. Til ølsmagning<br>
@@ -103,7 +113,7 @@
                 </p>
             </div>  
             <div>
-                <h2> Vinsmagning 05/07 </h2>
+                <h2> VINSMAGNING <br> 05/07 </h2>
                 <p class="p_size">
                     Tænker du at udforske dine vin <br>
                     connoisseur evner, så <br>
@@ -118,7 +128,7 @@
                 </p>
             </div>  
             <div>
-                <h2> Quizaften 15/07 </h2>
+                <h2> QUIZAFTEN <br> 15/07 </h2>
                 <p class="p_size">
                     Skal du være med til vores <br>
                     første quiz-aften? <br>
@@ -130,18 +140,22 @@
                     sjove og hyggelige præmier, <br>
                     til de heldige vindere.  
                 </p>
-            </div>  
-        </div>
+            </div> 
+        </div> 
+    </div>
     </section>
 
 <!-- EVENTS BILLEDER -->
-    <section class="flexcontainer two_pics">
-        <div>
-            <img class="max_img" src="images/event1.jpg" alt="Event billede 1">
-        </div>
+    <section class="line_container">
+        <div class="double_lines" id="double_lines_event"></div>
+        <div class="flexcontainer two_pics">
+            <div>
+                <img class="max_img" src="images/event1.jpg" alt="Event billede 1">
+            </div>
 
-        <div>
-            <img class="max_img" src="images/event2.jpg" alt="Event billede 2">
+            <div>
+                <img class="max_img" src="images/event2.jpg" alt="Event billede 2">
+            </div>
         </div>
     </section>
 

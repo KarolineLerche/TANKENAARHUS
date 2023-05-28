@@ -42,7 +42,7 @@ let mybutton = document.getElementById("myBtn");
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
     mybutton.style.display = "block";
   } else {
     mybutton.style.display = "none";
@@ -61,19 +61,7 @@ function topFunction() {
 
 
 
-// ØLQUIZ
-let quizbutton = document.getElementById("modalButton");
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    quizbutton.style.display = "block";
-  } else {
-    quizbutton.style.display = "none";
-  }
-}
 
 /* Modalt vindue med et funktion der vælger tilfældig øl i et array */
 

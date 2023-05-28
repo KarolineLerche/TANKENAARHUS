@@ -25,27 +25,22 @@
 
 <body>
 <!-- ØL SPIL -->
-<button id="modalButton">Hvilken øl <br> skal jeg vælge?</button>
-    <div id="myModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h1>Brug for hjælp til at vælge?</h1>
-            <h2>
-                Hvis du går med tanken om at prøve noget nyt,<br>
-                så lad os vælge din næste øl for dig <br>
-            </h2>
-            <p> Alt du skal gøre, er at trykke på knappen nedenunder<br>
-                Så finder vi en øl til dit næste besøg på TANKEN 
-                <br>
-                <br>
-                Kig forbi TANKEN for billige priser, samt stort udvalg</p>
-            <button id="btnBeer">INSPIRER MIG</button>
-            <h2 id="yourBeer"></h2>
+
+<div id="modalContainer">
+    <button id="hoverbox"><img src="images/arrowright.svg" alt="#"></button>
+    <button id="modalButton">For mange muligheder? <br> - Lad Tanken vælge din næste øl!</button>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h1>Prøv vores øl-spil</h1>
+                <button id="btnBeer">Stik mig en bajer!</button>
+                <p id="yourBeer"></p>
+            </div>
         </div>
     </div>
 
 
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<button onclick="topFunction()" id="myBtn" title="Go to top">TIL TOP</button>
 
 
 <!-- HEADER -->
@@ -65,12 +60,12 @@
                 
                 <div class="flexcontainer space_between">
                     <h1>MENUKORT</h1>   
-                    <div >      
-                        <h6 id="openNow">Åben nu</h6>
-                        <h6 id="closed">Lukket</h6>  
+                    <div class="openclosed">      
+                        <p id="openNow">Åben nu</p>
+                        <p id="closed">Åbner i morgen kl. 09:00</p>  
                     </div>                 
                 </div>
-                <h2>MAD</h2>
+                <h2 class="italic">MAD</h2>
                 <div>
                     <ul id="menu_navigation">
                         <li><a href="#morgenmad">MORGENMAD</a></li>
@@ -147,7 +142,6 @@
             </div>
         </div>
 
-    </section>
 
     <section class="menu_section flexcontainer">
         <div class="icon">
@@ -194,15 +188,22 @@
                 <div class="menu_item_width end_margin">
                     <div class="menu_item flexcontainer">
                         <div class="menu_text">
-                            <h4>Toast</h4>
+                            <div class="flexcontainer space_between">
+                                <h4>Toast</h4>
+                                <h3>2 for 60,-</h3>
+                            </div>
                             <p>Serrano, gammelknas & japansk mayo</p>                    
                         </div>
                         <div class="menu_price">
-                            <h4>35,-</h4>
+                            <h4>  35,-</h4>
                         </div>
                     </div>     
                 </div>
-            </div>    
+            </div> 
+            <div id="sticker_toast">
+                <img class="max_img" src="images/sticker.toast.png" alt="sticker til toast">
+            </div>
+            
         </div>
     </section>
 
@@ -344,6 +345,9 @@
                     Køb det i kiosken til 350,-
                 </p>
             </div>
+            <div id="sticker_bollekort">
+                <img class="max_img" src="images/sticker_bollekort.png" alt="Sticker til bollekort">
+            </div>
         </div>
     </section>
 
@@ -422,7 +426,7 @@
                                     <p>Ebeltoft bryghus</p>                     
                                 </div>
                                 <div class="menu_price">
-                                    <p>3 for 160,-</p>
+                                    <h3>3 for 160,-</h3>
                                     <p>65,-</p>
                                     <p>65,-</p>
                                     <p>65,-</p>
@@ -457,7 +461,7 @@
                                     <p>Anarkist</p>                      
                                 </div>
                                 <div class="menu_price">
-                                    <p>4 for 130,-</p>
+                                    <h3>4 for 130,-</h3>
                                     <p>40,-</p>
                                     <p>40,-</p>
                                     <p>40,-</p>
@@ -473,7 +477,7 @@
                                     <p>Odense Pilsner</p>                        
                                 </div>
                                 <div class="menu_price">
-                                    <p>5 for 100,-</p>
+                                    <h3>5 for 100,-</h3>
                                     <p>22,-</p>
                                     <p>22,-</p>
                                     <p>22,-</p>
@@ -490,12 +494,15 @@
         </div>
     </section>
 
-    <section class="two_pics flexcontainer">
-        <div>
-            <img class="max_img" src="images/mate1.jpg" alt="mate">
-        </div>
-        <div>
-            <img class="max_img" src="images/mate2.jpg" alt="mate">
+    <section class="line_container">
+        <div class="double_lines" id="double_lines_menu"></div>
+        <div class="two_pics flexcontainer">
+            <div>
+                <img class="max_img" src="images/mate1.jpg" alt="mate">
+            </div>
+            <div>
+                <img class="max_img" src="images/mate2.jpg" alt="mate">
+            </div>
         </div>
     </section>
 
@@ -606,11 +613,13 @@
                 <div class="menu_item_width">
                     <div class="menu_item flexcontainer">
                         <div class="menu_text">
-                            <h4>Slushy cocktails</h4>
+                            <h4>Cocktails</h4>
+                            <p>Tank N' Stormy</p>  
                             <p>Mexican Bulldog</p>   
                             <p>Tankens Dame</p> 
                         </div>
                         <div class="menu_price bottom_right">
+                            <p>55,-</p>
                             <p>60,-</p>
                             <p>55,-</p>
                         </div>
@@ -662,7 +671,7 @@
                         <div class="menu_item_width">
                             <div class="menu_item flexcontainer">
                                 <div class="menu_text">
-                                    <h4>Filterkaffe</h4> 
+                                    <h4>Kaffe</h4> 
                                     <h4>Irish Coffee</h4>   
                                     <br> 
                                     <h4>Te</h4> 
@@ -681,8 +690,15 @@
                 </div>
              </div>
         </div>
+
+
+
         <div id="infographic_drink">
             <img class="max_img" src="images/infographic.drink.png" alt="infographic drink">
+            <div id="sticker_drink">
+                <img class="max_img" src="images/sticker.drinks.png" alt="Sticker drinks">
+            </div>
+
         </div>
     </section>
 

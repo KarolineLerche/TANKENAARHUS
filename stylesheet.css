@@ -11,7 +11,7 @@
 /* FONTS */ 
 h1{
     font-family: bebas-neue, sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-style: normal;     
 }
 
@@ -45,7 +45,6 @@ p{
     font-family: ff-dagny-web-pro, sans-serif;
     font-weight: 300;
     font-style: normal;
-    
 }
 
 .p_size{
@@ -73,11 +72,12 @@ p{
 .merchsection h2{
     font-size: 350%;
     font-family: poppins, sans-serif;
-    font-weight: 600;
+    line-height: 70%;
+    font-weight: 400;
 }
 
 .merchsection h3{
-    font-size: 400%;
+    font-size: 300%;
 }
 
 .merchsection a{
@@ -86,6 +86,11 @@ p{
     text-decoration: none;
     font-size: 130%;  
 }
+
+#overskrift_merch{
+    margin-right: 14%;
+}
+
 
 
 /* KNAPPER */ 
@@ -156,22 +161,24 @@ p{
     #myBtn {
         display: none; /* Hidden by default */
         position: fixed; /* Fixed/sticky position */
-        bottom: 20px; /* Place the button at the bottom of the page */
-        right: 30px; /* Place the button 30px from the right */
+        bottom: 1%; /* Place the button at the bottom of the page */
+        right: 0; /* Place the button 30px from the right */
         z-index: 99; /* Make sure it does not overlap */
         border: none; /* Remove borders */
         outline: none; /* Remove outline */
-        background-color: red; /* Set a background color */
-        color: white; /* Text color */
         cursor: pointer; /* Add a mouse pointer on hover */
-        padding: 15px; /* Some padding */
-        border-radius: 10px; /* Rounded corners */
-        font-size: 18px; /* Increase font size */
+
+        background: none;
+        height: 6%;
+        width: 10%;
+       
+
+       
+        font-weight: 800;
+        font-size: 170%;
+        font-family: poppins, sans-serif;
       }
       
-      #myBtn:hover {
-        background-color: #555; /* Add a dark-grey background on hover */
-      }
 
 
 
@@ -197,35 +204,50 @@ p{
 }
 
 #hoverbox{
-    width: 3%;
+    width: 8%;
     z-index: 1;
     position: fixed;
-    background-color: #EB7C30;
-    height: 6%;
     
-    margin-top: 40%;
-    padding-left: 1%;
+    height: 15%;
+    border: none;
+    background: none;
+    margin-top: 45%;
+    margin-left: 1%;
+    border-left: none;
+    cursor: pointer;
 }
+
+
 
 
 
 
 #modalButton{
     display: none;
-    height: 12%;
-    z-index: 1;
     position: fixed;
-    background-color: #EB7C30;
-    margin-top: 40%;
-    font-family: bebas-neue, sans-serif;
-    font-weight: 400;
-    font-style: normal; 
-    color: white;
-    text-align: left;
+
+    height: 15%;
+    width: 25%;
+    z-index: 1;
+    
+    margin-top: 44%;
+    margin-left: 1%;
     padding-left: 1%;
-    font-size: 140%;   
-    width: 20%;
+
+    color: white;
+    background-color: #F5A83A;
+    font-family: bebas-neue, sans-serif;
+    font-size: 160%;  
+    letter-spacing: 50%; 
+    line-height: 150%; 
+    text-align: left;
+
+    border: none;
+    cursor: pointer;
+
+    box-shadow: #EB7C30 10px 10px;
 }
+
 
 #modalButton img{
     width: 100%;
@@ -329,13 +351,15 @@ p{
 }
 
 .two_pics{
-    padding: 10%;
+    justify-content: center;
 }
 
-.two_pics div:first-child{
-    padding-right: 5%;
-
+.two_pics div{
+    height: 450px;
+    margin: 3%;
 }
+
+
 
 .black_headlines{
 font-size: 300%;
@@ -376,15 +400,13 @@ header{
     font-family: bebas-neue, sans-serif;
     font-weight: 400;
     font-style: normal; 
-    display: flex;  
-}
+    display: flex;}
 
-nav a{
-    text-decoration: none;
-    color: black;
-    font-size: 150%;
-    margin-left: 7.5%; 
-}
+header img{
+    position: absolute;
+    width: 5%;
+    margin-left: 1.5%;
+    margin-top: 1.5%;}
 
 nav{
     position: fixed;
@@ -394,15 +416,15 @@ nav{
     margin-left: 76%;
     z-index: 1;    
     padding-top: 11px;
-    padding-bottom: 12px;
-}
+    padding-bottom: 12px;}
 
-header img{
-    position: absolute;
-    width: 5%;
-    margin-left: 1.5%;
-    margin-top: 1.5%;
-}
+nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 150%;
+    margin-left: 7.5%;}
+
+
 
 
 
@@ -442,7 +464,7 @@ header img{
     padding-right: 2%;
     width: 55%;
     padding-bottom: 10%;
-      margin-bottom: 15.5%;
+    margin-bottom: 15.5%;
 }
 
 /* - forside font - */
@@ -452,8 +474,7 @@ header img{
     line-height: 140%;
     letter-spacing: 5px;
     padding-bottom: 10%;
-    padding-right: 3%;
-      
+    padding-right: 3%; 
 }
 
 /* - højre side - */  
@@ -462,7 +483,6 @@ header img{
     margin-right: 4%;
     margin-top: 4%;
     text-align: right;
-
 }
 
 #index_right div:first-child{
@@ -473,22 +493,29 @@ header img{
     float: right;
 }
 
-#index_right p{
-    font-family: ff-dagny-web-pro, sans-serif;
-    font-weight: 900;
-    font-size: 150%;
-    padding-bottom: 4px;
-    padding-top: 4px;
+#index_right h1{
+    line-height: 90%;
 }
 
+
+
+
+
 /* Åben / lukket */ 
+.openclosed p{
+    font-family: poppins, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 140%;
+}
+
 #openNow{
-    color: rgb(57, 215, 57);
+    color: #2cdc00;
     display: none;
 }
 
 #closed{
-    color: rgb(215, 40, 40);
+    color: #F27501;
     display: none;
 }
 
@@ -535,8 +562,6 @@ header img{
     
 }
 
-
-
 @keyframes rotateImage{
     0% {transform: rotate(0deg);}
     100% {transform: rotate(360deg);}
@@ -547,12 +572,22 @@ header img{
 
 
 /* Index #TANKENDERTÆLLER sektion */
-/* højre side */
+
 #TANKENDERTÆLLER{
-    padding: 3%;
-    margin-top: 30%;
+    margin-top: 20%;
 }
 
+/* venstre side */
+#TANKENDERTÆLLER div:first-child{
+
+    margin-right: 30%;
+    margin-left: 13%;
+ 
+
+    padding: 3% 15% 3% 3%;
+}
+
+/* højre side */
 #TANKENDERTÆLLER div:last-child{
     width: 30%;
     position: absolute;
@@ -560,21 +595,13 @@ header img{
     margin-top: 10%;
 }
 
-/* venstre side */
-#TANKENDERTÆLLER div:first-child{
-    width: 80%;
-    margin-right: 30%;
-    margin-left: 13%;
-    padding-top: 5%;
-    padding-bottom: 8%;
-    padding-left: 3%;  
-}
+
 
 
 /* Index Bollekort sektion */
 /* overskrift */ 
 #overskrift_bollekort{
-    margin-top: 24.5%;
+    margin-top: 14%;
     margin-left: 6%;
 }
 
@@ -615,24 +642,22 @@ header img{
 }
 
 #instagramsection h2{
-    line-height: 45px;
+    padding-bottom: 1%;
 }
 
 #img_instagram{
     justify-content: space-evenly;
     margin-bottom: 10%;
     margin-top: 2%;
-    
 }
 
-#img_instagram div{width: 20%;}
+#img_instagram div{
+    height: 270px;}
 
 #instagramsection a{
 color: #EB7C30;
-font-family: bebas-neue, sans-serif;
-    font-weight: 400;
-    font-style: normal; 
-    font-size: 500%;
+text-decoration: underline;
+font-size: 100%;
 }
 /* højre side */ 
 
@@ -659,66 +684,60 @@ font-family: bebas-neue, sans-serif;
 /* OM OS */
 /* Video sektion */
  /* font */
- #videosection h1{
+#videosection{
+    position: relative;
+    padding-top: 2.9%;
+    margin-top: 10%;
+    margin-bottom: 7%;
+}
+
+#openclosed_omos{
+    position: absolute;
+    top: 0;
+    right: 5%;
+}
+
+ #videocontainer h1{
     font-size: 500%;
     margin-bottom: 5%;
     line-height: 120%;
 }
 
-#videosection h2{
+#videocontainer h2{
     margin-bottom: 5%;
-}
-
-#videosection{
-    margin-top: 14%;
-    margin-bottom: 10%;
 }
 
 #videocontainer{
     width: 80%;
-    align-items: center;
 
 }
 
 #videocontainer div:first-child{
-    width: 85%;
+    width: 70%;
     padding: 5% 20% 5% 5%;   
-    
 }
 
 #video{
     position: absolute;
-    left: 50%;
-    bottom: 47%;
-    width: 50%;
-    height: 50%;
+    left: 40%;
+    bottom: 56%;
+    width: 60%;
+
+    outline: 8px solid #1414DB;
+    outline-offset: 64px;
 }
 
 /* MERCH SEKTION */
 /* Font */
 
-#overskrift_merch{
-    margin-right: 14%;
-}
-.merchsection h2{
-    line-height: 70%;
-}
+
 
 
 
 /* linjer */
 
-#lines_omos{
-    right: 14%;
-    top: 14%;
-    height: 96%;
-    width: 100%;
-    
-    border-top: 8px solid #1414DB;
-    border-right: 8px solid #1414DB; 
-    border-bottom: 8px solid #1414DB; 
-}
-/* linjer */
+
+
 
 
 
@@ -729,30 +748,28 @@ font-family: bebas-neue, sans-serif;
     margin-left: 7%;
     margin-top: 7%;
     justify-content:space-between;
-
-    
 }
+
 
 
 #størrelser{
     margin-top: 3%;
-    text-align: right;
-    margin-right: 18%;
+    margin-left: 7%;
     color:#EB7C30;
     font-size: 120%;
 }
 
 #sticker_tshirt{
     margin-left: 5%;
-    width: 270px;
-    height: 270px;
+    width: 250px;
+    height: 250px;
 }
 
 /* Totebag sektion */
 #totebagcontainer{
     text-align: left;
     margin-left: 7%;
-    margin-top: 13%;
+    margin-top: 20%;
     margin-bottom: 5%;
 
 }
@@ -766,8 +783,8 @@ font-family: bebas-neue, sans-serif;
     float: right;
     margin-right: 14%;
 
-    width: 270px;
-    height: 270px;
+    width: 250px;
+    height: 250px;
 }
 
 
@@ -819,6 +836,7 @@ font-family: bebas-neue, sans-serif;
 
 .menu_price{
     text-align: right;
+
 }
 
 .menu_item p{
@@ -847,6 +865,27 @@ font-family: bebas-neue, sans-serif;
     width: 300px;    
 }
 
+#middagaften{
+    position: relative;
+
+}
+
+#sticker_toast{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    top: 40%;
+    left: 95%;
+}
+
+
+
+#sticker_drink{
+    position: absolute;
+    height: 200px;
+    bottom: 0;
+    left: 5%;
+}
 
 #mefisto_spacing div:nth-child(3), #mefisto_spacing div:nth-child(5){
     padding-bottom: 4%;
@@ -877,19 +916,17 @@ font-family: bebas-neue, sans-serif;
 
 
 #infographic_beer{
-    width: 400px;
-    height: 650px;
-    margin-top: 35px;
-    margin-right: 35px;
+    width: 450px;
+    height: 700px;
+    margin: 2% 3% 5% 0;
     text-align: right;
 }
 
 #infographic_drink{
-    width: 800px;
-    height: 380px;
-    margin-top: 35px;
-    margin-right: 35px;
-    text-align: right;
+    width: 740px;
+    height: 470px;
+    margin: 3% 3% 7% 0;
+    position: relative;
 }
 
 .space_between{
@@ -897,24 +934,32 @@ font-family: bebas-neue, sans-serif;
 }
 
 
-
 #menu_bollekort_img{
     width: 450px;
-    margin: 5%;
+    margin-right: 3%;
+
 }
 
 #menu_bollekort_section{
+    position: relative;
     height: 400px;
     margin-top: 15%;
     margin-bottom: 10%;
-    outline:7px solid #1414DB;
+    outline: 8px solid #1414DB;
     outline-offset: 10px;
     align-items: center;
+    justify-content: center;
 }
 
-#menu_bollekort_section div:last-child{
-    width: 40%;
+#sticker_bollekort{
+    position: absolute;
+    height: 200px;
+    right: 8%;
+    bottom: 70%;
+}
 
+#menu_bollekort_section div:nth-child(2){
+   width: 40%;
 }
 
 
@@ -961,20 +1006,25 @@ font-family: bebas-neue, sans-serif;
 /* Denne uge sektion */
 #overskrift_denneuge{
     margin-top: 17%;
-    margin-left: 15%;
-    
+    margin-left: 6%;
 }
 
 #denneuge{
-    margin-top: 5%;
-    padding-left: 10%;
-    margin-bottom: 16%;
+    padding:5%;
+    margin-top: 3%;
+    margin-bottom: 13%;
+}
+
+#openclosed_event{
+    position: absolute;
+    top: 3%;
+    right: 4%;
 }
 
 /* venstre side */
 #denneuge div:first-child{
     width: 40%;
-    padding: 3%;
+    margin-right: 5%;
 }
 
 /* højre side */ 
@@ -982,50 +1032,49 @@ font-family: bebas-neue, sans-serif;
     width: 40%;   
 }
 
-#denneuge div:last-child img{
-    width: 90%; 
-    padding-top: 10%;
-    margin-left: 5%;
-}
+
+
+
+
 
 /* Kommende events sektion */
-#overskrift_kommendeevents{
-    width: 80%;
-    margin-left: 10%;
-    padding-top: 5%;
-    padding-left: 4.3%;
-    padding-bottom: 3%;
-    font-size: 300%; 
+#events{
+  width: 80%;
+  margin-left: 10%;
+  padding: 1%;
+  margin-bottom: 9%;
 }
 
 #kommendeevents{
-    width: 80%;
-    margin-left: 10%;
-    margin-bottom: 10%;
-    padding-bottom: 8%;
-}
-
-/* venstre side */
-#kommendeevents div:first-child{
-padding-right: 3%;
-padding-left: 2%;
+padding-bottom: 3%;
 
 }
 
-/* midten */ 
+#overskrift_kommendeevents{
+    font-size: 300%; 
+    padding: 3% 0 3% 3%;
+}
+
+#kommendeevents div{
+    padding: 0 3% 1% 3%;
+    width: 33%;
+}
+
 #kommendeevents div:nth-child(2){
-    margin-right: 5%;
     border-left: 2px solid white;
     border-right: 2px solid white;
-    padding-left: 4%;
-    padding-right: 4%;
 }
 
-/* højre side */
-#kommendeevents div:first-child{
-    padding-right: 2%;
-    
-    }
+#kommendeevents h2{
+line-height: 29px;
+padding-bottom: 4%;
+}
+
+#kommendeevents p{
+    font-size: 120%;
+}
+
+
 
 
 
@@ -1115,43 +1164,67 @@ body{
 .lines{
     z-index: -2;
     position: absolute;
-}
-
-
-
-.blueline{
     border: #1414DB 8px solid;
-    position: absolute;
-    z-index: -99;
 }
 
-#blueline_index1{
-    top: 945px;
-    left: 70px;
-    width: 100%;
-    height: 500px;
-    border-bottom: none;
+#lines_index1{
     border-right: none;
+    right: 0;
+
+    width: 95%;
+    height: 110%;
 }
 
-#blueline_index2{
-    top: 1445px;
-    left: 70px;
-    width: 700px;
-    height: 1200px;
+#lines_index2{
+    border-left: none;
+    left: 0;
+
+    width: 95%;
+    height: 76%;
+}
+
+#lines_omos{
+    right: 14%;
+    top: 14%;
+    height: 96%;
+    width: 100%;
+    
     border-left: none;
 }
 
-#blueline_index3{
-    top: 2645px;
-    left: 70px;
-    width: 100%;
-    height: 480px;
-    border-top: none;
+#lines_event{
+    height: 98%;
+    width: 94%;
+    top: 8%;
+    right: 0;
     border-right: none;
 }
 
+.double_lines{
+    position: absolute;
+    z-index: -10;
+    border-top: #EB7C30 18px solid;
+    border-bottom: #1414DB 10px solid;
+    
+    height: 35px;
+    width: 100%;
+}
 
+#double_lines_index{
+    top: 70%;
+}
+
+#double_lines_omos{
+    top: 42%; 
+}
+
+#double_lines_menu{
+    top: 45%;
+}
+
+#double_lines_event{
+    top: 45%;
+}
 
 
 /* RESPONSIVE */

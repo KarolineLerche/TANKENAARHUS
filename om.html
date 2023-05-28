@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Om os</title>
+    <title>Tanken</title>
 
-   <!-- FONTS -->
+    <!-- FONTS -->
     <link rel="stylesheet" href="https://use.typekit.net/iib5ftc.css">
 
 
@@ -17,33 +17,36 @@
     <!--JAVASCRIPT -->
     <script src="script.js" defer></script>
 
-    <!--ANIMATIONER
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">-->
+    <!--ANIMATIONER-->
+
 
      <!-- FONTAWESOME -->
     <script src="https://kit.fontawesome.com/69e662559e.js" crossorigin="anonymous"></script>
 
 
-
 </head>
+
+
 <body>
 
 
 <!-- ØL SPIL -->
-<button id="modalButton">Hvilken øl <br> skal jeg vælge?</button>
-<div id="myModal" class="modal">
-    <div class="modal-content">
-        <span class="close">&times;</span>
-        <h1>Prøv vores øl-spil</h1>
-        <button id="btnBeer">Stik mig en bajer!</button>
-        <p id="yourBeer"></p>
+
+<div id="modalContainer">
+    <button id="hoverbox"><img src="images/arrowright.svg" alt="#"></button>
+    <button id="modalButton">For mange muligheder? <br> - Lad Tanken vælge din næste øl!</button>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h1>Prøv vores øl-spil</h1>
+                <button id="btnBeer">Stik mig en bajer!</button>
+                <p id="yourBeer"></p>
+            </div>
+        </div>
     </div>
-</div>
 
 
-<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-
+    <button onclick="topFunction()" id="myBtn" title="Go to top">TIL TOP</button>
 
 
 <!-- HEADER -->
@@ -59,12 +62,17 @@
 
 <!-- VIDEOSEKTION -->
     <section class="flexcontainer center" id="videosection">
-        <div data-aos="fade-up"data-aos-anchor-placement="top-bottom" class="container_overlap "  id="videocontainer">
+            <div class="openclosed" id="openclosed_omos">
+                <p id="openNow">Åben nu</p>
+                <p id="closed">Åbner i morgen kl. 09:00</p>
+            </div>
+        <div class="container_overlap "  id="videocontainer">
             <div class="blue_box">
-                <h1>KOM PÅ BESØG HOS OS</h1>
+                <h1>KOM PÅ <br> BESØG<br>HOS OS</h1>
                 <br>
                 <br>
                 <h2>Hvad er Tanken?</h2>
+                <br>
                 <p class="p_size">Tanken er en kiosk beliggende i Aarhus hyggelige gade Graven. Kiosken drives og ejes af fire venner: Tobias Knudsen, Morten Teglbrænder, Frederik Willems og Mathias Gjerka. 
                 <br>
                 <br>
@@ -74,46 +82,53 @@
                     Om morgenen kan man få serveret boller og kaffe, og om aftenen skifter kiosken scene og serverer kolde fadøl hen over baren. Tanken er derfor et heldagskoncept, til et hvert humør.
                 </p>
             </div>
-            <video id="video" width="100%" height="100%" autoplay loop muted>
-                <source src="video/tankenvideo.mp4">
+            <video id="video" autoplay loop muted>
+                <source src="images/tankenvideo.mp4">
             </video>
+
         </div>
     </section>
 
 
 
 <!-- MERCH SEKTION -->
-    <section data-aos="fade-up"data-aos-anchor-placement="top-bottom" class ="merchsection">
+
+<section  class ="merchsection">
+    <div class="line_container">
         <h1 class="align_right black_headlines" id="overskrift_merch">MERCH</h1>
 
 <!-- T-SHIRT -->
-        <div data-aos="fade-up"data-aos-anchor-placement="top-bottom" class="center flexcontainer align_right" id="tshirtcontainer">
-            <div class="omos_sticker" id="sticker_tshirt">
-                <img class="max_img" src="images/sticker.tshirt.png"  alt="sticker tshirt">
+    
+            <div id="lines_omos" class="lines"></div>  
+            <div class="center flexcontainer align_right" id="tshirtcontainer">
+                <div class="omos_sticker" id="sticker_tshirt">
+                    <img class="max_img" src="images/sticker.tshirt.png"  alt="sticker tshirt">
+                </div>
+                <div id="text_tshirt">
+                    <h2 class="italic">BLIV EN DEL AF TANKEN</h2>
+                    <h3>KØB VORES TANK-TOP</h3> <br>
+                    <p class="align_right p_size">
+                        Nu kan du købe din helt egen Tanken t-shirt. Ved at købe <br>
+                        en t-shirt støtter du Tanken, og hjælper med at sprede ordet. <br>
+                        Den kan fås i størrelserne XS til XL, og i farverne hvid, beige og grå.
+                    </p>
+                    <br>
+                    <a href onclick=" window.open('https://www.instagram.com/tankenigraven/','_blank')"> Læs om vores merch og meget mere på vores <span>INSTAGRAM</span> </a>
+                </div>
             </div>
-            <div>
-                <h2 class="italic">BLIV EN DEL AF TANKEN</h2>
-                <h3>KØB VORES TANK-TOP</h3> <br>
-                <p class="align_right p_size">
-                    Nu kan du købe din helt egen Tanken t-shirt. Ved at købe <br>
-                    en t-shirt støtter du Tanken, og hjælper med at sprede ordet. <br>
-                    Den kan fås i størrelserne XS til XL, og i farverne hvid, beige og grå.
-                </p>
-                <br>
-                <a href onclick=" window.open('https://www.instagram.com/tankenigraven/','_blank')"> Læs om vores merch og meget mere på vores <span>INSTAGRAM</span> </a>
+         
+    <!-- T-shirt billeder-->
+            <p id="størrelser">STR. XS - XL</p>
+            <div class="three_img flexcontainer">
+                <div><img class="max_img" src="images/tshirt1.jpg" alt="T-shirt 1"></div>
+                <div><img class="max_img" src="images/tshirt2.jpg" alt="T-shirt 2"></div>
+                <div><img class="max_img" src="images/tshirt3.jpg" alt="T-shirt 3"></div>
             </div>
-        </div>
-
-<!-- T-shirt billeder-->
-        <p id="størrelser">STR. XS - XL</p>
-        <div data-aos="fade-up"data-aos-anchor-placement="top-bottom" class="three_img flexcontainer">
-            <div><img class="max_img" src="images/tshirt1.jpg" alt="T-shirt 1"></div>
-            <div><img class="max_img" src="images/tshirt2.jpg" alt="T-shirt 2"></div>
-            <div><img class="max_img" src="images/tshirt3.jpg" alt="T-shirt 3"></div>
-        </div>
+        
+    </div>
 
 <!-- MULEPOSE -->
-        <div data-aos="fade-up"data-aos-anchor-placement="top-bottom" id="totebagcontainer">
+        <div  id="totebagcontainer">
             <div class="omos_sticker" id="sticker_totebag">
                 <img class="max_img" src="images/sticker.mulepose.png"  alt="stickermulepose">
             </div>
@@ -132,11 +147,15 @@
         </div>
 
 <!-- Mulepos billeder-->
-        <div data-aos="fade-up"data-aos-anchor-placement="top-bottom" class="three_img flexcontainer">
-            <div><img class="max_img" src="images/mulepose1.jpg" alt="#"></div>
-            <div><img class="max_img" src="images/mulepose2.jpg" alt="#"></div>
-            <div><img class="max_img" src="images/mulepose3.jpg" alt="#"></div>
+        <div class="line_container">
+            <div class="double_lines" id="double_lines_omos"></div>
+            <div class="three_img flexcontainer">
+                <div><img class="max_img" src="images/mulepose1.jpg" alt="#"></div>
+                <div><img class="max_img" src="images/mulepose2.jpg" alt="#"></div>
+                <div><img class="max_img" src="images/mulepose3.jpg" alt="#"></div>
+            </div>
         </div>
+
     </section>
 
 <!-- FOOTER -->

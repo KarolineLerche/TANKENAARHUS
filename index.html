@@ -31,7 +31,7 @@
 
 <div id="modalContainer">
     <button id="hoverbox"><img src="images/arrowright.svg" alt="#"></button>
-    <button id="modalButton">Hvilken øl <br> skal jeg vælge?</button>
+    <button id="modalButton">For mange muligheder? <br> - Lad Tanken vælge din næste øl!</button>
         <div id="myModal" class="modal">
             <div class="modal-content">
                 <span class="close">&times;</span>
@@ -43,7 +43,7 @@
     </div>
 
 
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<button onclick="topFunction()" id="myBtn" title="Go to top">TIL TOP</button>
 
 
 <!-- HEADER -->
@@ -68,11 +68,11 @@
             </div>
             <div id="index_right">
                 <div>
-                    <img class="max_img" src="images/forside2.jpg" alt="Forside Billede">
+                    <img class="max_img" src="images/forside.jpg" alt="Forside Billede">
                 </div>
-                <div>
+                <div class="openclosed">
                     <p id="openNow">Åben nu</p>
-                    <p id="closed">Lukket</p>
+                    <p id="closed">Åbner i morgen kl. 09:00</p>
                     <h1 >SØN - ONS: 09:00 - 22:00<br>FRE - LØR: 09:00 - SENT</h1>
                 </div>
             </div>
@@ -83,12 +83,10 @@
 
  <!-- PIZZA NYHED -->
 
-<div class="blueline" id="blueline_index1"></div>
-<div class="blueline" id="blueline_index2"></div>
-<div class="blueline" id="blueline_index3"></div>
 
-    <section>
+    <section class="line_container">
         <h1 class="align_right black_headlines" id="overskrift_nyhed"> Nyhed </h1>
+        <div class="lines" id="lines_index1"></div>
         <div class="flexcontainer center" id="pizzanews">
             <div>
                 <h2> TANKEN samarbejder med <br> Pizza & bar - By Mefisto </h2>
@@ -113,14 +111,13 @@
         <div class="blue_box">
             <h2> #TANKENDERTÆLLER </h2>
             <p class="p_size">
-                Det er nu muligt at nyde din yndlingspizza på TANKEN. <br> 
-                I samarbejde med vores nabo Mefisto, er drømme gået <br>
-                i opfyldelse. Fremadrettet kan du bestille friskbagt <br>
-                pizza, og den bliver leveret lige til dig på Tanken. <br> 
-                Det er nu muligt at nyde din yndlingspizza på TANKEN. <br> 
-                I samarbejde med vores nabo Mefisto, er drømme gået <br>
-                i opfyldelse. Fremadrettet kan du bestille friskbagt <br>
-                pizza, og den bliver leveret lige til dig på Tanken.
+                TANKEN er dit nye stamsted beliggende i de skønneste omgivelser i Graven midt i Aarhus' latinerkvateret. <br> <br>
+                I vores kiosk har vi alle små nødvendigheder til hverdag og weekend, så om du står og mangler en fadøl eller en tandbørste kan du regne med Tanken! <br> <br>
+                
+                Vi serverer friskbagte boller om morgenen og kolde fadøl om aftenen, og sammen med dig håber vi at være med til at  
+                skabe rammerne for gode grin og hyggelige stunder. <br><br>
+                
+                Smut forbi til en sludder og brug vores hashtag #TANKENDERTÆLLER så vi kan følge med i jeres oplevelser. 
             </p>
         </div>  
         <div>
@@ -129,8 +126,9 @@
     </section>
 
  <!-- BOLLEKORT -->
-    <section>
+    <section class="line_container">
         <h1 class="align_left black_headlines" id="overskrift_bollekort"> Tankens bollekort </h1>
+        <div class="lines" id="lines_index2"></div>
         <div class="flexcontainer" id="bollekort">
             <div>
                 <img class="max_img" src="images/bollekort.png" alt="Bollekort">
@@ -153,15 +151,16 @@
 
 
 <!-- INSTAGRAM -->
-<section data-aos="fade-up"data-aos-anchor-placement="top-bottom" class ="merchsection">
+<section class ="merchsection line_container">
+    <div class="double_lines" id="double_lines_index"></div>
     <div  id="instagramsection">
         <div>
             <h2 class="italic">Følg med på vores</h2> 
-            <a href onclick=" window.open('https://www.instagram.com/tankenigraven/','_blank')"> Instagram </a>
+            <h3>Instagram</h3>
             <br>
             <p class="p_size">
-                På vores Instagram kan du følge med i kommende events, <br>
-                samt deltage i fede konkurrencer. <span> @TANKENIGRAVEN</span> 
+                På vores Instagram <a href="#">@tankenigraven</a> hvor du kan følge <br>med i kommende events 
+                og deltage i fede konkurrencer.
             </p>
             <br>
         </div>  
@@ -176,7 +175,7 @@
             <div><img class="max_img" src="images/insta3.jpg" alt="Instagram billedesektion"></div>
             <div><img class="max_img" src="images/insta4.jpg" alt="Instagram billedesektion"></div>
         </div>
-    </section>
+</section>
 
 
 
