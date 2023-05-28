@@ -48,6 +48,7 @@
 
 <!-- HEADER -->
 <header>
+    <section class="mobile_hidden">
     <a href="index.html"><img class="max_img" src="images/hvid_logo.png" alt="Forside Logo"></a>
     <nav>
         <a href="om.html"> Om os</a>
@@ -55,6 +56,8 @@
         <a href="events.html"> Events </a>
     </nav> 
 </header>
+</section>
+
 
 
 <main>
@@ -86,7 +89,7 @@
 
     <section class="line_container">
         <h1 class="align_right black_headlines" id="overskrift_nyhed"> Nyhed </h1>
-        <div class="lines" id="lines_index1"></div>
+        <div class="lines mobile_hidden" id="lines_index1"></div>
         <div class="flexcontainer center" id="pizzanews">
             <div>
                 <h2> TANKEN samarbejder med <br> Pizza & bar - By Mefisto </h2>
@@ -121,14 +124,14 @@
             </p>
         </div>  
         <div>
-            <img class="max_img" src="images/mand.jpg" alt="Mand Hælder Drink">
+            <img class="max_img mobile_hidden" src="images/mand.jpg" alt="Mand Hælder Drink">
         </div>
     </section>
 
  <!-- BOLLEKORT -->
     <section class="line_container">
         <h1 class="align_left black_headlines" id="overskrift_bollekort"> Tankens bollekort </h1>
-        <div class="lines" id="lines_index2"></div>
+        <div class="lines mobile_hidden" id="lines_index2"></div>
         <div class="flexcontainer" id="bollekort">
             <div>
                 <img class="max_img" src="images/bollekort.png" alt="Bollekort">
@@ -144,7 +147,8 @@
                 </p>  
             </div>
             <div> 
-                <img class="max_img" src="images/sticker_bollekort.png" alt="Sticker Bollekort">
+                <img class="max_img mobile_hidden" src="images/sticker_bollekort.png" alt="Sticker Bollekort">
+                <img class="max_img laptop_hidden" src="images/sticker_bollekort.png" alt="Sticker Bollekort">
             </div>
         </div>
     </section>
@@ -152,7 +156,7 @@
 
 <!-- INSTAGRAM -->
 <section class ="merchsection line_container">
-    <div class="double_lines" id="double_lines_index"></div>
+    <div class="double_lines mobile_hidden" id="double_lines_index"></div>
     <div  id="instagramsection">
         <div>
             <h2 class="italic">Følg med på vores</h2> 
@@ -169,11 +173,15 @@
     
     
     <!-- Instagram billeder -->
-        <div class=" flexcontainer" id="img_instagram">
-            <div><img class="max_img" src="images/insta1.jpg" alt="Instagram billedesektion"></div>
+        <div class=" flexcontainer mobile_hidden" id="img_instagram">
+            <div><img class="max_img " src="images/insta1.jpg" alt="Instagram billedesektion"></div>
             <div><img class="max_img" src="images/insta2.jpg" alt="Instagram billedesektion"></div>
             <div><img class="max_img" src="images/insta3.jpg" alt="Instagram billedesektion"></div>
             <div><img class="max_img" src="images/insta4.jpg" alt="Instagram billedesektion"></div>
+        </div>
+
+        <div class="laptop_hidden" id="img_instagram">
+            <div><img class="max_img " src="images/insta1.jpg" alt="Instagram billedesektion responsive"></div>
         </div>
 </section>
 

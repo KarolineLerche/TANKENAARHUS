@@ -20,6 +20,7 @@
      <!-- FONTAWESOME -->
     <script src="https://kit.fontawesome.com/69e662559e.js" crossorigin="anonymous"></script>
 
+    
 
     
 
@@ -48,20 +49,33 @@
 
 <!-- HEADER -->
 <header>
-    <a href="index.html"><img class="max_img" src="images/orange_logo.png" alt="Forside Logo"></a>
-    <nav>
+    <section class="mobile_hidden">
+        <a href="index.html"><img class="max_img" src="images/orange_logo.png" alt="Forside Logo"></a>    <nav>
         <a href="om.html"> Om os</a>
         <a href="menukort.html"> Menukort </a>
         <a href="events.html"> Events </a>
     </nav> 
 </header>
 
+</section>
+    <section class="laptop_hidden">
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="om.html"> Om os</a>
+            <a href="menukort.html"> Menukort </a>
+            <a href="events.html"> Events </a>
+        </div>
+        <span onclick="openNav()"><i class="fa-solid fa-bars"></i></span>
+    </section>
+
+
+
 <main>
 
 
 <!-- DENNE UGE -->
     <section class="line_container">
-        <div class="lines" id="lines_event"></div>
+        <div class="lines mobile_hidden" id="lines_event"></div>
         <h1 class="black_headlines" id="overskrift_denneuge"> Denne uge </h1>
         <div class="openclosed" id="openclosed_event">      
             <p id="openNow">Åben nu</p>
@@ -86,14 +100,17 @@
                     en skøn og rolig morgen.   
                 </p>
             </div>  
-            <div>
+            <div class="mobile_hidden">
                 <img class="max_img" src="images/farsdag.jpg" alt="Fars dag billede">
             </div>
+        </div>
+        <div class="laptop_hidden">
+            <img class="max_img" src="images/farsdag.jpg" alt="Fars dag billede">
         </div>
     </section>
 
 <!-- KOMMENDE EVENTS -->
-    <section >
+    <section>
         <div class="blue_box" id="events">
                 <h1 id="overskrift_kommendeevents">KOMMENDE EVENTS</h1>
             <div class="flexcontainer"id="kommendeevents">  
@@ -146,17 +163,20 @@
     </section>
 
 <!-- EVENTS BILLEDER -->
-    <section class="line_container">
-        <div class="double_lines" id="double_lines_event"></div>
-        <div class="flexcontainer two_pics">
+    <section class="line_containe ">
+        <div class="mobile_hidden" ></div>
+        <div class="flexcontainer two_pics mobile_hidden">
             <div>
                 <img class="max_img" src="images/event1.jpg" alt="Event billede 1">
             </div>
-
             <div>
                 <img class="max_img" src="images/event2.jpg" alt="Event billede 2">
             </div>
         </div>
+        <div class="laptop_hidden">
+                <img class="max_img" src="images/event1.jpg" alt="Event billede 1">
+            </div>
+        
     </section>
 
 <!-- FOOTER -->
@@ -180,7 +200,6 @@
             <h1 class="italic"> TANKENGRAVEN@GMAIL.COM </h1>
             <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
             <i class="fa-brands fa-facebook" style="color: #ffffff;"></i>
-
         </div>
 </footer>
 

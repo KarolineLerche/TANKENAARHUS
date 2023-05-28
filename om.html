@@ -51,14 +51,14 @@
 
 <!-- HEADER -->
 <header>
-    <a href="index.html"><img class="max_img" src="images/orange_logo.png" alt="Forside Logo"></a>
-    <nav>
+    <section class="mobile_hidden">
+        <a href="index.html"><img class="max_img" src="images/orange_logo.png" alt="Forside Logo"></a>    <nav>
         <a href="om.html"> Om os</a>
         <a href="menukort.html"> Menukort </a>
         <a href="events.html"> Events </a>
     </nav> 
 </header>
-
+</section>
 
 <!-- VIDEOSEKTION -->
     <section class="flexcontainer center" id="videosection">
@@ -82,10 +82,16 @@
                     Om morgenen kan man få serveret boller og kaffe, og om aftenen skifter kiosken scene og serverer kolde fadøl hen over baren. Tanken er derfor et heldagskoncept, til et hvert humør.
                 </p>
             </div>
-            <video id="video" autoplay loop muted>
+            <div class="mobile_hidden" id="video_laptop">
+            <video autoplay loop muted>
                 <source src="images/tankenvideo.mp4">
             </video>
-
+        </div>
+        <div class="laptop_hidden" id="video_mobile">
+            <video autoplay loop muted>
+                <source src="images/tankenvideo.mp4">
+            </video>
+</div>
         </div>
     </section>
 
@@ -99,10 +105,11 @@
 
 <!-- T-SHIRT -->
     
-            <div id="lines_omos" class="lines"></div>  
+            <div id="lines_omos" class="lines mobile_hidden"></div>  
             <div class="center flexcontainer align_right" id="tshirtcontainer">
                 <div class="omos_sticker" id="sticker_tshirt">
-                    <img class="max_img" src="images/sticker.tshirt.png"  alt="sticker tshirt">
+                    <img class="max_img mobile_hidden" src="images/sticker.tshirt.png"  alt="sticker tshirt">
+                    <img class="max_img laptop_hidden" src="images/sticker.tshirt.png"  alt="sticker tshirt">
                 </div>
                 <div id="text_tshirt">
                     <h2 class="italic">BLIV EN DEL AF TANKEN</h2>
@@ -117,20 +124,22 @@
                 </div>
             </div>
          
-    <!-- T-shirt billeder-->
+<!-- T-shirt billeder-->
             <p id="størrelser">STR. XS - XL</p>
-            <div class="three_img flexcontainer">
+            <div class="three_img flexcontainer mobile_hidden">
                 <div><img class="max_img" src="images/tshirt1.jpg" alt="T-shirt 1"></div>
                 <div><img class="max_img" src="images/tshirt2.jpg" alt="T-shirt 2"></div>
                 <div><img class="max_img" src="images/tshirt3.jpg" alt="T-shirt 3"></div>
             </div>
-        
+            
+            <div><img class="max_img laptop_hidden" src="images/tshirt2.jpg" alt="T-shirt 2"></div>
     </div>
 
 <!-- MULEPOSE -->
         <div  id="totebagcontainer">
             <div class="omos_sticker" id="sticker_totebag">
-                <img class="max_img" src="images/sticker.mulepose.png"  alt="stickermulepose">
+                <img class="max_img mobile_hidden" src="images/sticker.mulepose.png"  alt="stickermulepose">
+                <img class="max_img laptop_hidden" src="images/sticker.mulepose.png"  alt="stickermulepose">
             </div>
             <div>
                 <h2 class="italic">TANK OP</h2>
@@ -148,12 +157,13 @@
 
 <!-- Mulepos billeder-->
         <div class="line_container">
-            <div class="double_lines" id="double_lines_omos"></div>
-            <div class="three_img flexcontainer">
+            <div class="double_lines mobile_hidden" id="double_lines_omos"></div>
+            <div class="three_img flexcontainer mobile_hidden ">
                 <div><img class="max_img" src="images/mulepose1.jpg" alt="#"></div>
                 <div><img class="max_img" src="images/mulepose2.jpg" alt="#"></div>
                 <div><img class="max_img" src="images/mulepose3.jpg" alt="#"></div>
             </div>
+            <div><img class="max_img laptop_hidden" src="images/mulepose3.jpg" alt="#"></div>
         </div>
 
     </section>

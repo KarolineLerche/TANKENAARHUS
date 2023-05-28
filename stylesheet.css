@@ -183,7 +183,6 @@ p{
 
 
 
-
     
     
 
@@ -323,14 +322,22 @@ p{
 
 
 /* KLASSER */
+
+
+.laptop_hidden{display: none;}
+    
+
 .blue_box{
     background-color: #1414DB;
     color: white;
 }
 
 .flexcontainer{
+    display: flex;   
+}
+
+#flexcontainer_menukort{
     display: flex;
-    
 }
 
 .max_img{
@@ -395,7 +402,7 @@ font-size: 300%;
 
 
 
-/* HEADER */
+/* HEADER LAPTOP */
 header{
     font-family: bebas-neue, sans-serif;
     font-weight: 400;
@@ -426,6 +433,63 @@ nav a{
 
 
 
+
+/* HEADER MOBIL */
+    .sidenav {
+        height: 30%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: #F27501;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 40px;
+        border-radius: 20px;
+      }
+      
+      .sidenav a {
+        padding-left: 10%;
+        text-decoration: none;
+        line-height: 150%;
+        font-size: 200%;
+        color: #ffffff;
+        display: block;
+        transition: 0.3s;
+        font-family: bebas-neue, sans-serif;
+        font-weight: 300;
+        font-style: normal; 
+
+      }
+      
+      .sidenav a:hover {
+        color: #ffc361;
+      }
+      
+      .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        color: #ffffff;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+    
+    
+    #mySidenav span{
+        font-size:200px;
+        cursor:pointer
+    }
+
+    .laptop_hidden span{
+        cursor: pointer;
+        float:right;
+        color: #EB7C30;
+        margin-right: 4%;
+        margin-top: 4%;
+
+    }
 
 
 
@@ -463,7 +527,7 @@ nav a{
     text-align: right;
     padding-right: 2%;
     width: 55%;
-    padding-bottom: 10%;
+    padding-bottom: 12%;
     margin-bottom: 15.5%;
 }
 
@@ -485,16 +549,12 @@ nav a{
     text-align: right;
 }
 
-#index_right div:first-child{
-    width: 565px;
-}
-
 #index_right div:last-child{
     float: right;
 }
 
 #index_right h1{
-    line-height: 90%;
+    line-height: 130%;
 }
 
 
@@ -635,7 +695,6 @@ nav a{
 }
 
 /* Index Instagram sektion */
-
 #instagramsection{
     margin-left: 4%;
     margin-top: 15%;
@@ -709,7 +768,6 @@ font-size: 100%;
 
 #videocontainer{
     width: 80%;
-
 }
 
 #videocontainer div:first-child{
@@ -717,31 +775,16 @@ font-size: 100%;
     padding: 5% 20% 5% 5%;   
 }
 
-#video{
+#video_laptop video{
     position: absolute;
     left: 40%;
     bottom: 56%;
     width: 60%;
-
     outline: 8px solid #1414DB;
     outline-offset: 64px;
 }
 
 /* MERCH SEKTION */
-/* Font */
-
-
-
-
-
-/* linjer */
-
-
-
-
-
-
-
 /* T-shirt sektion */
 #tshirtcontainer{
     margin-right: 18%;
@@ -749,8 +792,6 @@ font-size: 100%;
     margin-top: 7%;
     justify-content:space-between;
 }
-
-
 
 #størrelser{
     margin-top: 3%;
@@ -832,8 +873,6 @@ font-size: 100%;
 
 }
 
-
-
 .menu_price{
     text-align: right;
 
@@ -853,6 +892,7 @@ font-size: 100%;
     position: absolute;
     bottom: 0;
     right: 0;
+    
 }
 
 .icon{
@@ -870,6 +910,7 @@ font-size: 100%;
 
 }
 
+/* stickers */
 #sticker_toast{
     position: absolute;
     height: 200px;
@@ -878,8 +919,6 @@ font-size: 100%;
     left: 95%;
 }
 
-
-
 #sticker_drink{
     position: absolute;
     height: 200px;
@@ -887,6 +926,7 @@ font-size: 100%;
     left: 5%;
 }
 
+/* pizza sektion */
 #mefisto_spacing div:nth-child(3), #mefisto_spacing div:nth-child(5){
     padding-bottom: 4%;
 }
@@ -914,7 +954,7 @@ font-size: 100%;
     background-repeat: no-repeat;
 }
 
-
+/* inforgraphic */
 #infographic_beer{
     width: 450px;
     height: 700px;
@@ -933,7 +973,7 @@ font-size: 100%;
     justify-content: space-between;
 }
 
-
+/* Bollekort */
 #menu_bollekort_img{
     width: 450px;
     margin-right: 3%;
@@ -963,7 +1003,7 @@ font-size: 100%;
 }
 
 
-
+/* ?? */
 #menu_titeltop{
     margin-top: 20%;  
     margin-bottom: 5%;
@@ -980,6 +1020,8 @@ font-size: 100%;
     color: #EB7C30;
 }
 
+
+/* Menukort links top */
 #menu_navigation{
     position: absolute;
     top: 40px;
@@ -1073,6 +1115,7 @@ padding-bottom: 4%;
 #kommendeevents p{
     font-size: 120%;
 }
+
 
 
 
@@ -1227,5 +1270,486 @@ body{
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* RESPONSIVE */
+ /* LAPTOP */
+@media only screen and (min-width: 600px){
+
+/* Display none */
+    .laptop_hidden{display: none;}
+    
+
+}
+
+
+
+ /* MOBILE */
+  @media only screen and (max-width: 768px){
+
+
+/* Display none */   
+    .mobile_hidden{display: none;}
+    .laptop_hidden{display: block;}
+
+
+/* Klasser */ 
+    .flexcontainer_menukort{
+        flex-wrap: wrap;
+        flex-direction: column;
+}
+
+.flexcontainer{
+    flex-direction: column;
+}
+
+/* Index */
+/* Forside */
+#index_left{
+    margin-bottom: 0;
+    width: 100%;
+}
+
+#index_right{
+    width: 100%;
+    margin-top: 0;
+}
+
+#index_right div:last-child{
+    width: 100%;
+    padding-left: 5%;
+    text-align: left;
+    margin-top: 2%;
+    margin-bottom: 10%;
+}
+
+/* Pizza nyhed */
+#pizzanews div{
+    margin: 5%;
+    font-size: 90%;
+    
+}
+
+#pizzanews div:last-child{
+    width: 50%;  
+    margin-left: 35%;
+}
+
+/* #TANKENDERTÆLLER */
+#TANKENDERTÆLLER div:first-child{
+    width: 100%;
+    margin: 0;
+    font-size: 90%;
+    padding: 6%;
+}
+
+/* Bollekort */
+#bollekort{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    
+}
+
+#bollekort div:first-child{ 
+    width: 300px;
+    margin-left:10%;
+    margin-top: 10%;
+    margin-bottom: 15%;
+}
+
+#bollekort div:nth-child(2){
+    width: 100%;
+    font-size: 90%;
+    margin-top: 0;
+    padding: 5%;
+}
+
+#bollekort div:last-child img{
+    margin-top: 106%;
+    padding-right: 20% ;
+}
+#bollekort div:last-child{
+    width: 30%;
+}
+
+/* Instagram */
+#instagramsection{
+    margin: 0;
+    margin-top: 20%;
+    font-size: 80%;
+    margin-left: 3%;
+}
+
+#img_instagram{
+    width: 100%;
+    margin-left: 3%;
+}
+
+
+/* OM OS */
+/* Video sektion */
+#videocontainer{
+    width: 100%;
+}
+
+#videocontainer div:first-child{
+    width: 100%;
+    margin-top: 10%;
+    font-size: 90%;
+}
+
+#videocontainer h2, #videocontainer h1{
+    margin: 0;
+}
+
+#videocontainer p{
+    margin-bottom: 5%;
+}
+
+/* Merch sektion */
+/* T-shirt */
+#tshirtcontainer{
+    width: 90%;
+    font-size: 80%;
+}
+
+#tshirtcontainer h2{
+    line-height: 110%;
+}
+
+#sticker_tshirt img{
+    width: 80%;
+}
+
+#størrelser{
+    width: 100%;
+    margin-top: 10%;
+    margin-bottom: 5%;  
+}
+
+/* Totebag */
+#totebagcontainer{
+    width: 90%;
+    font-size: 80%;
+}
+
+#totebagcontainer h2{
+    line-height: 110%;
+    font-size: 255%;
+}
+
+#sticker_totebag img{
+    width: 80%;
+    margin-left: 40%;    
+}
+
+#video_mobile video{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* MENUKORT*/
+.menu_line{
+    flex-wrap: wrap;
+    font-size: 90%;  
+}
+
+.menu_item{
+    margin-bottom: 5%;
+    width: 120%;
+}  
+
+.menu_price{  
+    margin-left: 10%;
+}
+
+.icon{
+    width: 8%;
+    margin-top: 2.5%;
+}
+
+#sticker_toast_mobile{
+    width: 50%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 10%;
+}
+
+/* Link liste menukort */
+#menu_navigation_mobile a{
+    color: black;
+    line-height: 90%;
+    font-family: bebas-neue, sans-serif;
+    font-weight: 600;
+    font-size: 150%;
+    text-decoration: none;
+}
+
+#menu_navigation_mobile{
+    right: 0;
+    list-style: none;  
+    text-align: right;  
+}
+
+/* pizza menukort */
+#mefisto_img_mobile div{
+    width: 100%; 
+    bottom: 0;
+}
+
+#pizza_icon_mobile img{
+    width: 100%;
+    width: 20%;
+    margin-top: 5%;
+    bottom: 0;
+}
+
+#pizza_icon_mobile{
+    margin-bottom: 0;
+   width: 45%;
+   padding-left: 8%;
+}
+
+.menu_item h3{
+    top: 0;  
+}
+
+#mefisto_spacing p{
+    font-size: 80%;
+}
+
+#mefisto_spacing h1{
+    margin-top: 5%;
+    font-size: 200%;
+}
+
+#mefisto_spacing div:nth-child(3), #mefisto_spacing div:nth-child(5){
+    padding-bottom: 0;
+}
+
+#mefisto_spacing h3{
+    padding-top: 0;
+}
+
+#mefisto_spacing h4{
+    padding-top: 0;
+}
+
+
+/* bollekort */
+#menu_bollekort_section{
+    flex-direction: column;
+    height: 800px;
+    width: 100%;
+    margin-top: 20%;
+}
+
+#menu_bollekort_img{
+    width: 70%;
+    margin-bottom: 10%;
+}
+
+#sticker_bollekort{
+    position: absolute;
+    height: 200px;
+    right: 0%;
+    bottom: 86%; 
+}
+
+#sticker_bollekort img{
+    width: 70%;
+}
+
+#menu_bollekort_section div:nth-child(2){
+    width: 70%;
+    font-size: 80;
+ }
+
+.two_pics{flex-direction: column;}
+
+ #infographic_beer_mobile{
+    width: 40%;
+    margin-left: 40%;
+    margin-top: 5%;
+    margin-bottom: 5%; 
+ }
+
+ #infographic_drink_mobile{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+ }
+
+ #sticker_drink_mobile{
+    width: 50%;
+    margin-left: 30%;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* EVENTS */
+/* Denne uge */
+#denneuge{
+    width: 100%;
+    margin-left: 1%;
+}
+
+#denneuge p{
+    width: 150%;
+    font-size: 90%;
+}
+
+#denneuge h2{
+    width: 150%;
+    font-size: 100%;
+}
+
+/* Kommende events */
+#events{
+    margin-top: 10%;
+    font-size: 90%;
+}
+
+#kommendeevents div:nth-child(2){
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+    border-left: 0;
+    border-right: 0;
+    padding-top: 7%;
+    padding-bottom: 7%;
+}
+
+#kommendeevents div{
+    margin-bottom: 7%;
+    width: 100%;
+}
+
+#kommendeevents div p{
+    margin-top: 3%;
+}
+
+
+
+
+
+
+
+/* FOOTER */
+footer{
+    font-size: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  }
+
+
 
