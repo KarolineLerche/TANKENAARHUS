@@ -59,10 +59,8 @@
 
 <!-- HEADER -->
 <header>
-    <section class="mobile_hidden flexcontainer ">
-        <div>
-            <a href="index.html"><img class="max_img" src="images/hvid_logo.png" alt="Forside Logo"></a>   
-        </div>
+    <section class="mobile_hidden">
+        <a href="index.html"><img class="max_img" src="images/hvid_logo.png" alt="Forside Logo"></a>    
         <nav>
             <a href="om.html"> Om os</a>
             <a href="menukort.html"> Menukort </a>
@@ -70,14 +68,24 @@
         </nav> 
     </section>
 </header>
-    <section class="laptop_hidden">
+    <section class="laptop_hidden" id="white_burger">
+        <div class="flexcontainer_row blue_box space_between">
+            <div class="sidenav_logo">
+                <a href="index.html"><img class="max_img" src="images/hvid_logo.png" alt="Forside Logo"></a>   
+            </div>
+            <div>
+                <span onclick="openNav()"><i class="fa-solid fa-bars"></i></span>
+            </div>
+        </div>
+
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html"> Forside </a>
             <a href="om.html"> Om os</a>
             <a href="menukort.html"> Menukort </a>
             <a href="events.html"> Events </a>
         </div>
-        <span onclick="openNav()"><i class="fa-solid fa-bars"></i></span>
+
     </section>
 
 
@@ -86,7 +94,7 @@
 
  <!-- FORSIDE -->
     <section>
-        <div class="flexcontainer" >
+        <div class="flexcontainer_row" >
             <div class="blue_box" id="index_left">
                 <h1 id="overskrift_forside"> TANKEN<br>Aarhus C<br>Graven<br>26</h1>
                 <button class="cta_button whitebutton" id="omos_button" onclick=" window.open('om.html','_self')"> Om os </button>
@@ -107,12 +115,10 @@
 
 
  <!-- PIZZA NYHED -->
-
-
     <section class="line_container">
-        <h1 class="align_right black_headlines" id="overskrift_nyhed"> Nyhed </h1>
+        <h1 class="align_right black_headlines lines_responsive" id="overskrift_nyhed"> Nyhed </h1>
         <div class="lines mobile_hidden" id="lines_index1"></div>
-        <div class="flexcontainer center" id="pizzanews">
+        <div class="flexcontainer_row center" id="pizzanews">
             <div>
                 <h2> TANKEN samarbejder med <br> Pizza & bar - By Mefisto </h2>
                 <p class="p_size">
@@ -132,7 +138,7 @@
     </section>
 
  <!-- #TANKENDERTÆLLER -->
-    <section class="flexcontainer overlap center" id="TANKENDERTÆLLER">
+    <section class="flexcontainer_row center" id="TANKENDERTÆLLER">
         <div class="blue_box">
             <h2> #TANKENDERTÆLLER </h2>
             <p class="p_size">
@@ -145,16 +151,15 @@
                 Smut forbi til en sludder og brug vores hashtag #TANKENDERTÆLLER så vi kan følge med i jeres oplevelser. 
             </p>
         </div>  
-        <div>
-            <img class="max_img mobile_hidden" src="images/mand.jpg" alt="Mand Hælder Drink">
-        </div>
+        <div id="TANKENDERTÆLLER_IMG"><img class="max_img mobile_hidden" src="images/mand.jpg" alt="Mand Hælder Drink"></div>
+        <div class="mobile_image "><img class="max_img laptop_hidden" src="images/mand.jpg" alt="Mand Hælder Drink Responsive"></div>
     </section>
 
  <!-- BOLLEKORT -->
     <section class="line_container">
-        <h1 class="align_left black_headlines" id="overskrift_bollekort"> Tankens bollekort </h1>
+        <h1 class="align_left black_headlines lines_responsive" id="overskrift_bollekort"> Tankens bollekort </h1>
         <div class="lines mobile_hidden" id="lines_index2"></div>
-        <div class="flexcontainer" id="bollekort">
+        <div class="flexcontainer_row" id="bollekort">
             <div>
                 <img class="max_img" src="images/bollekort.png" alt="Bollekort">
             </div>  
@@ -190,29 +195,23 @@
             </p>
             <br>
         </div>  
-        
     </div>
     
-    
     <!-- Instagram billeder -->
-        <div class=" flexcontainer mobile_hidden" id="img_instagram">
-            <div><img class="max_img " src="images/insta1.jpg" alt="Instagram billedesektion"></div>
-            <div><img class="max_img" src="images/insta2.jpg" alt="Instagram billedesektion"></div>
-            <div><img class="max_img" src="images/insta3.jpg" alt="Instagram billedesektion"></div>
-            <div><img class="max_img" src="images/insta4.jpg" alt="Instagram billedesektion"></div>
+        <div class="flexcontainer_row" id="img_instagram">
+            <div><img class="max_img mobile_hidden" src="images/insta1.jpg" alt="Instagram billedesektion"></div>
+            <div><img class="max_img mobile_hidden" src="images/insta2.jpg" alt="Instagram billedesektion"></div>
+            <div><img class="max_img mobile_hidden" src="images/insta3.jpg" alt="Instagram billedesektion"></div>
+            <div><img class="max_img mobile_hidden" src="images/insta4.jpg" alt="Instagram billedesektion"></div>
         </div>
 
-        <div class="laptop_hidden" id="img_instagram">
-            <div><img class="max_img " src="images/insta1.jpg" alt="Instagram billedesektion responsive"></div>
+        <div class="mobile_image">
+            <div class="mobile_image"><img class="laptop_hidden max_img " src="images/insta1.jpg" alt="Instagram billedesektion responsive"></div>
         </div>
-</section>
-
-
-
-
+    </section>
 
  <!-- FOOTER -->
-    <footer class="flexcontainer blue_box">
+    <footer class="flexcontainer_row blue_box">
             <div>
                 
                 <h1 class="italic"> 

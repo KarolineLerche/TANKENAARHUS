@@ -70,6 +70,7 @@
 
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html"> Forside </a>
             <a href="om.html"> Om os</a>
             <a href="menukort.html"> Menukort </a>
             <a href="events.html"> Events </a>
@@ -82,12 +83,12 @@
 <!-- DENNE UGE -->
     <section class="line_container">
         <div class="lines mobile_hidden" id="lines_event"></div>
-        <h1 class="black_headlines" id="overskrift_denneuge"> Denne uge </h1>
+        <h1 class="black_headlines lines_responsive" id="overskrift_denneuge"> Denne uge </h1>
         <div class="openclosed" id="openclosed_event">      
             <p id="openNow">Åben nu</p>
             <p id="closed">Åbner i morgen kl. 09:00</p>  
         </div>  
-        <div class="flexcontainer center" id="denneuge">
+        <div class="flexcontainer_row center" id="denneuge">
             <div>
                 <h2> Fars dag 5. Juni </h2>
                 <p class="p_size">
@@ -110,7 +111,7 @@
                 <img class="max_img" src="images/farsdag.jpg" alt="Fars dag billede">
             </div>
         </div>
-        <div class="laptop_hidden">
+        <div class="laptop_hidden mobile_image">
             <img class="max_img" src="images/farsdag.jpg" alt="Fars dag billede">
         </div>
     </section>
@@ -119,7 +120,7 @@
     <section>
         <div class="blue_box" id="events">
                 <h1 id="overskrift_kommendeevents">KOMMENDE EVENTS</h1>
-            <div class="flexcontainer"id="kommendeevents">  
+            <div class="flexcontainer_row"id="kommendeevents">  
             <div >
                 <h2> ØLSMAGNING <br> 27/06 </h2>
                 <p class="p_size">
@@ -169,24 +170,18 @@
     </section>
 
 <!-- EVENTS BILLEDER -->
-    <section class="line_containe ">
+    <section class="line_container">
         <div class="mobile_hidden" ></div>
-        <div class="flexcontainer two_pics mobile_hidden">
-            <div>
-                <img class="max_img" src="images/event1.jpg" alt="Event billede 1">
-            </div>
-            <div>
-                <img class="max_img" src="images/event2.jpg" alt="Event billede 2">
-            </div>
-        </div>
-        <div class="laptop_hidden">
-                <img class="max_img" src="images/event1.jpg" alt="Event billede 1">
-            </div>
-        
+            <div class="double_lines mobile_hidden" id="double_lines_omos"></div>
+                <div class="flexcontainer_row two_pics">
+                    <div class="mobile_hidden"><img class="max_img" src="images/event1.jpg" alt="Event billede 1"></div>
+                    <div class="mobile_hidden"><img class="max_img" src="images/event2.jpg" alt="Event billede 2"></div>
+                </div>    
+                <div class=" mobile_image"><img class="laptop_hidden max_img " src="images/event1.jpg" alt="Event billede 1"></div>
     </section>
 
  <!-- FOOTER -->
- <footer class="flexcontainer blue_box">
+ <footer class="flexcontainer_row blue_box">
     <div>
         
         <h1 class="italic"> 

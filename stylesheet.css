@@ -222,23 +222,15 @@ p{
     cursor: pointer;
 }
 
-
-
-
-
-
 #modalButton{
     display: none;
     position: fixed;
-
     height: 18%;
     width: 25%;
     z-index: 1;
-    
     margin-top: 34%;
     margin-left: 1%;
     padding-left: 1%;
-
     color: white;
     background-color: #F5A83A;
     font-family: bebas-neue, sans-serif;
@@ -246,10 +238,8 @@ p{
     letter-spacing: 50%; 
     line-height: 150%; 
     text-align: left;
-
     border: none;
     cursor: pointer;
-
     box-shadow: #EB7C30 10px 10px;
 }
 
@@ -258,12 +248,6 @@ p{
     width: 100%;
     height: 100%;
 }
-
-
-
-
-
-
 
 .modal{
     display: none;
@@ -355,24 +339,79 @@ p{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* KLASSER */
 
 
-.laptop_hidden{display: none;}
-    
+
 
 .blue_box{
     background-color: #1414DB;
     color: white;
 }
 
-.flexcontainer{
-    display: flex;   
-}
-
 .flexcontainer_row{
     display: flex;
+    
 }
+.mobile_hidden div{display: none;}
 
 .max_img{
     max-width: 100%;
@@ -387,12 +426,15 @@ p{
     text-align: right;
 }
 
+/*
 .container_overlap{
     position: relative;
 }
+*/
 
 .two_pics{
     justify-content: center;
+    
 }
 
 .two_pics div{
@@ -436,6 +478,52 @@ font-size: 300%;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* HEADER LAPTOP */
 header{
     font-family: bebas-neue, sans-serif;
@@ -464,11 +552,8 @@ nav a{
     font-size: 150%;
     margin-left: 7.5%;}
 
-
-
-
 /* HEADER MOBIL */
-    .sidenav {
+    .sidenav{
         height: 25%;
         width: 0;
         position: fixed;
@@ -478,7 +563,7 @@ nav a{
         background-color: #F27501;
         overflow-x: hidden;
         transition: 0.5s;
-       padding-top: 5%;
+        padding-top: 5%;
         box-shadow: #F5A83A 10px 10px;
       }
       
@@ -508,22 +593,15 @@ nav a{
         font-size: 36px;
         margin-left: 50px;
       }
-    
-    
-   
-
-    .laptop_hidden span{
-        cursor: pointer;
-        float:right;
-        color: #EB7C30;
-        margin-right: 20%;
-        margin-top: 4%;
-    }
 
     .sidenav_logo{
-        height: 65px;
-        margin: 3%;
+        height: 60px;
     }
+    .sidenav_logo img{
+        margin: 20%;
+    }
+
+    
 
 
 
@@ -675,16 +753,14 @@ nav a{
 
     margin-right: 30%;
     margin-left: 13%;
- 
-
     padding: 3% 15% 3% 3%;
 }
 
 /* højre side */
-#TANKENDERTÆLLER div:last-child{
+#TANKENDERTÆLLER_IMG{
     width: 30%;
     position: absolute;
-    margin-left: 38%;
+    margin-left: 45%;
     margin-top: 10%;
 }
 
@@ -811,10 +887,9 @@ font-size: 100%;
 #video_laptop video{
     position: absolute;
     left: 40%;
-    bottom: 56%;
-    width: 60%;
-    outline: 8px solid #1414DB;
-    outline-offset: 64px;
+    bottom: 49%;
+    width: 50%;
+    
 }
 
 /* MERCH SEKTION */
@@ -1407,165 +1482,259 @@ body{
   @media only screen and (max-width: 768px){
 
 
-/* Display none */   
+/* DISPLAY - NONE */   
     .mobile_hidden{display: none;}
     .laptop_hidden{display: block;}
 
+/* KLASSER RESPONSIVE */ 
+    .flexcontainer_row{
+        display: flex;
+        flex-wrap: wrap; 
+    }
 
-/* Klasser */ 
-    .flexcontainer_menukort{
-        flex-wrap: wrap;
+    .flexcontainer{
+        display: flex;
         flex-direction: column;
-}
+        flex-wrap: wrap;
+    }
 
-.flexcontainer{
-    flex-direction: column;
-}
+    .mobile_image{
+        margin: 8%;  
+    }
 
-/* Index */
+    .lines_responsive{
+        border-bottom: 8px solid #1414DB;
+        margin-left: 3%;
+    }
+
+/* JAVASCRIPT RESPONSIVE */
+/* "TIL TOPPEN" knap responsive */
+    #myBtn{
+    bottom: 10%;
+    right: 1%;
+    font-size: 140%;
+    line-height: 110%;
+    }
+
+/* Øl spil responsive */
+    #hoverbox{
+    width: 10%;
+    bottom: 5%;
+    }
+
+    #modalButton{
+    bottom: 5%;
+    font-size: 80%;
+    width: 40%;
+    height: 10%;
+    }
+
+/* NAV RESPONSIVE */
+    .laptop_hidden span{
+        cursor: pointer;
+        float:right;
+        color: #EB7C30;
+        margin-right: 20%;
+        margin-top: 30%;
+        z-index: 999;
+        position: static;  
+    }
+
+    #white_burger span{
+        color: #ffffff;}
+
+
+
+
+
+
+/* INDEX RESPONSIVE */
 /* Forside */
-#index_left{
-    margin-bottom: 0;
-    width: 100%;
-}
+    #index_left{
+        margin-bottom: 0;
+        width: 100%;
+    }
 
-#index_right{
-    width: 100%;
-    margin-top: 0;
-}
+    #index_right{
+        width: 100%;
+        margin-top: 0;
+        margin-left: 4%;
+        
+    }
 
-#index_right div:last-child{
-    width: 100%;
-    padding-left: 5%;
-    text-align: left;
-    margin-top: 2%;
-    margin-bottom: 10%;
-}
+    #index_right div:last-child{
+        width: 100%;
+        padding-left: 5%;
+        text-align: left;
+        margin-top: 2%;
+        margin-bottom: 10%;
+    }
 
 /* Pizza nyhed */
-#pizzanews div{
-    margin: 5%;
-    font-size: 90%;
-    
-}
+    #pizzanews div{
+        margin: 5%;
+        font-size: 80%;
+        margin-left: 10%;
+    }
 
-#pizzanews div:last-child{
-    width: 50%;  
-    margin-left: 35%;
-}
+    #pizzanews div:last-child{
+        width: 50%;  
+        margin-left: 35%;
+    }
+
+    #overskrift_nyhed{
+        padding-right: 8%;
+        margin-left: 3%;
+    }
 
 /* #TANKENDERTÆLLER */
-#TANKENDERTÆLLER div:first-child{
-    width: 100%;
-    margin: 0;
-    font-size: 90%;
-    padding: 6%;
-}
+    #TANKENDERTÆLLER div:first-child{
+        width: 100%;
+        margin: 0;
+        font-size: 80%;
+        padding: 10%; 
+    }
+
+    #TANKENDERTÆLLER div:first-child p{
+        width: 95%; 
+    }
 
 /* Bollekort */
-#bollekort{
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    
-}
+    #overskrift_merch{
+        margin-top: 14%;
+        margin-left: 3%;
+        margin-right: 3%;
+        padding-right: 3%;
+    }
 
-#bollekort div:first-child{ 
-    width: 300px;
-    margin-left:10%;
-    margin-top: 10%;
-    margin-bottom: 15%;
-}
+    #bollekort{
+        width: 100%;
+        margin: 0;
+        padding: 0; 
+    }
 
-#bollekort div:nth-child(2){
-    width: 100%;
-    font-size: 90%;
-    margin-top: 0;
-    padding: 5%;
-}
+    #bollekort div:first-child{ 
+        width: 300px;
+        margin-left:10%;
+        margin-top: 10%;
+        margin-bottom: 15%;
+    }
 
-#bollekort div:last-child img{
-    margin-top: 106%;
-    padding-right: 20% ;
-}
-#bollekort div:last-child{
-    width: 30%;
-}
+    #bollekort div:nth-child(2){
+        width: 100%;
+        font-size: 90%;
+        margin-top: 0;
+        padding: 5%;
+    }
+
+    #bollekort div:last-child img{
+        margin-top: 106%;
+        padding-right: 20% ;
+    }
+
+    #bollekort div:last-child{
+        width: 30%;
+    }
 
 /* Instagram */
-#instagramsection{
-    margin: 0;
-    margin-top: 20%;
-    font-size: 80%;
-    margin-left: 3%;
-}
+    #instagramsection{
+        margin: 0;
+        margin-top: 20%;
+        font-size: 80%;
+        margin-left: 3%;
+    }
 
-#img_instagram{
-    width: 100%;
-    margin-left: 3%;
-}
+    #img_instagram{
+        width: 100%;
+        position: relative;
+        margin-top: 0;
+    }
+
+    #img_instagram div{
+        height: fit-content;
+        margin-top: 0;
+    }
 
 
 /* OM OS */
 /* Video sektion */
-#videocontainer{
-    width: 100%;
-}
+    #openclosed_omos{
+    padding-top: 10%;
+    }
 
-#videocontainer div:first-child{
-    width: 100%;
-    margin-top: 10%;
-    font-size: 90%;
-}
+    #video_mobile video{
+        width: 100%;
+    }
 
-#videocontainer h2, #videocontainer h1{
-    margin: 0;
-}
+    #videocontainer{
+        width: 100%;
+        top: 0;
+    }
 
-#videocontainer p{
-    margin-bottom: 5%;
-}
+    #videocontainer div:first-child{
+        width: 100%;
+        top: 0;
+        font-size: 80%;
+    }
+
+    #videocontainer h2, #videocontainer h1{
+        margin: 0;
+        padding-left: 7%;
+    }
+
+    #videocontainer p{
+        margin-bottom: 5%;
+        padding-left: 7%;
+    }
 
 /* Merch sektion */
 /* T-shirt */
-#tshirtcontainer{
-    width: 90%;
-    font-size: 80%;
-}
+    #tshirtcontainer{
+        width: 82%;
+        font-size: 75%;
+        margin-right: 6%;  
+    }
 
-#tshirtcontainer h2{
-    line-height: 110%;
-}
+    #tshirtcontainer h2{
+        line-height: 110%;
+    }
 
-#sticker_tshirt img{
-    width: 80%;
-}
+    #sticker_tshirt img{
+        width: 80%;
+    }
 
-#størrelser{
-    width: 100%;
-    margin-top: 10%;
-    margin-bottom: 5%;  
-}
+    #størrelser{
+        width: 100%;
+        margin-top: 10%;
+        margin-left: 10%; 
+    }
+
+
 
 /* Totebag */
-#totebagcontainer{
-    width: 90%;
-    font-size: 80%;
-}
+    #totebagcontainer{
+        width: 90%;
+        font-size: 80%;
+        padding-left: 3%;
+    }
 
-#totebagcontainer h2{
-    line-height: 110%;
-    font-size: 255%;
-}
+    #totebagcontainer h2{
+        line-height: 110%;
+        font-size: 255%;
+    }
 
-#sticker_totebag img{
-    width: 80%;
-    margin-left: 40%;    
-}
+    #totebagcontainer div:first-child{
+        width:40%;
+        margin-right: 0;
+        height: fit-content;
+        padding-bottom: 3%;
+    }
 
-#video_mobile video{
-    width: 100%;
-}
+    #sticker_totebag img{
+        width: 80%;
+        margin-left: 10%;     
+    }
+
 
 
 
@@ -1579,6 +1748,12 @@ body{
 
 
 /* MENUKORT*/
+
+#menu_titeltop{
+    font-size: 80%;
+}
+
+
 .menu_line{
     flex-wrap: wrap;
     font-size: 90%;  
@@ -1622,6 +1797,11 @@ body{
 }
 
 /* pizza menukort */
+
+#mefisto_spacing{
+    width: 300px;
+}
+
 #mefisto_img_mobile div{
     width: 100%; 
     bottom: 0;
@@ -1763,9 +1943,21 @@ body{
 
 /* EVENTS */
 /* Denne uge */
-#denneuge{
-    width: 100%;
-    margin-left: 1%;
+#openclosed_event{
+    position: absolute;
+    top: 1%;
+    right: 4%;
+}
+
+#overskrift_denneuge{
+    margin-left: 3%;
+    margin-right: 3%;
+    padding-left: 2%;
+}
+
+#denneuge div:first-child{
+    width: 60%;
+    margin-right: 30%;
 }
 
 #denneuge p{

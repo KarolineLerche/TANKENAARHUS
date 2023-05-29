@@ -54,26 +54,34 @@
         </nav> 
     </section>
 </header>
-    <section class="laptop_hidden">
+    <section class="laptop_hidden flexcontainer_row">
+        <div class="flexcontainer_row_row space_between">
+            <div class="sidenav_logo">
+                <a href="index.html"><img class="max_img" src="images/orange_logo.png" alt="Forside Logo"></a>   
+            </div>
+            <div>
+                <span onclick="openNav()"><i class="fa-solid fa-bars"></i></span>
+            </div>
+        </div>
+
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html"> Forside </a>
             <a href="om.html"> Om os</a>
             <a href="menukort.html"> Menukort </a>
             <a href="events.html"> Events </a>
         </div>
-        <span onclick="openNav()"><i class="fa-solid fa-bars"></i></span>
+
     </section>
 
 
 <main>
 
         <section class="menu_section">
-
- 
             <div id="menu_titeltop">
                 
-                <div class="flexcontainer space_between">
-                    <h1>MENUKORT</h1>   
+                <div class="flexcontainer_row_row space_between">
+                    <h1 class="lines_responsive">MENUKORT</h1>   
                     <div class="openclosed">      
                         <p id="openNow">Åben nu</p>
                         <p id="closed">Åbner i morgen kl. 09:00</p>  
@@ -112,16 +120,16 @@
                 </div> 
             </div>
 
-            <div class="flexcontainer">
+            <div class="flexcontainer_row">
                 <div class="icon">
                     <img class="max_img" src="images/ikon.croissant.png" alt="croissant ikon">
                 </div>
 
                 <div class="menu_kategori">
                     <h1>MORGEN</h1>
-                    <div class="menu_line flexcontainer">
+                    <div class="menu_line flexcontainer_row">
                         <div class="menu_item_width end_margin">
-                            <div class="menu_text menu_item flexcontainer">
+                            <div class="menu_text menu_item flexcontainer_row">
                                 <div>
                                     <h4>Bolle med smør</h4>
                                     <p>Friskbagt bolle fra Bageri Berta med smør</p>                    
@@ -132,7 +140,7 @@
                             </div>     
                         </div>
                         <div class="menu_item_width end_margin">
-                            <div class="menu_text menu_item flexcontainer">
+                            <div class="menu_text menu_item flexcontainer_row">
                                 <div>
                                     <h4>Bolle med ost</h4>
                                     <p>Friskbagt bolle fra Bageri Berta med smør og ost</p>                    
@@ -143,9 +151,9 @@
                             </div>     
                         </div>
                     </div>
-                    <div class="menu_line flexcontainer">
+                    <div class="menu_line flexcontainer_row">
                         <div class="menu_item_width end_margin">
-                            <div class="menu_text menu_item flexcontainer">
+                            <div class="menu_text menu_item flexcontainer_row">
                                 <div>
                                     <h4>Croissant</h4>
                                     <p>Friskbagt smørcroissant fra Bageri Berta</p>                    
@@ -156,7 +164,7 @@
                             </div>     
                         </div>
                         <div class="menu_item_width end_margin">
-                            <div class="menu_text menu_item flexcontainer">
+                            <div class="menu_text menu_item flexcontainer_row">
                                 <div>
                                     <h4>Kage</h4>
                                     <p>Kig forbi Tanken for at se vores lækre udvalg af kager</p>                    
@@ -172,15 +180,15 @@
         </section>
 
 
-    <section class="menu_section flexcontainer">
+    <section class="menu_section flexcontainer_row">
         <div class="icon">
             <img class="max_img" src="images/ikon.toast.png" alt="croissant ikon">
         </div>
         <div class="menu_kategori" id="middagaften">
             <h1>MIDDAG / AFTEN</h1>
-            <div class="menu_line flexcontainer">
+            <div class="menu_line flexcontainer_row">
                 <div class="menu_item_width end_margin">
-                    <div class=" menu_item flexcontainer">
+                    <div class=" menu_item flexcontainer_row">
                         <div class="menu_text">
                             <h4>Chorizo sandwich</h4>
                             <p>Chorizo, mozerella, soltørret tomater & grøn pesto</p>                    
@@ -191,7 +199,7 @@
                     </div>     
                 </div>
                 <div class="menu_item_width end_margin">
-                    <div class="menu_item flexcontainer">
+                    <div class="menu_item flexcontainer_row">
                         <div class="menu_text">
                             <h4>Serrano sandwich</h4>
                             <p>Serrano, brie, syltede rødløg, honeymustard & mayo</p>                    
@@ -202,9 +210,9 @@
                     </div>     
                 </div>
             </div>
-            <div class="menu_line flexcontainer">
+            <div class="menu_line flexcontainer_row">
                 <div class="menu_item_width end_margin">
-                    <div class="menu_item flexcontainer">
+                    <div class="menu_item flexcontainer_row">
                         <div class="menu_text">
                             <h4>Hummus sandwich</h4>
                             <p>Chili hummus, feta & grillet peberfrugt</p>                    
@@ -215,9 +223,9 @@
                     </div>     
                 </div>
                 <div class="menu_item_width end_margin">
-                    <div class="menu_item flexcontainer">
+                    <div class="menu_item flexcontainer_row">
                         <div class="menu_text">
-                            <div class="flexcontainer space_between">
+                            <div class="flexcontainer_row space_between">
                                 <h4>Toast</h4>
                                 <h3>2 for 60,-</h3>
                             </div>
@@ -239,16 +247,16 @@
         </div>
     </section>
 
-    <section class="menu_section flexcontainer">
+    <section class="menu_section flexcontainer_row">
         <div class="icon">
             <img class="max_img" src="images/ikon.chips.png" alt="croissant ikon">
         </div>
 
         <div class="menu_kategori" id="snacks">
             <h1>SNACKS</h1>
-            <div class="menu_line flexcontainer">
+            <div class="menu_line flexcontainer_row">
                 <div class="menu_item_width end_margin">
-                    <div class="menu_item flexcontainer">
+                    <div class="menu_item flexcontainer_row">
                         <div class="menu_text">
                             <h4>Slikpose</h4>
                             <p>Haribo</p>   
@@ -265,7 +273,7 @@
                     </div>     
                 </div>
                 <div class="menu_item_width end_margin">
-                    <div class=" menu_item flexcontainer">
+                    <div class=" menu_item flexcontainer_row">
                         <div class="menu_text">
                             <h4>Chokolade</h4>
                             <p>Nutella sticks</p>   
@@ -282,7 +290,7 @@
                     </div>     
                 </div>
                 <div class="menu_item_width">
-                    <div class=" menu_item flexcontainer">
+                    <div class=" menu_item flexcontainer_row">
                         <div class="menu_text">
                             <h4>Nødder</h4>
                             <p>Sweet & Salty</p>   
@@ -301,7 +309,7 @@
             </div>
     </section>
 
-    <section class="flexcontainer menu_section center" id="pizza">
+    <section class="flexcontainer_row menu_section center" id="pizza">
         <div class="mobile_hidden" id="mefisto_img">
         </div>
         
@@ -312,7 +320,7 @@
         
 
         <div id="mefisto_spacing">
-            <div class="flexcontainer menu_item">
+            <div class="flexcontainer_row menu_item">
                 <div class="menu_text">
                     <h1>PIZZA & BAR - BY MEFISTO</h1>
                     <p>Koldhævet dej og fermenteret i mindst 48 timer</p>
@@ -324,7 +332,7 @@
                     <img class="max_img" src="images/ikon.pizza.png" alt="pizza ikon">
                 </div>
             </div>
-            <div class="menu_item flexcontainer_row">
+            <div class="menu_item flexcontainer_row_row">
                 <div>
                     <h3>Månedens pizza</h3>
                     <p>Rød, porchetta, kål & Szechuan-peber</p>                    
@@ -339,7 +347,7 @@
                 <p>Serveret på bund af knuste tomater, mozzerella og grana padano</p>                   
             </div>  
 
-            <div class="menu_item flexcontainer_row">
+            <div class="menu_item flexcontainer_row_row">
                 <div class="menu_text">
                     <p>Klassisk margherita</p>
                     <p>Spicy salami</p>
@@ -360,7 +368,7 @@
                 <p>Serveret på bund af mascarpone, mozzerella og grana padano</p>                 
             </div> 
 
-            <div class="menu_item flexcontainer_row">
+            <div class="menu_item flexcontainer_row_row">
                 <div class="menu_text">
                     <p>Blåskimmel, spinat, citron & chili</p>
                     <p>Kartoffel, løg, rosmarin & sort hvidløg</p>
@@ -376,7 +384,7 @@
     </section>
 
     <section>
-        <div class="blue_box flexcontainer" id="menu_bollekort_section">
+        <div class="blue_box flexcontainer_row" id="menu_bollekort_section">
             <div id="menu_bollekort_img">
                 <img class="max_img" src="images/bollekort.png" alt="bollekort">
             </div>
@@ -395,20 +403,20 @@
         </div>
     </section>
 
-    <section class="flexcontainer space_between">
+    <section class="flexcontainer_row space_between">
         <div>
 
 
-            <div class="menu_section flexcontainer">
+            <div class="menu_section flexcontainer_row">
                 <div class="icon">
                     <img class="max_img" src="images/ikon.sodavand.png" alt="kolde drikke ikon">
                 </div>
 
                 <div class="menu_kategori" id="koldedrikke">
                     <h1>Kolde drikke</h1>
-                    <div class="menu_line flexcontainer">
+                    <div class="menu_line flexcontainer_row">
                         <div class="menu_item_width end_margin">
-                            <div class="menu_text menu_item flexcontainer">
+                            <div class="menu_text menu_item flexcontainer_row">
                                 <div>
                                     <h4>Frem sodavand</h4>
                                     <p>Grøn sport</p>   
@@ -427,7 +435,7 @@
                             </div>     
                         </div>
                         <div class="menu_item_width">
-                            <div class="menu_text menu_item flexcontainer">
+                            <div class="menu_text menu_item flexcontainer_row">
                                 <div>
                                     <h4>Tank op</h4>
                                     <p>Faxe Kondi</p>   
@@ -452,16 +460,16 @@
                     </div>
                 </div>
             </div>
-            <div class="menu_section flexcontainer">
+            <div class="menu_section flexcontainer_row">
                 <div class="icon">
                     <img class="max_img" src="images/ikon.øl.png" alt="øl ikon">
                 </div>
 
                 <div class="menu_kategori" id="ol">
                     <h1>ØL</h1>
-                    <div class="menu_line flexcontainer">
+                    <div class="menu_line flexcontainer_row">
                         <div class="menu_item_width end_margin">
-                            <div class="menu_text menu_item flexcontainer">
+                            <div class="menu_text menu_item flexcontainer_row">
                                 <div>
                                     <h4>Special øl</h4>
                                     <h5>Anarkist</h5> 
@@ -485,7 +493,7 @@
                             </div>     
                         </div>
                         <div class="menu_item_width">
-                            <div class="menu_text menu_item flexcontainer">
+                            <div class="menu_text menu_item flexcontainer_row">
                                 <div>
                                     <br>
                                     <h5>To Øl</h5>
@@ -508,9 +516,9 @@
                         </div>
                     </div>
 
-                    <div class="menu_line flexcontainer">
+                    <div class="menu_line flexcontainer_row">
                         <div class="menu_item_width end_margin">
-                            <div class="menu_text menu_item flexcontainer">
+                            <div class="menu_text menu_item flexcontainer_row">
                                 <div>
                                     <h4>0% alkohol</h4>
                                     <p>Sol</p>   
@@ -526,7 +534,7 @@
                             </div>     
                         </div>
                         <div class="menu_item_width">
-                            <div class="menu_text menu_item flexcontainer">
+                            <div class="menu_text menu_item flexcontainer_row">
                                 <div>
                                     <h4>Flaskeøl</h4>
                                     <p>Ceres top</p>   
@@ -557,26 +565,26 @@
 
     <section class="line_container">
         <div class="double_lines mobile_hidden" id="double_lines_menu"></div>
-        <div class="two_pics flexcontainer">
-            <div>
-                <img class="max_img" src="images/mate1.jpg" alt="mate">
-            </div>
-            <div>
-                <img class="max_img" src="images/mate2.jpg" alt="mate">
-            </div>
+        <div class="two_pics flexcontainer_row mobile_hidden">
+            <div><img class="max_img" src="images/mate1.jpg" alt="mate"></div>
+            <div><img class="max_img" src="images/mate2.jpg" alt="mate"></div>
+        </div>
+        <div class="two_pics flexcontainer_column laptop_hidden">
+            <div class="mobile_image"><img class="max_img" src="images/mate1.jpg" alt="mate"></div>
+            <div class="mobile_image"><img class="max_img" src="images/mate2.jpg" alt="mate"></div>
         </div>
     </section>
 
-    <section class="menu_section flexcontainer">
+    <section class="menu_section flexcontainer_row">
         <div class="icon">
             <img class="max_img" src="images/ikon.vin.png" alt="croissant ikon">
         </div>
 
         <div class="menu_kategori" id="vin">
             <h1>Vin</h1>
-            <div class="menu_line flexcontainer">
+            <div class="menu_line flexcontainer_row">
                 <div class="menu_item_width end_margin">
-                    <div class="menu_text menu_item flexcontainer">
+                    <div class="menu_text menu_item flexcontainer_row">
                         <div>
                             <h4>Rødvin</h4>
                             <h5>Make it Big</h5>   
@@ -594,7 +602,7 @@
                     </div>     
                 </div>
                 <div class="menu_item_width end_margin">
-                    <div class="menu_text menu_item flexcontainer">
+                    <div class="menu_text menu_item flexcontainer_row">
                         <div>
                             <h4>Hvidvin</h4>
                             <h5>CrystalBay</h5>   
@@ -612,7 +620,7 @@
                     </div>     
                 </div>
                 <div class="menu_item_width">
-                    <div class="menu_text menu_item flexcontainer">
+                    <div class="menu_text menu_item flexcontainer_row">
                         <div>
                             <h4>Rosé</h4>
                             <h5>LesDelices</h5>   
@@ -632,16 +640,16 @@
             </div>
     </section>
 
-    <section class="menu_section flexcontainer">
+    <section class="menu_section flexcontainer_row">
         <div class="icon">
             <img class="max_img" src="images/ikon.drink.png" alt="croissant ikon">
         </div>
 
         <div class="menu_kategori" id="drinks">
             <h1>Drinks</h1>
-            <div class="menu_line flexcontainer">
+            <div class="menu_line flexcontainer_row">
                 <div class="menu_item_width end_margin">
-                    <div class="menu_item flexcontainer">
+                    <div class="menu_item flexcontainer_row">
                         <div class="menu_text">
                             <h4>Gin & tonic</h4>
                             <p>B&T</p>   
@@ -657,7 +665,7 @@
                     </div>     
                 </div>
                 <div class="menu_item_width end_margin">
-                    <div class="menu_item flexcontainer">
+                    <div class="menu_item flexcontainer_row">
                         <div class="menu_text">
                             <h4>Long drink</h4>
                             <p>Sprinklervæske</p>   
@@ -672,7 +680,7 @@
                     </div>     
                 </div>
                 <div class="menu_item_width">
-                    <div class="menu_item flexcontainer">
+                    <div class="menu_item flexcontainer_row">
                         <div class="menu_text">
                             <h4>Cocktails</h4>
                             <p>Tank N' Stormy</p>  
@@ -693,18 +701,18 @@
         <img class="max_img" src="images/sticker.drinks.png" alt="Sticker drinks">
     </div>
 
-    <section class="flexcontainer space_between">
+    <section class="flexcontainer_row space_between">
         <div>
-            <div class="menu_section flexcontainer">
+            <div class="menu_section flexcontainer_row">
                 <div class="icon">
                     <img class="max_img" src="images/ikon.bobler.png" alt="bobler ikon">
                 </div>
 
                 <div class="menu_kategori" id="bobler">
                     <h1>Bobler</h1>
-                    <div class="menu_line flexcontainer">
+                    <div class="menu_line flexcontainer_row">
                         <div class="menu_item_width">
-                            <div class=" menu_item flexcontainer">
+                            <div class=" menu_item flexcontainer_row">
                                 <div class="menu_text">
                                     <h4>Mousserende vin</h4>
                                     <h5>Bellisco</h5>   
@@ -725,16 +733,16 @@
                 </div>
             </div>
 
-            <div class="menu_section flexcontainer">
+            <div class="menu_section flexcontainer_row">
                 <div class="icon">
                     <img class="max_img" src="images/ikon.kaffe.png" alt="varme drikke kaffe ikon">
                 </div>
 
                 <div class="menu_kategori" id="varmedrikke">
                     <h1>Varme drikke</h1>
-                    <div class="menu_line flexcontainer">
+                    <div class="menu_line flexcontainer_row">
                         <div class="menu_item_width">
-                            <div class="menu_item flexcontainer">
+                            <div class="menu_item flexcontainer_row">
                                 <div class="menu_text">
                                     <h4>Kaffe</h4> 
                                     <h4>Irish Coffee</h4>   
@@ -773,7 +781,7 @@
 
 
  <!-- FOOTER -->
- <footer class="flexcontainer blue_box">
+ <footer class="flexcontainer_row blue_box">
     <div>
         
         <h1 class="italic"> 

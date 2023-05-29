@@ -58,22 +58,32 @@
     </section>
 </header>
     <section class="laptop_hidden">
+        <div class="flexcontainer_row  space_between">
+            <div class="sidenav_logo">
+                <a href="index.html"><img class="max_img" src="images/orange_logo.png" alt="Forside Logo"></a>   
+            </div>
+            <div>
+                <span onclick="openNav()"><i class="fa-solid fa-bars"></i></span>
+            </div>
+        </div>
+
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html"> Forside </a>
             <a href="om.html"> Om os</a>
             <a href="menukort.html"> Menukort </a>
             <a href="events.html"> Events </a>
         </div>
-        <span onclick="openNav()"><i class="fa-solid fa-bars"></i></span>
+
     </section>
 
 <!-- VIDEOSEKTION -->
-    <section class="flexcontainer center" id="videosection">
+    <section class="flexcontainer_row center" id="videosection">
             <div class="openclosed" id="openclosed_omos">
                 <p id="openNow">Åben nu</p>
                 <p id="closed">Åbner i morgen kl. 09:00</p>
             </div>
-        <div class="container_overlap "  id="videocontainer">
+        <div class="container_overlap"  id="videocontainer">
             <div class="blue_box">
                 <h1>KOM PÅ <br> BESØG<br>HOS OS</h1>
                 <br>
@@ -105,15 +115,13 @@
 
 
 <!-- MERCH SEKTION -->
-
-<section  class ="merchsection">
-    <div class="line_container">
-        <h1 class="align_right black_headlines" id="overskrift_merch">MERCH</h1>
+    <section  class ="merchsection">
+        <div class="line_container">
+            <h1 class="align_right black_headlines lines_responsive" id="overskrift_merch">MERCH</h1>
 
 <!-- T-SHIRT -->
-    
             <div id="lines_omos" class="lines mobile_hidden"></div>  
-            <div class="center flexcontainer align_right" id="tshirtcontainer">
+            <div class="center flexcontainer_row align_right" id="tshirtcontainer">
                 <div class="omos_sticker" id="sticker_tshirt">
                     <img class="max_img mobile_hidden" src="images/sticker.tshirt.png"  alt="sticker tshirt">
                     <img class="max_img laptop_hidden" src="images/sticker.tshirt.png"  alt="sticker tshirt">
@@ -129,17 +137,17 @@
                     <br>
                     <a href onclick=" window.open('https://www.instagram.com/tankenigraven/','_blank')"> Læs om vores merch og meget mere på vores <span>INSTAGRAM</span> </a>
                 </div>
-            </div>
+        </div>
          
 <!-- T-shirt billeder-->
-            <p id="størrelser">STR. XS - XL</p>
-            <div class="three_img flexcontainer mobile_hidden">
-                <div><img class="max_img" src="images/tshirt1.jpg" alt="T-shirt 1"></div>
-                <div><img class="max_img" src="images/tshirt2.jpg" alt="T-shirt 2"></div>
-                <div><img class="max_img" src="images/tshirt3.jpg" alt="T-shirt 3"></div>
-            </div>
-            
-            <div><img class="max_img laptop_hidden" src="images/tshirt2.jpg" alt="T-shirt 2"></div>
+        <p id="størrelser"> STR. XS - XL </p>
+
+        <div class="three_img flexcontainer_row">
+            <div><img class="max_img mobile_hidden" src="images/tshirt1.jpg" alt="T-shirt 1"></div>
+            <div><img class="max_img mobile_hidden" src="images/tshirt2.jpg" alt="T-shirt 2"></div>
+            <div><img class="max_img mobile_hidden" src="images/tshirt3.jpg" alt="T-shirt 3"></div>
+        </div> 
+        <div class="mobile_image"><img class="max_img laptop_hidden" src="images/tshirt2.jpg" alt="T-shirt 2"></div>
     </div>
 
 <!-- MULEPOSE -->
@@ -162,21 +170,20 @@
             
         </div>
 
-<!-- Mulepos billeder-->
+<!-- Mulepose billeder-->
         <div class="line_container">
             <div class="double_lines mobile_hidden" id="double_lines_omos"></div>
-            <div class="three_img flexcontainer mobile_hidden ">
-                <div><img class="max_img" src="images/mulepose1.jpg" alt="#"></div>
-                <div><img class="max_img" src="images/mulepose2.jpg" alt="#"></div>
-                <div><img class="max_img" src="images/mulepose3.jpg" alt="#"></div>
+                <div class="three_img flexcontainer_row">
+                    <div><img class="max_img mobile_hidden" src="images/mulepose1.jpg" alt="#"></div>
+                    <div><img class="max_img mobile_hidden" src="images/mulepose2.jpg" alt="#"></div>
+                    <div><img class="max_img mobile_hidden" src="images/mulepose3.jpg" alt="#"></div>
+                </div>
+                <div class="mobile_image"><img class="max_img laptop_hidden" src="images/mulepose3.jpg" alt="#"></div>
             </div>
-            <div><img class="max_img laptop_hidden" src="images/mulepose3.jpg" alt="#"></div>
-        </div>
-
     </section>
 
  <!-- FOOTER -->
- <footer class="flexcontainer blue_box">
+ <footer class="flexcontainer_row blue_box">
     <div>
         
         <h1 class="italic"> 
