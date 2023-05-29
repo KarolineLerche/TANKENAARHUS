@@ -105,7 +105,7 @@ window.onclick = function(event) {
 Vi bruger math random til at vælge en tilfældig øl fra arrayet, 
 og innerHTML til at sætte resultatet ind i vores HTML */
 btnBeer.onclick = function random(){
-  let beer = ["Anarkist", "Kings Country", "To øl", "Ebeltoft Bryghus", "Odense Classic", "Odense Pilsner", "Anarkist", "Sol (0%)", "Galipette (0%)", "Anarkist (0%)", "Ceres top",]
+  let beer = ["Kings County - Infinite Machine", "Kings County - Superhero Sidekicks", "Kings County - Venemous Villains", "Ebeltoft Gårdbryggeri - Wildflower IPA", "Ebeltoft Gårdbryggeri - Raw Power Double IPA", "Ebeltoft Gårdbryggeri - Imperial Stout", "Odense Classic", "Odense Pilsner", "Anarkist - Bloody Weizen", "Sol (0%)", "Galipette (0%)", "Anarkist (0%)", "Ceres top", "Anarkist - Crisp 'N Cold", "Anarkist - Mighty Mild", "Anarkist - White Dragon", "Anarkist - Fizzy Lime IPA", "To Øl - Snublejuice", "To Øl - House of Pale", "To Øl - Implosion", "To Øl - Whirl Domination"]
   let randomBeer = Math.floor(Math.random() * beer.length);
   document.getElementById("yourBeer").innerHTML = beer[randomBeer];
 }

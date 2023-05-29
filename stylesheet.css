@@ -47,6 +47,12 @@ p{
     font-style: normal;
 }
 
+.cta_font{
+    font-family: "vinyl", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 .p_size{
     font-size: 130%;
     line-height: 140%;
@@ -161,7 +167,7 @@ p{
     #myBtn {
         display: none; /* Hidden by default */
         position: fixed; /* Fixed/sticky position */
-        bottom: 1%; /* Place the button at the bottom of the page */
+        bottom: 25%; /* Place the button at the bottom of the page */
         right: 0; /* Place the button 30px from the right */
         z-index: 99; /* Make sure it does not overlap */
         border: none; /* Remove borders */
@@ -169,7 +175,7 @@ p{
         cursor: pointer; /* Add a mouse pointer on hover */
 
         background: none;
-        height: 6%;
+        height: 4%;
         width: 10%;
        
 
@@ -207,10 +213,10 @@ p{
     z-index: 1;
     position: fixed;
     
-    height: 15%;
+    height: 10%;
     border: none;
     background: none;
-    margin-top: 45%;
+    margin-top: 36%;
     margin-left: 1%;
     border-left: none;
     cursor: pointer;
@@ -225,11 +231,11 @@ p{
     display: none;
     position: fixed;
 
-    height: 15%;
+    height: 18%;
     width: 25%;
     z-index: 1;
     
-    margin-top: 44%;
+    margin-top: 34%;
     margin-left: 1%;
     padding-left: 1%;
 
@@ -274,30 +280,58 @@ p{
 
 .modal-content{
     background-color: #EB7C30;
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 40%;
+    margin: 5% auto;
+    
+    
+    width: 42%;
     text-align: center;
-    height: 60%;
+    height: 80%;
+    color: #ffffff;
+    box-shadow: #F5A83A 15px 15px;
 }
+
+.modal-content h1{
+    padding-top: 10%;
+    padding-left: 7%;
+    font-size: 300%;
+}
+
+.modal-content h2{
+    line-height: 115%;
+    padding: 5% 8% 5% 8%;
+}
+
+.modal-content p{
+    font-size: 120%;
+    
+}
+
 
 #btnBeer{
     width: 30%;
     height: 7%;
-    font-size: 14px;
+    margin-top: 8%;
+    font-size: 120%;
+    background-color:#F5A83A;
+    box-shadow: white 5px 5px;
+    border: none;
+    color: white;
+    cursor: pointer;
 }
 
 #yourBeer{
-    font-size: 30px;
-    margin-top: 10%;
+    font-size: 150%;
+    font-weight: 800;
+    margin-top: 3%;
+    color: #1414DB;
 }
 
 .close{
-    color: #aaa;
+    color: #ffffff;
     float: right;
-    font-size: 28px;
-    font-weight: bold;
+    font-size: 320%;
+    font-weight: 800;
+   padding-right: 3%;
 }
 
 .close:hover,
@@ -336,7 +370,7 @@ p{
     display: flex;   
 }
 
-#flexcontainer_menukort{
+.flexcontainer_row{
     display: flex;
 }
 
@@ -416,9 +450,8 @@ header img{
     margin-top: 1.5%;}
 
 nav{
+    background-color: white;
     position: fixed;
-    width: 100%;
-    background-color: #ffffff;
     width: 24%;
     margin-left: 76%;
     z-index: 1;    
@@ -436,7 +469,7 @@ nav a{
 
 /* HEADER MOBIL */
     .sidenav {
-        height: 30%;
+        height: 25%;
         width: 0;
         position: fixed;
         z-index: 1;
@@ -445,15 +478,15 @@ nav a{
         background-color: #F27501;
         overflow-x: hidden;
         transition: 0.5s;
-        padding-top: 40px;
-        border-radius: 20px;
+       padding-top: 5%;
+        box-shadow: #F5A83A 10px 10px;
       }
       
       .sidenav a {
-        padding-left: 10%;
+        margin-left: 12%;
         text-decoration: none;
-        line-height: 150%;
-        font-size: 200%;
+        line-height: 140%;
+        font-size: 150%;
         color: #ffffff;
         display: block;
         transition: 0.3s;
@@ -477,20 +510,20 @@ nav a{
       }
     
     
-    #mySidenav span{
-        font-size:200px;
-        cursor:pointer
-    }
+   
 
     .laptop_hidden span{
         cursor: pointer;
         float:right;
         color: #EB7C30;
-        margin-right: 4%;
+        margin-right: 20%;
         margin-top: 4%;
-
     }
 
+    .sidenav_logo{
+        height: 65px;
+        margin: 3%;
+    }
 
 
 
@@ -869,19 +902,22 @@ font-size: 100%;
 .menu_item h4{
  color: #1414DB;
  font-size: 120%;
- padding-bottom: 1%;
+ padding-bottom: 3%;
 
 }
 
 .menu_price{
     text-align: right;
+}
 
+.menu_price h5{
+    padding-bottom: 118px;
 }
 
 .menu_item p{
     padding-top: 4px;
     padding-bottom: 3px;
-    font-size: 95%;
+    font-size: 90%;
 }
 
 .end_margin{
@@ -898,7 +934,7 @@ font-size: 100%;
 .icon{
     height: 55px;
     width: 55px; 
-    flex-shrink: 0;
+ 
 }
 
 .menu_item_width{
@@ -926,6 +962,13 @@ font-size: 100%;
     left: 5%;
 }
 
+#sticker_bollekort{
+    position: absolute;
+    height: 200px;
+    right: 8%;
+    bottom: 70%;
+}
+
 /* pizza sektion */
 #mefisto_spacing div:nth-child(3), #mefisto_spacing div:nth-child(5){
     padding-bottom: 4%;
@@ -946,7 +989,7 @@ font-size: 100%;
 
 #mefisto_img{
     width: 500px;
-    height: 550px;
+    height: 560px;
     margin-right: 5%;
     background-image: url(images/mefisto.pizza.jpg);
     background-size: cover;
@@ -957,8 +1000,9 @@ font-size: 100%;
 /* inforgraphic */
 #infographic_beer{
     width: 450px;
-    height: 700px;
-    margin: 2% 3% 5% 0;
+    height: 800px;
+    margin: 5% 3% 5% 0;
+   
     text-align: right;
 }
 
@@ -991,19 +1035,14 @@ font-size: 100%;
     justify-content: center;
 }
 
-#sticker_bollekort{
-    position: absolute;
-    height: 200px;
-    right: 8%;
-    bottom: 70%;
-}
+
 
 #menu_bollekort_section div:nth-child(2){
    width: 40%;
 }
 
 
-/* ?? */
+/* Menukort overskrifter */
 #menu_titeltop{
     margin-top: 20%;  
     margin-bottom: 5%;
@@ -1020,7 +1059,6 @@ font-size: 100%;
     color: #EB7C30;
 }
 
-
 /* Menukort links top */
 #menu_navigation{
     position: absolute;
@@ -1029,7 +1067,6 @@ font-size: 100%;
     list-style: none;  
     text-align: right;  
     width: 10%;
-
 }
 
 #menu_navigation a{
@@ -1143,50 +1180,51 @@ padding-bottom: 4%;
 /* FOOTER */
 
 footer{
-    font-size: 80%;
-}
-/* venstre side */
-footer div:first-child{
-    width: 40%;
-    margin-right: 9%;
+    font-size: 70%;
+    padding: 1%;
 }
 
-footer div:first-child h1:first-child{
-    padding: 5%;
+footer a{
+    color: white;
 }
-footer div:first-child h1:last-child{
-    padding: 5%;
+
+footer h2{
+    font-size: 150%;
+    line-height: 120%;
+    font-weight: 200;
 }
+
+/* venstre side */
+footer div{
+    width: 33%;
+}
+
+footer div h1:first-child{
+    margin-bottom: 7%;
+}
+
+
 
 /* midten */
 footer div:nth-child(2){
-    width: 20%;
+    text-align: center;
 }
 
 footer div:nth-child(2) img{
-    width: 50%;
-    padding-top: 29%;  
+    width: 20%;
+    padding-top: 7%;
+    
 }
 
 
-/* højre side */ 
-footer div:last-child{
-    width: 40%;
-}
 
-footer div:last-child h1:first-child{
-    padding-right: 5%;
-    padding-top: 5%;
-    padding-bottom: 1%;
-}
-footer div:last-child h1:nth-child(2){
-    padding-right: 5%;
-    padding-bottom: 20%;
-}
+
 
 i{
-    font-size: 300%;
-    padding-right: 5%;
+    font-size: 350%;
+    margin-left: 5%;
+    margin-top: 14%;
+    margin-bottom: 4%;
 }
 
 
@@ -1281,7 +1319,66 @@ body{
 
 
 
+/* 404 side */
 
+#box_404{
+    height: 1000px;
+    text-align: right;
+
+
+}
+
+#box_404_big{
+    font-size: 850%;
+    line-height: 80%;
+    padding-top: 15%;
+    padding-right: 20%;
+}
+
+
+#box_404_small{
+    font-size: 380%;
+    line-height: 140%;
+
+    padding-right: 20%;
+    padding-bottom: 1%;
+}
+
+
+#box_404 div{
+    width: 100%;
+}
+
+#box_404_line{
+    height: 3%;
+    background-color: #EB7C30;
+    border-bottom: 7px solid white;
+    
+}
+
+#box_404_line2{
+    height: 1%;
+    background-color: #1414DB;
+
+    
+}
+
+
+#box_404 p{
+    font-size: 140%;
+    padding-right: 20%;
+    padding-top: 2%;
+}
+
+#box_404 a{
+    font-size: 140%;
+    padding-right: 20%;
+    color: black;
+    font-family: ff-dagny-web-pro, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    
+}
 
 
 
@@ -1704,10 +1801,6 @@ body{
 #kommendeevents div p{
     margin-top: 3%;
 }
-
-
-
-
 
 
 

@@ -37,7 +37,7 @@
                 <p id="yourBeer"></p>
             </div>
         </div>
-    </div>
+</div>
 
 
 <button onclick="topFunction()" id="myBtn" title="Go to top">TIL TOP</button>
@@ -46,17 +46,30 @@
 <!-- HEADER -->
 <header>
     <section class="mobile_hidden">
-        <a href="index.html"><img class="max_img" src="images/orange_logo.png" alt="Forside Logo"></a>    <nav>
-        <a href="om.html"> Om os</a>
-        <a href="menukort.html"> Menukort </a>
-        <a href="events.html"> Events </a>
-    </nav> 
+        <a href="index.html"><img class="max_img" src="images/orange_logo.png" alt="Forside Logo"></a>    
+        <nav>
+            <a href="om.html"> Om os</a>
+            <a href="menukort.html"> Menukort </a>
+            <a href="events.html"> Events </a>
+        </nav> 
+    </section>
 </header>
-</section>
+    <section class="laptop_hidden">
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="om.html"> Om os</a>
+            <a href="menukort.html"> Menukort </a>
+            <a href="events.html"> Events </a>
+        </div>
+        <span onclick="openNav()"><i class="fa-solid fa-bars"></i></span>
+    </section>
+
 
 <main>
 
-        <div class="menu_section">
+        <section class="menu_section">
+
+ 
             <div id="menu_titeltop">
                 
                 <div class="flexcontainer space_between">
@@ -99,14 +112,14 @@
                 </div> 
             </div>
 
-            <div class=" flexcontainer">
+            <div class="flexcontainer">
                 <div class="icon">
                     <img class="max_img" src="images/ikon.croissant.png" alt="croissant ikon">
                 </div>
 
                 <div class="menu_kategori">
                     <h1>MORGEN</h1>
-                    <div class="menu_line" id="flexcontainer_menukort">
+                    <div class="menu_line flexcontainer">
                         <div class="menu_item_width end_margin">
                             <div class="menu_text menu_item flexcontainer">
                                 <div>
@@ -156,7 +169,7 @@
                     </div>    
                 </div>
             </div>
-        </div>
+        </section>
 
 
     <section class="menu_section flexcontainer">
@@ -288,7 +301,7 @@
             </div>
     </section>
 
-    <section class="flexcontainer_menukort menu_section center" id="pizza">
+    <section class="flexcontainer menu_section center" id="pizza">
         <div class="mobile_hidden" id="mefisto_img">
         </div>
         
@@ -311,7 +324,7 @@
                     <img class="max_img" src="images/ikon.pizza.png" alt="pizza ikon">
                 </div>
             </div>
-            <div class="menu_item flexcontainer_menukort">
+            <div class="menu_item flexcontainer_row">
                 <div>
                     <h3>Månedens pizza</h3>
                     <p>Rød, porchetta, kål & Szechuan-peber</p>                    
@@ -326,7 +339,7 @@
                 <p>Serveret på bund af knuste tomater, mozzerella og grana padano</p>                   
             </div>  
 
-            <div class="menu_item flexcontainer_menukort">
+            <div class="menu_item flexcontainer_row">
                 <div class="menu_text">
                     <p>Klassisk margherita</p>
                     <p>Spicy salami</p>
@@ -347,7 +360,7 @@
                 <p>Serveret på bund af mascarpone, mozzerella og grana padano</p>                 
             </div> 
 
-            <div class="menu_item flexcontainer_menukort">
+            <div class="menu_item flexcontainer_row">
                 <div class="menu_text">
                     <p>Blåskimmel, spinat, citron & chili</p>
                     <p>Kartoffel, løg, rosmarin & sort hvidløg</p>
@@ -451,32 +464,45 @@
                             <div class="menu_text menu_item flexcontainer">
                                 <div>
                                     <h4>Special øl</h4>
-                                    <p>Anarkist</p>   
-                                    <p>Kings County</p> 
-                                    <p>To øl</p>   
-                                    <p>Ebeltoft bryghus</p>                     
+                                    <h5>Anarkist</h5> 
+                                    <p>Bloody Weizen</p> 
+                                    <p>Fizzy Lime IPA</p>
+                                    <p>White Dragon</p>
+                                    <p>Crisp 'N Cold</p>
+                                    <p>Mighty Mild</p>
+                                    <br>
+                                    <h5>Kings County</h5> 
+                                    <p>Infinite Machine</p>
+                                    <p>Superhero Sidekicks</p>
+                                    <p>Venemous Villains</p>                   
                                 </div>
                                 <div class="menu_price">
                                     <h3>3 for 160,-</h3>
-                                    <p>65,-</p>
-                                    <p>65,-</p>
-                                    <p>65,-</p>
-                                    <p>65,-</p>
+                                    <h5>65,-</h5>
+                                    <br>
+                                    <h5>65,-</h5>
                                 </div>
                             </div>     
                         </div>
                         <div class="menu_item_width">
                             <div class="menu_text menu_item flexcontainer">
                                 <div>
-                                    <h4>Fadøl</h4>
-                                    <p>Odense Classic</p>   
-                                    <p>Odense Pilsner</p> 
-                                    <p>Anarkist</p>                       
+                                    <br>
+                                    <h5>To Øl</h5>
+                                    <p>Snuble Juice</p>   
+                                    <p>House of Pale</p> 
+                                    <p>Implosion</p> 
+                                    <p>Whirl Domination</p>   
+                                    <br>
+                                    <h5>Ebeltoft Gårdbryggeri</h5>  
+                                    <p>Wildflower IPA</p>   
+                                    <p>Raw Power Double IPA</p>  
+                                    <p>Imperial Stout</p>            
                                 </div>
-                                <div class="menu_price bottom_right">
-                                    <p>35,-</p>
-                                    <p>35,-</p>
-                                    <p>55,-</p>
+                                <div class="menu_price">
+                                    <br>
+                                    <h5>65,-</h5>
+                                    <h5>65,-</h5>
                                 </div>
                             </div>     
                         </div>
@@ -746,28 +772,24 @@
             </div>
 
 
-    <!-- FOOTER -->
-    <footer class="flexcontainer blue_box">
-        <div>
-            <h1 class="italic"> 
-                MAN -TOR 08:00 - 18:00 <br>
-                FRE - SØN 08:00 - 02:00    
-            </h1>
-            <h1> 
-                TANKEN <br>
-                GRAVEN 26 <br>
-                8000 AARHUS C    
-            </h1>
-        </div>
-        <div>
-            <img class="max_img" src="images/hvid_logo.png" alt="Forside Logo">
-        </div>
-        <div class="align_right">
-            <h1>Instagram Facebook</h1>
-            <h1 class="italic"> TANKENGRAVEN@GMAIL.COM </h1>
-            <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
-            <i class="fa-brands fa-facebook" style="color: #ffffff;"></i>
-        </div>
+ <!-- FOOTER -->
+ <footer class="flexcontainer blue_box">
+    <div>
+        
+        <h1 class="italic"> 
+            MAN - TOR: 09:00 - 22:00 <br>
+            FRE - SØN: 09:00 - SENT    
+        </h1>
+        <h1><a href="https://www.google.com/maps/place/Tanken/@56.1588644,10.2074208,17z/data=!3m1!4b1!4m6!3m5!1s0x464c3fed6d8e6675:0xc4b3cf601aec155e!8m2!3d56.1588614!4d10.2099957!16s%2Fg%2F11kc2n7_gd?entry=ttu" target="_blank">Tanken <br> Graven 26 - Aarhus C</a></h1>
+    </div>
+    <div>
+        <img class="max_img" src="images/hvid_logo.png" alt="Forside Logo">
+    </div>
+    <div class="align_right">
+        <a href="#"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
+        <a href="404.html"><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></a>
+        <h2> <a class="italic" href="#">tankenigraven@gmail.com</a></h2>
+    </div>
 </footer>
 </body>
 </html>
