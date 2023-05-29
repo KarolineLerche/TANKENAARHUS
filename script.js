@@ -1,6 +1,6 @@
 
 
-
+/* RESPONSIVE NAV SIDEBAR */
 function openNav() {
   document.getElementById("mySidenav").style.width = "200px";
 }
@@ -9,10 +9,7 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
 
-
-
-/* Åben - Lukket funktion baseret på klokkeslæt */
-
+/* ÅBEN / LUKKET FUNKTION - UD FRA KLOKKESLÆT */
 /* Vi vælger den nuværende dag og får den nøjagtige time */
 let date = new Date();
 let hour = date.getHours();
@@ -34,20 +31,14 @@ function myTime(){
   }
 }
 
-
 myTime();
 setInterval(myTime,100);
 
 
-
-
-
-
 // SCROLL TOP PIL //
-// Get the button:
 let mybutton = document.getElementById("myBtn");
 
-// When the user scrolls down 20px from the top of the document, show the button
+// Viser knappen, når brugeren scroller 500 px ned af siden //
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
@@ -58,29 +49,16 @@ function scrollFunction() {
   }
 }
 
-
-// When the user clicks on the button, scroll to the top of the document
+// Tager brugeren til toppen, ved klik //
 function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  document.body.scrollTop = 0; // Til Safari //
+  document.documentElement.scrollTop = 0; // Til Chrome, Firefox, IE and Opera //
 }
 
-
-
-
-
-
-
-
-
-/* Modalt vindue med et funktion der vælger tilfældig øl i et array */
-
-
+/* MODALT VINDUE - RANGOM ØL GENERATOR */
 /* Vi definerer vores variabler med ID */
 let modal = document.getElementById("myModal");
-
 let btn = document.getElementById("modalButton");
-
 let span = document.getElementsByClassName("close")[0];
 
 /* Funktion der viser det modale vindue ved klik på knap */
@@ -100,8 +78,6 @@ window.onclick = function(event) {
   }
 }
 
-
-
 /* Funktion med et array der indeholder forskellige øl. 
 Vi bruger math random til at vælge en tilfældig øl fra arrayet, 
 og innerHTML til at sætte resultatet ind i vores HTML */
@@ -112,10 +88,6 @@ btnBeer.onclick = function random(){
 }
 
 
-
-
-// ANIMATIONER //
-AOS.init(); 
 
 
 
