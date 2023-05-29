@@ -25,61 +25,61 @@
 
 <body>
 <!-- ØL SPIL -->
-
-<div id="modalContainer">
-    <button id="hoverbox"><img src="images/arrowright.svg" alt="#"></button>
-    <button id="modalButton">For mange muligheder? <br> - Lad Tanken vælge din næste øl!</button>
-        <div id="myModal" class="modal">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <h1>Prøv vores øl-spil</h1>
-                <button id="btnBeer">Stik mig en bajer!</button>
-                <p id="yourBeer"></p>
+    <div id="modalContainer">
+        <button id="hoverbox"><img src="images/arrowright.svg" alt="#"></button>
+        <button id="modalButton">For mange muligheder? <br> - Tryk her og lad Tanken vælge din næste øl!</button>
+            <div id="myModal" class="modal">
+            
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h1>Brug for hjælp til at vælge?</h1>
+                    <h2>Hvis du går med tanken om at prøve noget nyt,
+                        så lad os vælge din næste øl for dig! <br> </h2>
+                    <p> Alt du skal gøre, er at trykke på knappen nedenunder,<br>
+                        så finder vi en øl til dit næste besøg på TANKEN </p>
+                    <button id="btnBeer" class="cta_font">INSPIRER MIG</button>
+                    <h2 id="yourBeer"></p>
+                </div>
             </div>
-        </div>
-</div>
+    </div>
 
-
-<button onclick="topFunction()" id="myBtn" title="Go to top">TIL TOP</button>
-
+<!-- LINK TIL TOP -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">TIL TOP</button>
 
 <!-- HEADER -->
-<header>
-    <section class="mobile_hidden">
-        <a href="index.html"><img class="max_img" src="images/orange_logo.png" alt="Forside Logo"></a>    
-        <nav>
-            <a href="om.html"> Om os</a>
-            <a href="menukort.html"> Menukort </a>
-            <a href="events.html"> Events </a>
-        </nav> 
-    </section>
-</header>
-    <section class="laptop_hidden flexcontainer_row">
-        <div class="flexcontainer_row_row space_between">
+    <header>
+        <section class="mobile_hidden">
+            <a href="index.html"><img class="max_img" src="images/orange_logo.png" alt="Forside Logo"></a>    
+            <nav>
+                <a href="om.html"> Om os</a>
+                <a href="menukort.html"> Menukort </a>
+                <a href="events.html"> Events </a>
+            </nav> 
+        </section>
+    </header>
+
+    <section class="laptop_hidden">
+        <div class="flexcontainer_row space_between">
             <div class="sidenav_logo">
                 <a href="index.html"><img class="max_img" src="images/orange_logo.png" alt="Forside Logo"></a>   
             </div>
-            <div>
-                <span onclick="openNav()"><i class="fa-solid fa-bars"></i></span>
+            <div><span onclick="openNav()"><i class="fa-solid fa-bars"></i></span></div>
             </div>
-        </div>
-
-        <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="index.html"> Forside </a>
-            <a href="om.html"> Om os</a>
-            <a href="menukort.html"> Menukort </a>
-            <a href="events.html"> Events </a>
-        </div>
-
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="index.html"> Forside </a>
+                <a href="om.html"> Om os</a>
+                <a href="menukort.html"> Menukort </a>
+                <a href="events.html"> Events </a>
+            </div>
     </section>
 
-
+<!-- MAIN -->
 <main>
 
+<!-- MENUKORT TOP -->   
         <section class="menu_section">
             <div id="menu_titeltop">
-                
                 <div class="flexcontainer_row_row space_between">
                     <h1 class="lines_responsive">MENUKORT</h1>   
                     <div class="openclosed">      
@@ -87,7 +87,7 @@
                         <p id="closed">Åbner i morgen kl. 09:00</p>  
                     </div>                 
                 </div>
-                <h2 class="italic">MAD</h2>
+                <h2 class="italic mobile_hidden menu_titeltop_h2">MAD</h2>
                 <div class="mobile_hidden">
                     <ul id="menu_navigation">
                         <li><a href="#morgenmad">MORGENMAD</a></li>
@@ -117,9 +117,11 @@
                         <li><a href="#bobler">BOBLER</a></li>
                         <li><a href="#varmedrikke">VARME DRIKKE</a></li>
                     </ul>
+                    <h2 class="italic menu_titeltop_h2 laptop_hidden">MAD</h2>
                 </div> 
             </div>
 
+<!-- MORGEN -->   
             <div class="flexcontainer_row">
                 <div class="icon">
                     <img class="max_img" src="images/ikon.croissant.png" alt="croissant ikon">
@@ -179,7 +181,7 @@
             </div>
         </section>
 
-
+<!-- MIDDAG / AFTEN -->   
     <section class="menu_section flexcontainer_row">
         <div class="icon">
             <img class="max_img" src="images/ikon.toast.png" alt="croissant ikon">
@@ -247,6 +249,7 @@
         </div>
     </section>
 
+<!-- SNACKS -->   
     <section class="menu_section flexcontainer_row">
         <div class="icon">
             <img class="max_img" src="images/ikon.chips.png" alt="croissant ikon">
@@ -257,7 +260,7 @@
             <div class="menu_line flexcontainer_row">
                 <div class="menu_item_width end_margin">
                     <div class="menu_item flexcontainer_row">
-                        <div class="menu_text">
+                        <div class="menu_text" id="snacks_margin">
                             <h4>Slikpose</h4>
                             <p>Haribo</p>   
                             <p>Bonbon bolcher</p> 
@@ -289,7 +292,7 @@
                         </div>
                     </div>     
                 </div>
-                <div class="menu_item_width">
+                <div class="menu_item_width end_margin">
                     <div class=" menu_item flexcontainer_row">
                         <div class="menu_text">
                             <h4>Nødder</h4>
@@ -309,16 +312,17 @@
             </div>
     </section>
 
-    <section class="flexcontainer_row menu_section center" id="pizza">
-        <div class="mobile_hidden" id="mefisto_img">
-        </div>
-        
-        <section id="pizza_mobile">
-            <div class="laptop_hidden" id="mefisto_img">
-            </div>
-        </section>
-        
+<!-- PIZZA SEKTION -->
+<!-- PIZZA BILLEDE -->   
+        <section class="flexcontainer_row menu_section center" id="pizza">
+            <div class="mobile_hidden" id="mefisto_img"></div>
 
+<!-- RESPONSIVE PIZZA BILLEDE -->        
+            <div class="laptop_hidden mobile_image" id="mefisto_img_responsive">
+                <img class="max_img"  src="images/mefisto.pizza.jpg" alt="Pizza billede responsiv">
+            </div>
+
+<!-- PIZZA SEKTION TEKST -->    
         <div id="mefisto_spacing">
             <div class="flexcontainer_row menu_item">
                 <div class="menu_text">
@@ -332,7 +336,7 @@
                     <img class="max_img" src="images/ikon.pizza.png" alt="pizza ikon">
                 </div>
             </div>
-            <div class="menu_item flexcontainer_row_row">
+            <div class="menu_item flexcontainer_row">
                 <div>
                     <h3>Månedens pizza</h3>
                     <p>Rød, porchetta, kål & Szechuan-peber</p>                    
@@ -368,7 +372,7 @@
                 <p>Serveret på bund af mascarpone, mozzerella og grana padano</p>                 
             </div> 
 
-            <div class="menu_item flexcontainer_row_row">
+            <div class="menu_item flexcontainer_row">
                 <div class="menu_text">
                     <p>Blåskimmel, spinat, citron & chili</p>
                     <p>Kartoffel, løg, rosmarin & sort hvidløg</p>
@@ -383,6 +387,7 @@
         </div>
     </section>
 
+<!-- BOLLEKORT SEKTION -->
     <section>
         <div class="blue_box flexcontainer_row" id="menu_bollekort_section">
             <div id="menu_bollekort_img">
@@ -402,11 +407,13 @@
             
         </div>
     </section>
+    
+<!-- DRIKKEVARER -->   
+    <div class="menu_titeltop_h2"><h2 class="italic"> DRIKKEVARER </h2></div>
 
+<!-- KOLDE DRIKKE --> 
     <section class="flexcontainer_row space_between">
         <div>
-
-
             <div class="menu_section flexcontainer_row">
                 <div class="icon">
                     <img class="max_img" src="images/ikon.sodavand.png" alt="kolde drikke ikon">
@@ -434,7 +441,7 @@
                                 </div>
                             </div>     
                         </div>
-                        <div class="menu_item_width">
+                        <div class="menu_item_width end_margin">
                             <div class="menu_text menu_item flexcontainer_row">
                                 <div>
                                     <h4>Tank op</h4>
@@ -465,6 +472,7 @@
                     <img class="max_img" src="images/ikon.øl.png" alt="øl ikon">
                 </div>
 
+<!-- ØL --> 
                 <div class="menu_kategori" id="ol">
                     <h1>ØL</h1>
                     <div class="menu_line flexcontainer_row">
@@ -492,7 +500,7 @@
                                 </div>
                             </div>     
                         </div>
-                        <div class="menu_item_width">
+                        <div class="menu_item_width end_margin">
                             <div class="menu_text menu_item flexcontainer_row">
                                 <div>
                                     <br>
@@ -533,7 +541,7 @@
                                 </div>
                             </div>     
                         </div>
-                        <div class="menu_item_width">
+                        <div class="menu_item_width end_margin">
                             <div class="menu_text menu_item flexcontainer_row">
                                 <div>
                                     <h4>Flaskeøl</h4>
@@ -554,20 +562,23 @@
             </div>
         </div>
 
+<!-- INFORGRAPHIC ØL --> 
         <div class="mobile_hidden" id="infographic_beer">
             <img class="max_img" src="images/infographic.øl.png" alt="infographic øl">
         </div>
     </section>
 
+<!-- RESPONSIVE INFOGRAPHIC ØL --> 
         <div class="laptop_hidden" id="infographic_beer_mobile">
             <img class="max_img" src="images/infographic.øl.png" alt="infographic øl">
         </div>
 
+<!-- BILLEDE SEKTION + LINJER --> 
     <section class="line_container">
         <div class="double_lines mobile_hidden" id="double_lines_menu"></div>
-        <div class="two_pics flexcontainer_row mobile_hidden">
-            <div><img class="max_img" src="images/mate1.jpg" alt="mate"></div>
-            <div><img class="max_img" src="images/mate2.jpg" alt="mate"></div>
+        <div class="two_pics flexcontainer_row ">
+            <div class="mobile_hidden"><img class="max_img" src="images/mate1.jpg" alt="mate"></div>
+            <div class="mobile_hidden"><img class="max_img" src="images/mate2.jpg" alt="mate"></div>
         </div>
         <div class="two_pics flexcontainer_column laptop_hidden">
             <div class="mobile_image"><img class="max_img" src="images/mate1.jpg" alt="mate"></div>
@@ -575,7 +586,8 @@
         </div>
     </section>
 
-    <section class="menu_section flexcontainer_row">
+<!-- VIN --> 
+    <section class="menu_section flexcontainer_row" id="vin">
         <div class="icon">
             <img class="max_img" src="images/ikon.vin.png" alt="croissant ikon">
         </div>
@@ -619,7 +631,7 @@
                         </div>
                     </div>     
                 </div>
-                <div class="menu_item_width">
+                <div class="menu_item_width end_margin">
                     <div class="menu_text menu_item flexcontainer_row">
                         <div>
                             <h4>Rosé</h4>
@@ -640,7 +652,8 @@
             </div>
     </section>
 
-    <section class="menu_section flexcontainer_row">
+<!-- DRINKS --> 
+    <section class="menu_section flexcontainer_row" id="drinks">
         <div class="icon">
             <img class="max_img" src="images/ikon.drink.png" alt="croissant ikon">
         </div>
@@ -679,7 +692,7 @@
                         </div>
                     </div>     
                 </div>
-                <div class="menu_item_width">
+                <div class="menu_item_width end_margin">
                     <div class="menu_item flexcontainer_row">
                         <div class="menu_text">
                             <h4>Cocktails</h4>
@@ -697,10 +710,17 @@
             </div>
     </section>
 
+<!-- STICKER DRINKS RESPONSIVE--> 
     <div class="laptop_hidden" id="sticker_drink_mobile">
         <img class="max_img" src="images/sticker.drinks.png" alt="Sticker drinks">
     </div>
 
+<!-- RESPONSIV STICKER INFOGRAPHIC --> 
+    <div class="laptop_hidden" id="infographic_drink_mobile">
+        <img class="max_img" src="images/infographic.drink.png" alt="infographic drink">
+    </div>
+
+<!-- BOBLER --> 
     <section class="flexcontainer_row space_between">
         <div>
             <div class="menu_section flexcontainer_row">
@@ -733,6 +753,7 @@
                 </div>
             </div>
 
+<!-- VARME DRIKKE --> 
             <div class="menu_section flexcontainer_row">
                 <div class="icon">
                     <img class="max_img" src="images/ikon.kaffe.png" alt="varme drikke kaffe ikon">
@@ -764,21 +785,12 @@
              </div>
         </div>
 
-
-
+<!-- INFORGRAPHIC DRINK + STICKER DRINK --> 
         <div class="mobile_hidden" id="infographic_drink">
             <img class="max_img" src="images/infographic.drink.png" alt="infographic drink">
-            <div id="sticker_drink">
-                <img class="max_img" src="images/sticker.drinks.png" alt="Sticker drinks">
-            </div>
+            <img class="max_img" id="sticker_drink" src="images/sticker.drinks.png" alt="Sticker drinks">
         </div>
-        
     </section>
-    
-    <div class="laptop_hidden" id="infographic_drink_mobile">
-            <img class="max_img" src="images/infographic.drink.png" alt="infographic drink">
-            </div>
-
 
  <!-- FOOTER -->
  <footer class="flexcontainer_row blue_box">
@@ -794,10 +806,11 @@
         <img class="max_img" src="images/hvid_logo.png" alt="Forside Logo">
     </div>
     <div class="align_right">
-        <a href="#"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
+        <a href onclick=" window.open('https://www.instagram.com/tankenigraven/','_blank')"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
         <a href="404.html"><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></a>
         <h2> <a class="italic" href="#">tankenigraven@gmail.com</a></h2>
     </div>
 </footer>
+
 </body>
 </html>

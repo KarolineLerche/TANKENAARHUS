@@ -36,7 +36,7 @@ function myTime(){
 
 
 myTime();
-setInterval(myTime,10000);
+setInterval(myTime,100);
 
 
 
@@ -57,6 +57,7 @@ function scrollFunction() {
     mybutton.style.display = "none";
   }
 }
+
 
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {

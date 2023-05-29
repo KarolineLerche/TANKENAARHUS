@@ -23,37 +23,43 @@
 
      <!-- FONTAWESOME -->
     <script src="https://kit.fontawesome.com/69e662559e.js" crossorigin="anonymous"></script>
-
-
 </head>
 
 
 <body>
 
+<!-- LINK TIL TOP -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">TIL TOP</button>
+
 <!-- HEADER -->
-<header class="mobile_hidden">
-    <section >
-        <a href="index.html"><img class="max_img" src="images/orange_logo.png" alt="Forside Logo"></a>    
-        <nav>
-            <a href="om.html"> Om os</a>
-            <a href="menukort.html"> Menukort </a>
-            <a href="events.html"> Events </a>
-        </nav> 
-    </section>
-</header>
+    <header>
+        <section class="mobile_hidden">
+            <a href="index.html"><img class="max_img" src="images/orange_logo.png" alt="Forside Logo"></a>    
+            <nav>
+                <a href="om.html"> Om os</a>
+                <a href="menukort.html"> Menukort </a>
+                <a href="events.html"> Events </a>
+            </nav> 
+        </section>
+    </header>
+
     <section class="laptop_hidden">
-        <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="om.html"> Om os</a>
-            <a href="menukort.html"> Menukort </a>
-            <a href="events.html"> Events </a>
-        </div>
-        <span onclick="openNav()"><i class="fa-solid fa-bars"></i></span>
+        <div class="flexcontainer_row space_between">
+            <div class="sidenav_logo">
+                <a href="index.html"><img class="max_img" src="images/orange_logo.png" alt="Forside Logo"></a>   
+            </div>
+            <div><span onclick="openNav()"><i class="fa-solid fa-bars"></i></span></div>
+            </div>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="index.html"> Forside </a>
+                <a href="om.html"> Om os</a>
+                <a href="menukort.html"> Menukort </a>
+                <a href="events.html"> Events </a>
+            </div>
     </section>
 
-
-
-
+<!-- MAIN -->
     <main>
         <div id="box_404">
             <h1 id="box_404_big">404</h1>
@@ -61,14 +67,14 @@
             <div id="box_404_line"></div>
             <div id="box_404_line2"></div>
             <p>Tanken var ellers god.</p>
-            <a href="index.html">Klik her for at hoppe tilbage til forsiden</a>
+            <p><a href="index.html"><span> Klik her</span></a>for at hoppe tilbage til forsiden</p>
         </div>
     </main>
 
 
     
-    <!-- FOOTER -->
-    <footer class="flexcontainer_row blue_box">
+     <!-- FOOTER -->
+     <footer class="flexcontainer_row blue_box">
         <div>
             
             <h1 class="italic"> 
@@ -81,11 +87,11 @@
             <img class="max_img" src="images/hvid_logo.png" alt="Forside Logo">
         </div>
         <div class="align_right">
-            <a href="#"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
+            <a href onclick=" window.open('https://www.instagram.com/tankenigraven/','_blank')"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
             <a href="404.html"><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></a>
             <h2> <a class="italic" href="#">tankenigraven@gmail.com</a></h2>
         </div>
-    </footer>
+</footer>
 
 
 

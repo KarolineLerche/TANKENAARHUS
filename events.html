@@ -27,59 +27,59 @@
 </head>
 
 <body>
-
 <!-- ØL SPIL -->
-
-<div id="modalContainer">
-    <button id="hoverbox"><img src="images/arrowright.svg" alt="#"></button>
-    <button id="modalButton">For mange muligheder? <br> - Lad Tanken vælge din næste øl!</button>
-        <div id="myModal" class="modal">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <h1>Prøv vores øl-spil</h1>
-                <button id="btnBeer">Stik mig en bajer!</button>
-                <p id="yourBeer"></p>
+    <div id="modalContainer">
+        <button id="hoverbox"><img src="images/arrowright.svg" alt="#"></button>
+        <button id="modalButton">For mange muligheder? <br> - Tryk her og lad Tanken vælge din næste øl!</button>
+            <div id="myModal" class="modal">
+            
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h1>Brug for hjælp til at vælge?</h1>
+                    <h2>Hvis du går med tanken om at prøve noget nyt,
+                        så lad os vælge din næste øl for dig! <br> </h2>
+                    <p> Alt du skal gøre, er at trykke på knappen nedenunder,<br>
+                        så finder vi en øl til dit næste besøg på TANKEN </p>
+                    <button id="btnBeer" class="cta_font">INSPIRER MIG</button>
+                    <h2 id="yourBeer"></p>
+                </div>
             </div>
-        </div>
     </div>
 
-
+<!-- LINK TIL TOP -->
     <button onclick="topFunction()" id="myBtn" title="Go to top">TIL TOP</button>
 
-
 <!-- HEADER -->
-<header>
-    <section class="mobile_hidden">
-        <a href="index.html"><img class="max_img" src="images/orange_logo.png" alt="Forside Logo"></a>    
-        <nav>
-            <a href="om.html"> Om os</a>
-            <a href="menukort.html"> Menukort </a>
-            <a href="events.html"> Events </a>
-        </nav> 
-    </section>
-</header>
-    <section class="laptop_hidden flexcontainer">
+    <header>
+        <section class="mobile_hidden">
+            <a href="index.html"><img class="max_img" src="images/orange_logo.png" alt="Forside Logo"></a>    
+            <nav>
+                <a href="om.html"> Om os</a>
+                <a href="menukort.html"> Menukort </a>
+                <a href="events.html"> Events </a>
+            </nav> 
+        </section>
+    </header>
+
+    <section class="laptop_hidden">
         <div class="flexcontainer_row space_between">
             <div class="sidenav_logo">
                 <a href="index.html"><img class="max_img" src="images/orange_logo.png" alt="Forside Logo"></a>   
             </div>
-            <div>
-                <span onclick="openNav()"><i class="fa-solid fa-bars"></i></span>
+            <div><span onclick="openNav()"><i class="fa-solid fa-bars"></i></span></div>
             </div>
-        </div>
-
-        <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="index.html"> Forside </a>
-            <a href="om.html"> Om os</a>
-            <a href="menukort.html"> Menukort </a>
-            <a href="events.html"> Events </a>
-        </div>
-
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="index.html"> Forside </a>
+                <a href="om.html"> Om os</a>
+                <a href="menukort.html"> Menukort </a>
+                <a href="events.html"> Events </a>
+            </div>
     </section>
 
-
+<!-- MAIN -->
 <main>
+    
 <!-- DENNE UGE -->
     <section class="line_container">
         <div class="lines mobile_hidden" id="lines_event"></div>
@@ -102,10 +102,15 @@
                     så derfor har vi lavet en skarp pris til din far og dig på 
                     Fars dag d. 5 juni hvor du kan få 2 kopper kaffe, 2  boller 
                     med ost og 2 morgenkager til kun 130,- <br>
-                    <br>
                     Så tag din kære far i hånden og kom ned til os på Tanken til 
-                    en skøn og rolig morgen.   
+                    en skøn og rolig morgen. 
+                    <br>
+                    <br>
+                    Huske vi også serverer en masse andre spændende mad og drikkevarer.
+                    Tag et kig på menukortet, for at læse nærmere.   
                 </p>
+                <button class="cta_button bluebutton cta_font" id="events_button" onclick=" window.open('menukort.html','_self')"> Om os </button>
+
             </div>  
             <div class="mobile_hidden">
                 <img class="max_img" src="images/farsdag.jpg" alt="Fars dag billede">
@@ -120,7 +125,7 @@
     <section>
         <div class="blue_box" id="events">
                 <h1 id="overskrift_kommendeevents">KOMMENDE EVENTS</h1>
-            <div class="flexcontainer_row"id="kommendeevents">  
+            <div class="flexcontainer_row" id="kommendeevents">  
             <div >
                 <h2> ØLSMAGNING <br> 27/06 </h2>
                 <p class="p_size">
@@ -173,7 +178,7 @@
     <section class="line_container">
         <div class="mobile_hidden" ></div>
             <div class="double_lines mobile_hidden" id="double_lines_omos"></div>
-                <div class="flexcontainer_row two_pics">
+                <div class="flexcontainer_row two_pics" id="events_img">
                     <div class="mobile_hidden"><img class="max_img" src="images/event1.jpg" alt="Event billede 1"></div>
                     <div class="mobile_hidden"><img class="max_img" src="images/event2.jpg" alt="Event billede 2"></div>
                 </div>    
@@ -194,7 +199,7 @@
         <img class="max_img" src="images/hvid_logo.png" alt="Forside Logo">
     </div>
     <div class="align_right">
-        <a href="#"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
+        <a href onclick=" window.open('https://www.instagram.com/tankenigraven/','_blank')"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
         <a href="404.html"><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></a>
         <h2> <a class="italic" href="#">tankenigraven@gmail.com</a></h2>
     </div>

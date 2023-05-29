@@ -1,105 +1,345 @@
+
+/* 
+-- INDHOLDSFORTEGNELSE --
+
+1. GENERELT 
+
+2. FONT 
+   - Font generelt
+   - Font CTA knapper
+   - Font overskrifter
+   - Font modalvindue
+
+3. KLASSER
+
+4. LINJER
+
+5. KNAPPER
+   - CTA knapper
+
+6. JAVASCRIPT
+   - Javascript modalvindue
+   - Javascript til top funktion
+   - Javascript åben / lukket
+
+7. HEADER LAPTOP
+
+8. HEADER MOBIL
+
+9. INDEX
+   - Index landingpage
+   - Index pizza sektion
+   - Index #TANKENDERTÆLLER
+   - Index bollekort
+   - Index instagram
+
+10. OM OS
+   - Om os video sektion
+   - Om os merch sektion
+   - Om os t-shirt sektion
+   - Om os totebag sektion
+
+11. MENUKORT
+   - Menukort links top
+   - Menukort indhold
+   - Menukort stickers
+   - Menukort pizza sektion
+   - Menukort infographics
+   - Menukort bollekort
+   - Menukort overskrifter
+
+12. EVENTS
+   - Events denne uge
+   - Events kommende events
+   - Events billeder
+
+13. 404 FEJLSIDE
+
+14. FOOTER
+
+15. RESPONSIVE LAPTOP
+
+16. RESPONSIVE MOBILE
+   - Responsive display:none
+
+   - Responsive klasser
+
+   - Responsive javascript
+      - Øl spil
+      - Nav
+
+   - Responsive index
+      - Forside
+      - Pizza nyhed
+      - #TANKENDERTÆLLER
+      - Bollekort
+      - Instagram
+
+   - Responsive om os
+      - Video sektion
+      - Merch sektion
+      - T-shirt sektion
+      - Totebag sektion
+
+   - Responsive menukort
+      - Top sektion
+      - Link liste
+      - Indhold
+      - Stickers
+      - Pizza sektion
+      - Bollekort sektion
+      - Infographics
+
+   - Responsive events
+      - Denne uge
+      - Kommende events
+
+   - Responsive 404 fejlside
+   - Responsive footer
+*/
+
 /* GENERELT */
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    body{
+        width: 100%;
+        overflow-x: hidden;
+    
+    }
+
+/* ---------------------------------------------------------- */
+/* FONT */ 
+/* FONT - GENERELT */
+    h1{
+        font-family: bebas-neue, sans-serif;
+        font-weight: 300;
+        font-style: normal;     
+    }
+
+    h2{
+        font-family: poppins, sans-serif;
+        font-weight: 500;
+        font-style: normal;
+    }
+
+    h3{
+        font-family: bebas-neue, sans-serif;
+        font-weight: 400;
+        font-style: normal;  
+        color: #EB7C30;
+    }
+
+    h4{
+        font-family: ff-dagny-web-pro, sans-serif;
+        font-weight: 300;
+        font-style: normal;
+    }
+
+    h5{
+        font-family: ff-dagny-web-pro, sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 100%;
+    }
+
+    p{
+        font-family: ff-dagny-web-pro, sans-serif;
+        font-weight: 300;
+        font-style: normal;
+    }
+
+    .p_size{
+        font-size: 130%;
+        line-height: 140%;
+    }
+
+    .italic{font-style: italic;}
+
+/* Font - call to action knapper */
+    .cta_font{
+        font-family: "vinyl", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+/* FONT - OVERSKRIFTER */
+/* Overskrift - sektioner */
+    .black_headlines{font-size: 300%;}
+
+/* Overskrift - Om os */
+    #overskrift_merch{margin-right: 14%;}
+
+/* Overskrift - Forside */
+    #overskrift_forside{
+        padding-top: 10%;
+        font-size: 450%;
+        line-height: 140%;
+        letter-spacing: 5px;
+        padding-bottom: 10%;
+        padding-right: 3%; 
+    }
+    
+    #overskrift_nyhed{margin-right: 4%;}
+
+ /* Overskrift - Menukort */ 
+    #overskrift_bollekort{
+        margin-top: 14%;
+        margin-left: 6%;
+    }
+
+ /* Overskrift - Events */   
+    #overskrift_kommendeevents{
+        font-size: 300%; 
+        padding: 3% 0 3% 3%;
+    }
+
+    #overskrift_denneuge{
+        margin-top: 17%;
+        margin-left: 6%;
+    }
+
+/* Font - ?? */
+    .textbox h2{font-size: 300%;}
+
+    .textbox p{
+        font-size: 120%;
+        line-height: 130%;
+    }
+
+/* Font - modalvindue */  
+    .modal-content h1{
+        padding-top: 10%;
+        padding-left: 7%;
+        font-size: 300%;
+    }
+
+    .modal-content h2{
+        line-height: 115%;
+        padding: 5% 8% 5% 8%;
+    }
+
+    .modal-content p{
+        font-size: 120%;
+    }
+
+
+
+/* ---------------------------------------------------------- */
+/* KLASSER */
+/* Blå baggrund & hvid skrift */
+.blue_box{
+    background-color: #1414DB;
+    color: white;
 }
 
+/* Display flex */
+    .flexcontainer_row{display: flex;}
 
+/* Responsive display none */
+    .mobile_hidden div{display: none;}
 
-/* FONTS */ 
-h1{
-    font-family: bebas-neue, sans-serif;
-    font-weight: 300;
-    font-style: normal;     
-}
+/* Billeder */
+    .max_img{
+        max-width: 100%;
+        max-height: 100%;
+    }
 
-h2{
-    font-family: poppins, sans-serif;
-    font-weight: 500;
-    font-style: normal;
-}
+/* Centrering */
+    .center{justify-content: center;}
 
-h3{
-    font-family: bebas-neue, sans-serif;
-    font-weight: 400;
-    font-style: normal;  
-    color: #EB7C30;
-}
+/* Højreliggende */
+    .align_right{text-align: right;}
 
-h4{
-    font-family: ff-dagny-web-pro, sans-serif;
-    font-weight: 300;
-    font-style: normal;
-}
+/* Div med 2 billeder */
+    .two_pics{justify-content: center;}
 
-h5{
-    font-family: ff-dagny-web-pro, sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 100%;
-}
+    .two_pics div{
+        height: 450px;
+        margin: 3%;
+    }
 
-p{
-    font-family: ff-dagny-web-pro, sans-serif;
-    font-weight: 300;
-    font-style: normal;
-}
+/* Div med 3 billeder */  
+    .three_img{
+        justify-content: space-evenly;
+        margin-bottom: 10%;
+    }
 
-.cta_font{
-    font-family: "vinyl", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
+    .three_img div{width: 24%;}
 
-.p_size{
-    font-size: 130%;
-    line-height: 140%;
-}
-
-.italic{
-    font-style: italic;
-}
-
-.merchsection span{
-    font-family: bebas-neue, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-
-/* FONTS MERCH + INSTAGRAM SEKTION */ 
-.merchsection h1{
-    padding-top: 5%;
-    margin-bottom: 5%;
-}
-
-.merchsection h2{
-    font-size: 350%;
-    font-family: poppins, sans-serif;
-    line-height: 70%;
-    font-weight: 400;
-}
-
-.merchsection h3{
-    font-size: 300%;
-}
-
-.merchsection a{
-    color: black;
-    font-family: ff-dagny-web-pro, sans-serif;
-    text-decoration: none;
-    font-size: 130%;  
-}
-
-#overskrift_merch{
-    margin-right: 14%;
-}
+/* Omos stickers */
+    .omos_sticker{width: 20%;}
 
 
 
+
+/* ---------------------------------------------------------- */
+/* LINJER */ 
+    .line_container{position: relative;}
+
+    .lines{
+        z-index: -2;
+        position: absolute;
+        border: #1414DB 8px solid;
+    }
+
+    #lines_index1{
+        border-right: none;
+        right: 0;
+        width: 95%;
+        height: 110%;
+    }
+
+    #lines_index2{
+        border-left: none;
+        left: 0;
+        width: 95%;
+        height: 76%;
+    }
+
+    #lines_omos{
+        right: 14%;
+        top: 14%;
+        height: 96%;
+        width: 100%;
+        border-left: none;
+    }
+
+    #lines_event{
+        height: 98%;
+        width: 94%;
+        top: 8%;
+        right: 0;
+        border-right: none;
+    }
+
+/* LINJER - DOUBLE */ 
+    .double_lines{
+        position: absolute;
+        z-index: -10;
+        border-top: #EB7C30 18px solid;
+        border-bottom: #1414DB 10px solid;
+        height: 35px;
+        width: 100%;
+    }
+
+    #double_lines_index{top: 70%;}
+
+    #double_lines_omos{top: 42%;}
+
+    #double_lines_menu{top: 45%;}
+
+    #double_lines_event{top: 45%;}
+
+
+
+
+/* ---------------------------------------------------------- */ 
 /* KNAPPER */ 
+/* KNAPPER - CALL TO ACTION */
     .whitebutton{
         border: 2px solid #ffffff;
         background-color: #1414DB;
@@ -122,16 +362,22 @@ p{
     background-color: rgb(255, 255, 255);
     }
 
-    #læsmere_button::before{
-        content: 'Læs mere';
-    }
+    #læsmere_button::before{content: 'Læs mere';}
 
-    #omos_button::before{
-        content: 'Om os';
+    #omos_button::before{content: 'Om os';}
+
+    #events_button::before{content: 'Menukort';}
+
+    #events_button{
+        margin-top: 8%;
+        margin-left: 1%;
     }
 
    .cta_button{
-        padding: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 23px;
+        padding-right: 23px;
         font-size: 15px;
         outline: none;
         position: relative;
@@ -161,396 +407,213 @@ p{
         cursor: pointer;
     }
 
+ 
 
-  
 
-    #myBtn {
-        display: none; /* Hidden by default */
-        position: fixed; /* Fixed/sticky position */
-        bottom: 25%; /* Place the button at the bottom of the page */
-        right: 0; /* Place the button 30px from the right */
-        z-index: 99; /* Make sure it does not overlap */
-        border: none; /* Remove borders */
-        outline: none; /* Remove outline */
-        cursor: pointer; /* Add a mouse pointer on hover */
+/* ---------------------------------------------------------- */  
+/* JAVASCRIPT */ 
+/* JAVASCRIPT - MODALVINDUE */ 
+/* Modalvindue - img pile */
+    #modalButton img{
+        width: 100%;
+        height: 100%;
+    }
 
+/* Modalvindue - hover funktion */
+    #modalContainer>div{display: none;}
+
+    #modalContainer>#hoverbox{display: block;}
+
+    #modalContainer:hover>#modalButton{display: block;}
+
+/* Modalvindue - hover pile */
+    #hoverbox{
+        width: 8%;
+        z-index: 1;
+        position: fixed; 
+       
+        border: none;
         background: none;
-        height: 4%;
-        width: 10%;
-       
+        margin-top: 36%;
+        margin-left: 1%;
+        border-left: none;
+        cursor: pointer;
+    }
 
-       
+/* Modalvindue - hover boks */
+    #modalButton{
+        display: none;
+        position: fixed;
+        height: 18%;
+        width: 29%;
+        z-index: 1;
+        margin-top: 34%;
+        margin-left: 1%;
+        padding-left: 1%;
+        color: white;
+        background-color: #F5A83A;
+        font-family: bebas-neue, sans-serif;
+        font-size: 160%;  
+        letter-spacing: 50%; 
+        line-height: 150%; 
+        text-align: left;
+        border: none;
+        cursor: pointer;
+        box-shadow: #EB7C30 10px 10px;
+    }
+
+/* Modalvindue - vindue */
+    .modal{
+        display: none;
+        position: fixed;
+        z-index: 999;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: #000000;
+        background-color: #00000066;
+    }
+
+/* Modalvindue - indhold */
+    .modal-content{
+        background-color: #EB7C30;
+        margin: 4% auto;
+        width: 42%;
+        height: 530px;
+        text-align: center;
+        color: #ffffff;
+        box-shadow: #F5A83A 15px 15px;
+        
+    }
+    
+/* Modalvindue - øl knap */
+    #btnBeer{
+        width: 30%;
+        padding: 2%;
+        font-size: 120%;
+        background-color:#F5A83A;
+        box-shadow: white 5px 5px;
+        border: none;
+        color: white;
+        cursor: pointer;
+        outline: none;
+        position: relative;
+        letter-spacing: 1px;
+        margin: 8% 4% 4% 0;
+    }
+
+    #yourBeer{
+        font-size: 150%;
         font-weight: 800;
-        font-size: 170%;
-        font-family: poppins, sans-serif;
-      }
-      
+        color: #1414DB;
+    }
 
 
+/* Modalvindue - lukke knap */
+    .close{
+        color: #ffffff;
+        float: right;
+        font-size: 320%;
+        font-weight: 800;
+        padding-right: 3%;
+    }
 
+    .close:hover{
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
 
-    
-    
-
-
-/* MODALVINDUE */ 
-
-
-#modalContainer>div{
+/* JAVASCRIPT - TIL TOP FUNKTION */  
+#myBtn {
     display: none;
-}
-
-#modalContainer>#hoverbox{
-    display: block;
-}
-
-#modalContainer:hover>#modalButton{
-    display: block;
-}
-
-#hoverbox{
-    width: 8%;
-    z-index: 1;
     position: fixed;
-    
-    height: 10%;
-    border: none;
+    bottom: 22%;
+    right: 0; 
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    cursor: pointer;
     background: none;
-    margin-top: 36%;
-    margin-left: 1%;
-    border-left: none;
-    cursor: pointer;
-}
-
-#modalButton{
-    display: none;
-    position: fixed;
-    height: 18%;
-    width: 25%;
-    z-index: 1;
-    margin-top: 34%;
-    margin-left: 1%;
-    padding-left: 1%;
-    color: white;
-    background-color: #F5A83A;
-    font-family: bebas-neue, sans-serif;
-    font-size: 160%;  
-    letter-spacing: 50%; 
-    line-height: 150%; 
-    text-align: left;
-    border: none;
-    cursor: pointer;
-    box-shadow: #EB7C30 10px 10px;
-}
-
-
-#modalButton img{
-    width: 100%;
-    height: 100%;
-}
-
-.modal{
-    display: none;
-    position: fixed;
-    z-index: 999;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgb(0,0,0);
-    background-color: rgb(0,0,0,0.4);
-}
-
-.modal-content{
-    background-color: #EB7C30;
-    margin: 5% auto;
-    
-    
-    width: 42%;
-    text-align: center;
-    height: 80%;
-    color: #ffffff;
-    box-shadow: #F5A83A 15px 15px;
-}
-
-.modal-content h1{
-    padding-top: 10%;
-    padding-left: 7%;
-    font-size: 300%;
-}
-
-.modal-content h2{
-    line-height: 115%;
-    padding: 5% 8% 5% 8%;
-}
-
-.modal-content p{
-    font-size: 120%;
-    
-}
-
-
-#btnBeer{
-    width: 30%;
-    height: 7%;
-    margin-top: 8%;
-    font-size: 120%;
-    background-color:#F5A83A;
-    box-shadow: white 5px 5px;
-    border: none;
-    color: white;
-    cursor: pointer;
-}
-
-#yourBeer{
-    font-size: 150%;
+    color: #F27501;
+    text-decoration: underline;
+    height: 4%;
+    width: 10%;
     font-weight: 800;
-    margin-top: 3%;
-    color: #1414DB;
-}
+    font-size: 170%;
+    font-family: poppins, sans-serif;
+  }
 
-.close{
-    color: #ffffff;
-    float: right;
-    font-size: 320%;
-    font-weight: 800;
-   padding-right: 3%;
-}
+  /* JAVASCRIPT - ÅBEN / LUKKET */ 
+    .openclosed p{
+        font-family: poppins, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 140%;
+    }
 
-.close:hover,
-.close:focus{
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
+    #openNow{
+        color: #2cdc00;
+        display: none;
+    }
 
+    #closed{
+        color: #F27501;
+        display: none;
+    }
 
+    /* ÅBEN / LUKKET - ALLE SIDER */
+    #openclosed_omos{
+        position: absolute;
+        top: 5%;
+        right: 10%;
+    }
 
+    #openclosed_event{
+        position: absolute;
+        top: 3%;
+        right: 4%;
+    }
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* KLASSER */
-
-
-
-
-.blue_box{
-    background-color: #1414DB;
-    color: white;
-}
-
-.flexcontainer_row{
-    display: flex;
-    
-}
-.mobile_hidden div{display: none;}
-
-.max_img{
-    max-width: 100%;
-    max-height: 100%;
-}
-
-.center{
-    justify-content: center;
-}
-
-.align_right{
-    text-align: right;
-}
-
-/*
-.container_overlap{
-    position: relative;
-}
-*/
-
-.two_pics{
-    justify-content: center;
-    
-}
-
-.two_pics div{
-    height: 450px;
-    margin: 3%;
-}
-
-
-
-.black_headlines{
-font-size: 300%;
-}
-
-.omos_sticker{
-    width: 20%;
-}
-
-.three_img{
-    justify-content: space-evenly;
-    margin-bottom: 10%;
-}
-
-.three_img div{
-    width: 24%;
-}
-
-.textbox h2{
-    font-size: 300%;
-
-}
-
-.textbox p{
-    font-size: 120%;
-    line-height: 130%;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* ---------------------------------------------------------- */
 /* HEADER LAPTOP */
-header{
-    font-family: bebas-neue, sans-serif;
-    font-weight: 400;
-    font-style: normal; 
-    display: flex;}
+    header{
+        font-family: bebas-neue, sans-serif;
+        font-weight: 400;
+        font-style: normal; 
+        display: flex;
+    }
 
-header img{
-    position: absolute;
-    width: 5%;
-    margin-left: 1.5%;
-    margin-top: 1.5%;}
+    nav{
+        background-color: white;
+        position: fixed;
+        width: 24%;
+        margin-left: 76%;
+        z-index: 1;    
+        padding-top: 11px;
+        padding-bottom: 12px;
+    }
 
-nav{
-    background-color: white;
-    position: fixed;
-    width: 24%;
-    margin-left: 76%;
-    z-index: 1;    
-    padding-top: 11px;
-    padding-bottom: 12px;}
+    nav a{
+        text-decoration: none;
+        color: black;
+        font-size: 150%;
+        margin-left: 7.5%;
+    }
 
-nav a{
-    text-decoration: none;
-    color: black;
-    font-size: 150%;
-    margin-left: 7.5%;}
+/* HEADER LAPTOP - LOGO */
+    header img{
+        position: absolute;
+        width: 5%;
+        margin-left: 1.5%;
+        margin-top: 1.5%;
+    }
 
 /* HEADER MOBIL */
     .sidenav{
@@ -565,9 +628,9 @@ nav a{
         transition: 0.5s;
         padding-top: 5%;
         box-shadow: #F5A83A 10px 10px;
-      }
+    }
       
-      .sidenav a {
+    .sidenav a {
         margin-left: 12%;
         text-decoration: none;
         line-height: 140%;
@@ -578,915 +641,628 @@ nav a{
         font-family: bebas-neue, sans-serif;
         font-weight: 300;
         font-style: normal; 
-
-      }
+    }
       
-      .sidenav a:hover {
-        color: #ffc361;
-      }
+    .sidenav a:hover {color: #ffc361;}
       
-      .sidenav .closebtn {
+    .sidenav .closebtn {
         position: absolute;
         top: 0;
         color: #ffffff;
         right: 25px;
         font-size: 36px;
         margin-left: 50px;
-      }
-
-    .sidenav_logo{
-        height: 60px;
-    }
-    .sidenav_logo img{
-        margin: 20%;
     }
 
+/* HEADER MOBIL - LOGO */
+    .sidenav_logo{height: 60px;}
     
+    .sidenav_logo img{margin: 20%;}
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* ---------------------------------------------------------- */
 /* INDEX */ 
-/* Index første sektion */
-/* - Venstre side - */
-#index_left{
-    text-align: right;
-    padding-right: 2%;
-    width: 55%;
-    padding-bottom: 12%;
-    margin-bottom: 15.5%;
-}
-
-/* - forside font - */
-#overskrift_forside{
-    padding-top: 10%;
-    font-size: 450%;
-    line-height: 140%;
-    letter-spacing: 5px;
-    padding-bottom: 10%;
-    padding-right: 3%; 
-}
+/* Index landingpage */
+/* Venstre side */
+    #index_left{
+        text-align: right;
+        padding-right: 2%;
+        width: 55%;
+        padding-bottom: 12%;
+        margin-bottom: 15.5%;
+    }
 
 /* - højre side - */  
-#index_right{
-    width: 45%;
-    margin-right: 4%;
-    margin-top: 4%;
-    text-align: right;
-}
+    #index_right{
+        width: 45%;
+        margin-right: 4%;
+        margin-top: 4%;
+        text-align: right;
+    }
 
-#index_right div:last-child{
-    float: right;
-}
+    #index_right div:last-child{float: right;}
 
-#index_right h1{
-    line-height: 130%;
-}
-
-
-
-
-
-/* Åben / lukket */ 
-.openclosed p{
-    font-family: poppins, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 140%;
-}
-
-#openNow{
-    color: #2cdc00;
-    display: none;
-}
-
-#closed{
-    color: #F27501;
-    display: none;
-}
-
-
-
-
-
-
-
-
-
-
+    #index_right h1{line-height: 130%;}
 
 
 /* Index PIZZA sektion */
-/* Nyhed overskrift */ 
-#overskrift_nyhed{
-    margin-right: 4%;
-}
+/* - Højre side - */ 
+    #pizzanews div{margin-top: 7%;}
 
-/* - højre side - */ 
-#pizzanews div{
-    margin-top: 7%;
-}
+    #pizzanews div:last-child{width: 30%;}
 
-#pizzanews div:last-child{
-    width: 30%;  
-}
+/* - Venstre side - */ 
+    #pizzanews div:first-child{
+        margin-right: 10%;
+        margin-top: 9%;
+    }
 
-/* - venstre side - */ 
-#pizzanews div:first-child{
-    margin-right: 10%;
-   margin-top: 9%;
-}
+    #pizzanews div:first-child button{
+        margin-top: 8%;
+        margin-left: 2%; 
+    }
 
-#pizzanews div:first-child button{
-    margin-top: 8%;
-    margin-left: 2%; 
-}
+/* Pizza animation */
+    #pizzaTurn{animation: rotateImage 60s linear infinite;}
 
-/* - Pizza der drejer - */
-#pizzaTurn{
-    animation: rotateImage 60s linear infinite;
-    
-}
+    @keyframes rotateImage{
+        0% {transform: rotate(0deg);}
+        100% {transform: rotate(360deg);}
+    }
 
-@keyframes rotateImage{
-    0% {transform: rotate(0deg);}
-    100% {transform: rotate(360deg);}
-}
+/* #TANKENDERTÆLLER */
+    #TANKENDERTÆLLER{margin-top: 20%;}
 
+/* Venstre side */
+    #TANKENDERTÆLLER div:first-child{
+        margin-right: 30%;
+        margin-left: 13%;
+        padding: 3% 15% 3% 3%;
+    }
 
+/* Højre side */
+    #TANKENDERTÆLLER_IMG{
+        width: 30%;
+        position: absolute;
+        margin-left: 45%;
+        margin-top: 15%;
+    }
 
+/* INDEX BOLLEKORT */
+/* Højre side */
+    #bollekort{
+        margin-left: 10%;
+        margin-bottom: 10%;
+        margin-top: 7%;
+        position: relative;
+    }
 
+    #bollekort div:first-child{ 
+        width: 480px;
+        margin-left: 2%;
+    }
 
-/* Index #TANKENDERTÆLLER sektion */
+/* Venstre side */
+    #bollekort div:nth-child(2){
+        margin-top: 25%;
+        width: 43%;
+        padding-top: 3%;
+        padding-bottom: 4%;
+        padding-left: 3%; 
+    }
 
-#TANKENDERTÆLLER{
-    margin-top: 20%;
-}
+    #bollekort div:last-child{
+        position: absolute;
+        width: 15%;
+        margin-left: 70%;
+        margin-top: 16%;
+    }
 
-/* venstre side */
-#TANKENDERTÆLLER div:first-child{
+/* INDEX - INSTAGRAM */
+    #instagramsection{
+        margin-left: 4%;
+        margin-top: 15%;
+    }
 
-    margin-right: 30%;
-    margin-left: 13%;
-    padding: 3% 15% 3% 3%;
-}
+    #instagramsection h2{padding-bottom: 1%;}
 
-/* højre side */
-#TANKENDERTÆLLER_IMG{
-    width: 30%;
-    position: absolute;
-    margin-left: 45%;
-    margin-top: 10%;
-}
+    #img_instagram{
+        justify-content: space-evenly;
+        margin-bottom: 10%;
+        margin-top: 2%;
+    }
 
+    #img_instagram div{height: 270px;}
 
-
-
-/* Index Bollekort sektion */
-/* overskrift */ 
-#overskrift_bollekort{
-    margin-top: 14%;
-    margin-left: 6%;
-}
-
-/* højre side */
-#bollekort{
-    margin-left: 10%;
-    margin-bottom: 10%;
-     margin-top: 7%;
-     position: relative;
-}
-
-#bollekort div:first-child{ 
-    width: 400px;
-    margin-left: 5%;
-}
-
-/* venstre side */
-#bollekort div:nth-child(2){
-    margin-top: 25%;
-    width: 43%;
-    padding-top: 3%;
-    padding-bottom: 4%;
-    padding-left: 3%; 
-}
-
-#bollekort div:last-child{
-    position: absolute;
-    width: 15%;
-    margin-left: 70%;
-    margin-top: 16%;
-}
-
-/* Index Instagram sektion */
-#instagramsection{
-    margin-left: 4%;
-    margin-top: 15%;
-}
-
-#instagramsection h2{
-    padding-bottom: 1%;
-}
-
-#img_instagram{
-    justify-content: space-evenly;
-    margin-bottom: 10%;
-    margin-top: 2%;
-}
-
-#img_instagram div{
-    height: 270px;}
-
-#instagramsection a{
-color: #EB7C30;
-text-decoration: underline;
-font-size: 100%;
-}
-/* højre side */ 
-
-
-/* venstre side */
+    #instagramsection a{
+        color: #000000;
+        text-decoration: none;
+        font-size: 100%;
+        font-family: bebas-neue, sans-serif;
+        font-weight: 300;
+        font-style: normal;
+    }
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* ---------------------------------------------------------- */
 /* OM OS */
-/* Video sektion */
- /* font */
-#videosection{
-    position: relative;
-    padding-top: 2.9%;
-    margin-top: 10%;
-    margin-bottom: 7%;
+/* OM OS - VIDEOSEKTION */
+    #videosection{
+        position: relative;
+        padding-top: 2.9%;
+        margin-top: 10%;
+        margin-bottom: 7%;
+    }
+
+    #videocontainer h1{
+        font-size: 500%;
+        margin-bottom: 5%;
+        line-height: 120%;
+    }
+
+    #videocontainer h2{margin-bottom: 5%;}
+
+    #videocontainer{width: 80%;}
+
+    #videocontainer div:first-child{
+        width: 70%;
+        padding: 5% 20% 5% 5%;   
+    }
+
+    #video_laptop video{
+        position: absolute;
+        left: 40%;
+        bottom: 49%;
+        width: 50%;
+    }
+
+/* OM OS - MERCH SEKTION */
+/* Font - merch sektion */
+.merchsection span{
+    font-family: bebas-neue, sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
-#openclosed_omos{
-    position: absolute;
-    top: 0;
-    right: 5%;
-}
-
- #videocontainer h1{
-    font-size: 500%;
+.merchsection h1{
+    padding-top: 5%;
     margin-bottom: 5%;
-    line-height: 120%;
 }
 
-#videocontainer h2{
-    margin-bottom: 5%;
+.merchsection h2{
+    font-size: 350%;
+    font-family: poppins, sans-serif;
+    line-height: 70%;
+    font-weight: 400;
 }
 
-#videocontainer{
-    width: 80%;
+.merchsection h3{font-size: 300%;}
+
+.merchsection a{
+    color: black;
+    font-family: ff-dagny-web-pro, sans-serif;
+    text-decoration: none;
+    font-size: 130%;  
 }
 
-#videocontainer div:first-child{
-    width: 70%;
-    padding: 5% 20% 5% 5%;   
-}
+/* OM OS - T-SHIRT */
+    #tshirtcontainer{
+        margin-right: 18%;
+        margin-left: 7%;
+        margin-top: 7%;
+        justify-content:space-between;
+    }
 
-#video_laptop video{
-    position: absolute;
-    left: 40%;
-    bottom: 49%;
-    width: 50%;
-    
-}
+    #størrelser{
+        margin-top: 3%;
+        margin-left: 7%;
+        color:#EB7C30;
+        font-size: 120%;
+    }
 
-/* MERCH SEKTION */
-/* T-shirt sektion */
-#tshirtcontainer{
-    margin-right: 18%;
-    margin-left: 7%;
-    margin-top: 7%;
-    justify-content:space-between;
-}
+    #sticker_tshirt{
+        margin-left: 5%;
+        width: 250px;
+        height: 250px;
+    }
 
-#størrelser{
-    margin-top: 3%;
-    margin-left: 7%;
-    color:#EB7C30;
-    font-size: 120%;
-}
+/* OM OS - TOTEBAG */
+    #totebagcontainer{
+        text-align: left;
+        margin-left: 7%;
+        margin-top: 20%;
+        margin-bottom: 5%;
+    }
 
-#sticker_tshirt{
-    margin-left: 5%;
-    width: 250px;
-    height: 250px;
-}
-
-/* Totebag sektion */
-#totebagcontainer{
-    text-align: left;
-    margin-left: 7%;
-    margin-top: 20%;
-    margin-bottom: 5%;
-
-}
-
-#totebagcontainer p{
-    text-align: left;
-}
-
+#totebagcontainer p{text-align: left;}
 
 #sticker_totebag{
     float: right;
     margin-right: 14%;
-
     width: 250px;
     height: 250px;
 }
 
 
 
-
-
-
-
-
-
-
-
-
-
-
+/* ---------------------------------------------------------- */
 /* MENUKORT */
-
-.menu_section{
-    margin-top: 70px;
-    margin-left: 35px;
-    margin-right: 35px;
-    flex-grow: 1;
-}
-
-.menu_kategori{
-    padding-left: 10px;
-    padding-top: 10px;    
-}
-
-.menu_line{
-    margin-top: 1%;
-    margin-bottom: 3%;
-
-}
-
-.menu_item{
-    justify-content: space-between;
-    position: relative; 
-}
-
-.menu_item h4{
- color: #1414DB;
- font-size: 120%;
- padding-bottom: 3%;
-
-}
-
-.menu_price{
-    text-align: right;
-}
-
-.menu_price h5{
-    padding-bottom: 118px;
-}
-
-.menu_item p{
-    padding-top: 4px;
-    padding-bottom: 3px;
-    font-size: 90%;
-}
-
-.end_margin{
-    margin-right: 85px;
-}
-
-.bottom_right{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    
-}
-
-.icon{
-    height: 55px;
-    width: 55px; 
- 
-}
-
-.menu_item_width{
-    width: 300px;    
-}
-
-#middagaften{
-    position: relative;
-
-}
-
-/* stickers */
-#sticker_toast{
-    position: absolute;
-    height: 200px;
-    width: 200px;
-    top: 40%;
-    left: 95%;
-}
-
-#sticker_drink{
-    position: absolute;
-    height: 200px;
-    bottom: 0;
-    left: 5%;
-}
-
-#sticker_bollekort{
-    position: absolute;
-    height: 200px;
-    right: 8%;
-    bottom: 70%;
-}
-
-/* pizza sektion */
-#mefisto_spacing div:nth-child(3), #mefisto_spacing div:nth-child(5){
-    padding-bottom: 4%;
-}
-
-#mefisto_spacing h4{
-    padding-top: 10%;
-}
-
-#mefisto_spacing h3{
-    padding-top: 13%;
-    font-size: 150%;
-}
-
-#mefisto_spacing{
-    width: 500px;
-}
-
-#mefisto_img{
-    width: 500px;
-    height: 560px;
-    margin-right: 5%;
-    background-image: url(images/mefisto.pizza.jpg);
-    background-size: cover;
-    background-position: bottom;
-    background-repeat: no-repeat;
-}
-
-/* inforgraphic */
-#infographic_beer{
-    width: 450px;
-    height: 800px;
-    margin: 5% 3% 5% 0;
-   
-    text-align: right;
-}
-
-#infographic_drink{
-    width: 740px;
-    height: 470px;
-    margin: 3% 3% 7% 0;
-    position: relative;
-}
-
-.space_between{
-    justify-content: space-between;
-}
-
-/* Bollekort */
-#menu_bollekort_img{
-    width: 450px;
+.menukort_margin{
+    margin-left: 3%;
     margin-right: 3%;
-
 }
 
-#menu_bollekort_section{
-    position: relative;
-    height: 400px;
-    margin-top: 15%;
-    margin-bottom: 10%;
-    outline: 8px solid #1414DB;
-    outline-offset: 10px;
-    align-items: center;
-    justify-content: center;
-}
+/* MENUKORT - LINKS TOP */
+    #menu_navigation{
+        position: absolute;
+        top: 40px;
+        right: 0;
+        list-style: none;  
+        text-align: right;  
+        width: 10%;
+    }
+
+    #menu_navigation a{
+        color: black;
+        line-height: 90%;
+        font-family: bebas-neue, sans-serif;
+        font-weight: 600;
+        font-size: 150%;
+        text-decoration: none;
+    }
+
+
+/* MENUKORT - INDHOLD */
+    .menu_section{
+        margin-top: 70px;
+        margin-left: 80px;
+        margin-right: 80px;
+        flex-grow: 1;
+    }
+
+    .menu_kategori{
+        padding-left: 10px;
+        padding-top: 10px;    
+    }
+
+    .menu_line{
+        margin-top: 1%;
+        margin-bottom: 3%;
+    }
+
+    .menu_item{
+        justify-content: space-between;
+        position: relative; 
+    }
+
+    .menu_item h4{
+        color: #1414DB;
+        font-size: 120%;
+        padding-bottom: 3%;
+    }
+
+    .menu_price{text-align: right;}
+
+    .menu_price h5{padding-bottom: 118px;}
+
+    .menu_item p{
+        padding-top: 4px;
+        padding-bottom: 3px;
+        font-size: 90%;
+    }
+
+    .end_margin{margin-right: 85px;}
+
+    .bottom_right{
+        position: absolute;
+        bottom: 0;
+        right: 0; 
+    }
+
+    .icon{
+        height: 55px;
+        width: 55px; 
+    }
+
+    .menu_item_width{width: 300px;}
+
+    #middagaften{position: relative;}
+
+    #snacks{width: 90%;}
+
+    #vin{width: 90%;}
+
+    #drinks{width: 90%;}
+
+/* MENUKORT - STICKERS */
+    #sticker_toast{
+        position: absolute;
+        height: 200px;
+        width: 200px;
+        top: 40%;
+        left: 95%;
+    }
+
+    #sticker_drink{
+        position: absolute;
+        right: 75%;
+        top: 60%;
+        height: 200px;
+        width: 200px;
+    }
+
+    #sticker_bollekort{
+        position: absolute;
+        height: 200px;
+        right: 8%;
+        bottom: 70%;
+    }
+
+/* MENUKORT - PIZZA SEKTION */
+    #mefisto_spacing div:nth-child(3), 
+    #mefisto_spacing div:nth-child(5){padding-bottom: 4%;}
+
+    #mefisto_spacing h4{padding-top: 10%;}
+
+    #mefisto_spacing h3{
+        padding-top: 13%;
+        font-size: 150%;
+    }
+
+    #mefisto_spacing{width: 500px;}
+
+    #mefisto_img{
+        width: 500px;
+        height: 560px;
+        margin-right: 5%;
+        background-image: url(images/mefisto.pizza.jpg);
+        background-size: cover;
+        background-position: bottom;
+        background-repeat: no-repeat;
+    }
+
+/* MENUKORT - INFOGRAPHICS */
+    #infographic_beer{
+        width: 400px;
+        height: 750px;
+        margin: 13% 5% 5% 0;
+        text-align: right;
+    }
+
+    #infographic_drink{
+        width: 740px;
+        height: 470px;
+        margin: 3% 3% 7% 0;
+        position: relative;
+    }
+
+    .space_between{justify-content: space-between;}
+
+/* MENUKORT - BOLLEKORT */
+    #menu_bollekort_img{
+        width: 450px;
+        margin-right: 3%;
+    }
+
+    #menu_bollekort_section{
+        position: relative;
+        height: 400px;
+        margin-top: 15%;
+        margin-bottom: 10%;
+        outline: 8px solid #1414DB;
+        outline-offset: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #menu_bollekort_section div:nth-child(2){width: 40%;}
+
+/* MENUKORT - OVERSKRIFTER */
+    #menu_titeltop{
+        margin-top: 20%;  
+        margin-bottom: 5%;
+        position: relative;  
+    }
+
+    #menu_titeltop h1{
+        font-size: 500%;
+    }
+
+    .menu_titeltop_h2{
+        font-size: 200%;
+        padding-top: 4%;
+        color: #EB7C30;
+        margin-left: 2%;
+    }
 
 
 
-#menu_bollekort_section div:nth-child(2){
-   width: 40%;
-}
-
-
-/* Menukort overskrifter */
-#menu_titeltop{
-    margin-top: 20%;  
-    margin-bottom: 5%;
-    position: relative;  
-}
-
-#menu_titeltop h1{
-    font-size: 500%;
-}
-
-#menu_titeltop h2{
-    font-size: 200%;
-    padding-top: 4%;
-    color: #EB7C30;
-}
-
-/* Menukort links top */
-#menu_navigation{
-    position: absolute;
-    top: 40px;
-    right: 0;
-    list-style: none;  
-    text-align: right;  
-    width: 10%;
-}
-
-#menu_navigation a{
-    color: black;
-    line-height: 90%;
-    font-family: bebas-neue, sans-serif;
-    font-weight: 600;
-    font-size: 150%;
-    text-decoration: none;
-}
-
-
-
-
+/* ---------------------------------------------------------- */
 /* EVENTS */
-/* Denne uge sektion */
-#overskrift_denneuge{
-    margin-top: 17%;
-    margin-left: 6%;
-}
+/* EVENTS DENNE UGE */ 
+    #denneuge{
+        padding:5%;
+        margin-top: 3%;
+        margin-bottom: 13%;
+    }
 
-#denneuge{
-    padding:5%;
-    margin-top: 3%;
-    margin-bottom: 13%;
-}
+/* Venstre side */
+    #denneuge div:first-child{
+        width: 40%;
+        margin-right: 5%;
+    }
 
-#openclosed_event{
-    position: absolute;
-    top: 3%;
-    right: 4%;
-}
-
-/* venstre side */
-#denneuge div:first-child{
-    width: 40%;
-    margin-right: 5%;
-}
-
-/* højre side */ 
-#denneuge div:last-child{
-    width: 40%;   
-}
+/* Højre side */ 
+    #denneuge div:last-child{width: 40%;}
 
 
+/* OM OS - KOMMENDE EVENTS */
+    #events{
+        width: 80%;
+        margin-left: 10%;
+        padding: 1%;
+        margin-bottom: 9%;
+    }
 
+    #kommendeevents{padding-bottom: 3%;}
 
+    #kommendeevents div{
+        padding: 0 3% 1% 3%;
+        width: 33%;
+    }
 
+    #kommendeevents div:nth-child(2){
+        border-left: 2px solid white;
+        border-right: 2px solid white;
+    }
 
-/* Kommende events sektion */
-#events{
-  width: 80%;
-  margin-left: 10%;
-  padding: 1%;
-  margin-bottom: 9%;
-}
+    #kommendeevents h2{
+        line-height: 29px;
+        padding-bottom: 4%;
+    }
 
-#kommendeevents{
-padding-bottom: 3%;
+    #kommendeevents p{font-size: 120%;}
 
-}
-
-#overskrift_kommendeevents{
-    font-size: 300%; 
-    padding: 3% 0 3% 3%;
-}
-
-#kommendeevents div{
-    padding: 0 3% 1% 3%;
-    width: 33%;
-}
-
-#kommendeevents div:nth-child(2){
-    border-left: 2px solid white;
-    border-right: 2px solid white;
-}
-
-#kommendeevents h2{
-line-height: 29px;
-padding-bottom: 4%;
-}
-
-#kommendeevents p{
-    font-size: 120%;
-}
+/* OM OS - EVENTS BILLEDER*/ 
+    #events_img{margin-bottom: 8%;}
 
 
 
 
+/* ---------------------------------------------------------- */
+/* 404 FEJLSIDE */
+    #box_404{
+        height: 800px;
+        text-align: right;
+    }
+
+    #box_404_big{
+        font-size: 850%;
+        line-height: 80%;
+        padding-top: 15%;
+        padding-right: 20%;
+    }
+
+    #box_404_small{
+        font-size: 380%;
+        line-height: 140%;
+        padding-right: 20%;
+        padding-bottom: 1%;
+    }
+
+    #box_404 div{width: 100%;}
+
+    #box_404_line{
+        height: 3%;
+        background-color: #EB7C30;
+        border-bottom: 7px solid white;
+    }
+
+    #box_404_line2{
+        height: 1%;
+        background-color: #1414DB; 
+    }
+
+    #box_404 p{
+        font-size: 140%;
+        padding-right: 20%;
+        padding-top: 2%;
+    }
+
+    #box_404 a{
+        font-size: 140%;
+        color: black;
+        font-family: ff-dagny-web-pro, sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        text-decoration: none;
+    }
+
+    #box_404 span{
+        font-family: bebas-neue, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 100%;
+        padding-right: 0.4%;
+        padding-left: 0.4%;
+    }
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* ---------------------------------------------------------- */
 /* FOOTER */
+   footer{
+        font-size: 70%;
+        padding: 1%;
+        outline: 8px solid #1414DB;
+        outline-offset: 10px;
+    }
 
-footer{
-    font-size: 70%;
-    padding: 1%;
-}
+    footer a{color: white;}
 
-footer a{
-    color: white;
-}
-
-footer h2{
-    font-size: 150%;
-    line-height: 120%;
-    font-weight: 200;
-}
+    footer h2{
+        font-size: 150%;
+        line-height: 120%;
+        font-weight: 200;
+    }
 
 /* venstre side */
-footer div{
-    width: 33%;
-}
+    footer div{width: 33%;}
 
-footer div h1:first-child{
-    margin-bottom: 7%;
-}
-
-
+    footer div h1:first-child{margin-bottom: 7%;}
 
 /* midten */
-footer div:nth-child(2){
-    text-align: center;
-}
+    footer div:nth-child(2){
+        text-align: center;
+    }
 
-footer div:nth-child(2) img{
-    width: 20%;
-    padding-top: 7%;
-    
-}
+    footer div:nth-child(2) img{
+        width: 20%;
+        padding-top: 7%;  
+    }
 
+    #white_line{
+        height: 6px;
+        width: 100%;
+        background-color: rgb(180, 35, 35);
+        z-index: 999;  
+    }
 
+    i{
+        font-size: 350%;
+        margin-left: 5%;
+        margin-top: 14%;
+        margin-bottom: 4%;
+    }
 
 
 
-i{
-    font-size: 350%;
-    margin-left: 5%;
-    margin-top: 14%;
-    margin-bottom: 4%;
-}
 
-
-
-
-
-
-body{
-    width: 100%;
-    overflow-x: hidden;
-
-}
-
-.line_container{
-    position: relative;
-}
-
-.lines{
-    z-index: -2;
-    position: absolute;
-    border: #1414DB 8px solid;
-}
-
-#lines_index1{
-    border-right: none;
-    right: 0;
-
-    width: 95%;
-    height: 110%;
-}
-
-#lines_index2{
-    border-left: none;
-    left: 0;
-
-    width: 95%;
-    height: 76%;
-}
-
-#lines_omos{
-    right: 14%;
-    top: 14%;
-    height: 96%;
-    width: 100%;
-    
-    border-left: none;
-}
-
-#lines_event{
-    height: 98%;
-    width: 94%;
-    top: 8%;
-    right: 0;
-    border-right: none;
-}
-
-.double_lines{
-    position: absolute;
-    z-index: -10;
-    border-top: #EB7C30 18px solid;
-    border-bottom: #1414DB 10px solid;
-    
-    height: 35px;
-    width: 100%;
-}
-
-#double_lines_index{
-    top: 70%;
-}
-
-#double_lines_omos{
-    top: 42%; 
-}
-
-#double_lines_menu{
-    top: 45%;
-}
-
-#double_lines_event{
-    top: 45%;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 404 side */
-
-#box_404{
-    height: 1000px;
-    text-align: right;
-
-
-}
-
-#box_404_big{
-    font-size: 850%;
-    line-height: 80%;
-    padding-top: 15%;
-    padding-right: 20%;
-}
-
-
-#box_404_small{
-    font-size: 380%;
-    line-height: 140%;
-
-    padding-right: 20%;
-    padding-bottom: 1%;
-}
-
-
-#box_404 div{
-    width: 100%;
-}
-
-#box_404_line{
-    height: 3%;
-    background-color: #EB7C30;
-    border-bottom: 7px solid white;
-    
-}
-
-#box_404_line2{
-    height: 1%;
-    background-color: #1414DB;
-
-    
-}
-
-
-#box_404 p{
-    font-size: 140%;
-    padding-right: 20%;
-    padding-top: 2%;
-}
-
-#box_404 a{
-    font-size: 140%;
-    padding-right: 20%;
-    color: black;
-    font-family: ff-dagny-web-pro, sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    
-}
-
-
-
-
-
-
-
-
-
-
-
-
+/* ---------------------------------------------------------- */
 /* RESPONSIVE */
  /* LAPTOP */
-@media only screen and (min-width: 600px){
+    @media only screen and (min-width: 600px){
 
 /* Display none */
-    .laptop_hidden{display: none;}
-    
-
-}
+    .laptop_hidden{display: none;}}
 
 
 
- /* MOBILE */
-  @media only screen and (max-width: 768px){
+
+/* ---------------------------------------------------------- */
+/* RESPONSIVE */
+/* RESPONSIVE - MOBILE */
+    @media only screen and (max-width: 768px){
 
 
-/* DISPLAY - NONE */   
+/* RESPONSIVE - DISPLAY : NONE */   
     .mobile_hidden{display: none;}
     .laptop_hidden{display: block;}
 
-/* KLASSER RESPONSIVE */ 
+/* RESPONSIVE - KLASSER */ 
     .flexcontainer_row{
         display: flex;
         flex-wrap: wrap; 
@@ -1507,8 +1283,13 @@ body{
         margin-left: 3%;
     }
 
-/* JAVASCRIPT RESPONSIVE */
-/* "TIL TOPPEN" knap responsive */
+    .two_pics{flex-direction: column;}
+
+
+
+/* ---------------------------------------------------------- */
+/* RESPONSIVE - JAVASCRIPT */
+/* RESPONSIVE - "TIL TOPPEN" KNAP */
     #myBtn{
     bottom: 10%;
     right: 1%;
@@ -1516,7 +1297,7 @@ body{
     line-height: 110%;
     }
 
-/* Øl spil responsive */
+/* RESPONSIVE - ØL SPIL */
     #hoverbox{
     width: 10%;
     bottom: 5%;
@@ -1529,7 +1310,7 @@ body{
     height: 10%;
     }
 
-/* NAV RESPONSIVE */
+/* RESPONSIVE - NAV */
     .laptop_hidden span{
         cursor: pointer;
         float:right;
@@ -1540,16 +1321,14 @@ body{
         position: static;  
     }
 
-    #white_burger span{
-        color: #ffffff;}
+    #white_burger span{color: #ffffff;}
 
 
 
 
-
-
-/* INDEX RESPONSIVE */
-/* Forside */
+/* ---------------------------------------------------------- */
+/* RESPONSIVE - INDEX */
+/* RESPONSIVE - INDEX - FORSIDE */
     #index_left{
         margin-bottom: 0;
         width: 100%;
@@ -1570,7 +1349,7 @@ body{
         margin-bottom: 10%;
     }
 
-/* Pizza nyhed */
+/* RESPONSIVE - INDEX - PIZZA NYHED */
     #pizzanews div{
         margin: 5%;
         font-size: 80%;
@@ -1583,11 +1362,12 @@ body{
     }
 
     #overskrift_nyhed{
-        padding-right: 8%;
+        padding-right: 12%;
         margin-left: 3%;
+        margin-right: 0;
     }
 
-/* #TANKENDERTÆLLER */
+/* RESPONSIVE - INDEX - #TANKENDERTÆLLER */
     #TANKENDERTÆLLER div:first-child{
         width: 100%;
         margin: 0;
@@ -1595,18 +1375,9 @@ body{
         padding: 10%; 
     }
 
-    #TANKENDERTÆLLER div:first-child p{
-        width: 95%; 
-    }
+    #TANKENDERTÆLLER div:first-child p{width: 95%;}
 
-/* Bollekort */
-    #overskrift_merch{
-        margin-top: 14%;
-        margin-left: 3%;
-        margin-right: 3%;
-        padding-right: 3%;
-    }
-
+/* RESPONSIVE - INDEX - BOLLEKORT */
     #bollekort{
         width: 100%;
         margin: 0;
@@ -1636,7 +1407,7 @@ body{
         width: 30%;
     }
 
-/* Instagram */
+/* RESPONSIVE - INDEX - INSTAGRAM */
     #instagramsection{
         margin: 0;
         margin-top: 20%;
@@ -1656,15 +1427,14 @@ body{
     }
 
 
-/* OM OS */
-/* Video sektion */
-    #openclosed_omos{
-    padding-top: 10%;
-    }
 
-    #video_mobile video{
-        width: 100%;
-    }
+
+/* ---------------------------------------------------------- */
+/* RESPONSIVE - OM OS */
+/* RESPONSIVE - OM OS - VIDEO SEKTION */
+    #openclosed_omos{padding-top: 10%;}
+
+    #video_mobile video{width: 100%;}
 
     #videocontainer{
         width: 100%;
@@ -1687,8 +1457,15 @@ body{
         padding-left: 7%;
     }
 
-/* Merch sektion */
-/* T-shirt */
+/* RESPONSIVE - OM OS - MERCH SEKTION */
+    #overskrift_merch{
+        margin-top: 14%;
+        margin-left: 3%;
+        margin-right: 0;
+        padding-right: 3%;
+    }
+
+/* RESPONSIVE - OM OS - T-SHIRT */
     #tshirtcontainer{
         width: 82%;
         font-size: 75%;
@@ -1709,9 +1486,7 @@ body{
         margin-left: 10%; 
     }
 
-
-
-/* Totebag */
+/* RESPONSIVE - OM OS - TOTEBAG */
     #totebagcontainer{
         width: 90%;
         font-size: 80%;
@@ -1738,303 +1513,247 @@ body{
 
 
 
+/* ---------------------------------------------------------- */
+/* RESPONSIVE - MENUKORT */
+/* RESPONSIVE - MENUKORT TOP */
+    #menu_titeltop h1{
+        font-size: 340%;
+        margin-bottom: 5%;
+        margin-left: 0;
+    }
+
+    .menu_section{
+        margin-left: 35px;
+        margin-right: 0;  
+    }
+
+/* RESPONSIVE - MENUKORT LINK LISTE */
+    #menu_navigation_mobile a{
+        color: black;
+        line-height: 90%;
+        font-family: bebas-neue, sans-serif;
+        font-weight: 600;
+        font-size: 150%;
+        text-decoration: none;
+    }
+
+    #menu_navigation_mobile{
+        right: 0;
+        list-style: none;  
+        text-align: right; 
+        margin-right: 5%;  
+    }
+
+/* RESPONSIVE - MENUKORT INDHOLD */
+    .menu_line{
+        flex-wrap: wrap;
+        font-size: 90%; 
+        width: 90%;
+    }
+
+    .menu_item{
+        margin-bottom: 5%;
+        width: 133%;  
+    }  
+
+    .menu_price{margin-left: 10%;}
+
+    .icon{
+        width: 15%;
+        margin-top: 2.5%;
+        margin-left: 2%;
+    }
+
+    .menu_section{margin-top:7%;}    
+
+/* RESPONSIVE - MENUKORT - STICKERS */
+    #sticker_toast_mobile{
+        width: 50%;
+        margin-left: 20%;
+        margin-right: 20%;
+        margin-top: 10%;
+    }
+
+    #sticker_bollekort{
+        position: absolute;
+        height: 200px;
+        right: 0%;
+        bottom: 86%; 
+    }
+
+    #sticker_bollekort img{width: 70%;}
+
+/* RESPONSIVE - MENUKORT - PIZZA */
+    #mefisto_spacing{
+        width: 400px;
+        margin-right: 0;
+    }
+
+    #mefisto_spacing .menu_item{width: 400px;}
+
+    #mefisto_img_mobile div{
+        width: 100%; 
+        bottom: 0;
+    }
+
+    #pizza_icon_mobile img{
+        width: 100%;
+        margin-top: 5%;
+        margin-left: 0;
+        bottom: 0;
+    }
+
+    #pizza_icon_mobile{
+        margin-bottom: 0;
+        width: 15%;
+        margin-top: 1%;  
+    }
+
+    .menu_item h3{top: 0;}
+
+    #mefisto_spacing p{font-size: 80%;}
+
+    #mefisto_spacing h1{
+        margin-top: 5%;
+        font-size: 200%;
+    }
+
+    #mefisto_spacing div:nth-child(3), 
+    #mefisto_spacing div:nth-child(5){padding-bottom: 0;}
+
+    #mefisto_spacing h3, 
+    #mefisto_spacing h4{padding-top: 0;}
+
+/* RESPONSIVE - MENUKORT - BOLLEKORT */
+    #menu_bollekort_section{
+        flex-direction: column;
+        height: 800px;
+        width: 100%;
+        margin-top: 20%;
+    }
+
+    #menu_bollekort_img{
+        width: 70%;
+        margin-bottom: 10%;
+    }
+
+    #menu_bollekort_section div:nth-child(2){
+        width: 70%;
+        font-size: 80;
+    }
+
+/* RESPONSIVE - MENUKORT - INFOGRAPHIC */
+    #infographic_beer_mobile{
+        width: 40%;
+        margin-left: 35%;
+        margin-top: 5%;
+        margin-bottom: 5%; 
+    }
+
+    #infographic_drink_mobile{
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+    #sticker_drink_mobile{
+        position: absolute;
+        width: 25%;
+        margin-left: 10%;
+        margin-top: 40%;
+    }
 
 
 
 
+/* ---------------------------------------------------------- */
+/* RESPONSIVE - EVENTS */
+/* RESPONSIVE - EVENTS - DENNE UGE */
+    #openclosed_event{
+        position: absolute;
+        top: 1%;
+        right: 4%;
+    }
+
+    #overskrift_denneuge{padding-left: 2%;}
+
+    #denneuge div:first-child{
+        width: 60%;
+        margin-right: 30%;
+    }
+
+    #denneuge p{
+        width: 150%;
+        font-size: 90%;
+    }
+
+    #denneuge h2{
+        width: 150%;
+        font-size: 100%;
+    }
+
+/* RESPONSIVE - EVENTS - KOMMENDE EVENTS */
+    #events{
+        margin-top: 10%;
+        font-size: 90%;
+    }
+
+    #kommendeevents div:nth-child(2){
+        border-bottom: 2px solid white;
+        border-top: 2px solid white;
+        border-left: 0;
+        border-right: 0;
+        padding-top: 7%;
+        padding-bottom: 7%;
+    }
+
+    #kommendeevents div{
+        margin-bottom: 7%;
+        width: 100%;
+    }
+
+    #kommendeevents div p{margin-top: 3%;}
 
 
 
+/* ---------------------------------------------------------- */
+/* RESPONSIVE - 404 FEJLSIDE */
+    #box_404{height: 600px;}
 
 
-/* MENUKORT*/
 
-#menu_titeltop{
-    font-size: 80%;
+/* ---------------------------------------------------------- */
+/* RESPONSIVE - FOOTER */
+    footer{
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        text-align: center;
+        font-size: 60%;
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+
+    footer div{
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;  
+    }
+
+    footer div:last-child{
+        text-align: center;
+        width: 100%;  
+    }
+
+    footer i{
+        margin-left: 0;
+        margin-top: 5%;
+        padding: 1%;
+    }
+
 }
-
-
-.menu_line{
-    flex-wrap: wrap;
-    font-size: 90%;  
-}
-
-.menu_item{
-    margin-bottom: 5%;
-    width: 120%;
-}  
-
-.menu_price{  
-    margin-left: 10%;
-}
-
-.icon{
-    width: 8%;
-    margin-top: 2.5%;
-}
-
-#sticker_toast_mobile{
-    width: 50%;
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-top: 10%;
-}
-
-/* Link liste menukort */
-#menu_navigation_mobile a{
-    color: black;
-    line-height: 90%;
-    font-family: bebas-neue, sans-serif;
-    font-weight: 600;
-    font-size: 150%;
-    text-decoration: none;
-}
-
-#menu_navigation_mobile{
-    right: 0;
-    list-style: none;  
-    text-align: right;  
-}
-
-/* pizza menukort */
-
-#mefisto_spacing{
-    width: 300px;
-}
-
-#mefisto_img_mobile div{
-    width: 100%; 
-    bottom: 0;
-}
-
-#pizza_icon_mobile img{
-    width: 100%;
-    width: 20%;
-    margin-top: 5%;
-    bottom: 0;
-}
-
-#pizza_icon_mobile{
-    margin-bottom: 0;
-   width: 45%;
-   padding-left: 8%;
-}
-
-.menu_item h3{
-    top: 0;  
-}
-
-#mefisto_spacing p{
-    font-size: 80%;
-}
-
-#mefisto_spacing h1{
-    margin-top: 5%;
-    font-size: 200%;
-}
-
-#mefisto_spacing div:nth-child(3), #mefisto_spacing div:nth-child(5){
-    padding-bottom: 0;
-}
-
-#mefisto_spacing h3{
-    padding-top: 0;
-}
-
-#mefisto_spacing h4{
-    padding-top: 0;
-}
-
-
-/* bollekort */
-#menu_bollekort_section{
-    flex-direction: column;
-    height: 800px;
-    width: 100%;
-    margin-top: 20%;
-}
-
-#menu_bollekort_img{
-    width: 70%;
-    margin-bottom: 10%;
-}
-
-#sticker_bollekort{
-    position: absolute;
-    height: 200px;
-    right: 0%;
-    bottom: 86%; 
-}
-
-#sticker_bollekort img{
-    width: 70%;
-}
-
-#menu_bollekort_section div:nth-child(2){
-    width: 70%;
-    font-size: 80;
- }
-
-.two_pics{flex-direction: column;}
-
- #infographic_beer_mobile{
-    width: 40%;
-    margin-left: 40%;
-    margin-top: 5%;
-    margin-bottom: 5%; 
- }
-
- #infographic_drink_mobile{
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 10%;
-    margin-bottom: 10%;
- }
-
- #sticker_drink_mobile{
-    width: 50%;
-    margin-left: 30%;
- }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* EVENTS */
-/* Denne uge */
-#openclosed_event{
-    position: absolute;
-    top: 1%;
-    right: 4%;
-}
-
-#overskrift_denneuge{
-    margin-left: 3%;
-    margin-right: 3%;
-    padding-left: 2%;
-}
-
-#denneuge div:first-child{
-    width: 60%;
-    margin-right: 30%;
-}
-
-#denneuge p{
-    width: 150%;
-    font-size: 90%;
-}
-
-#denneuge h2{
-    width: 150%;
-    font-size: 100%;
-}
-
-/* Kommende events */
-#events{
-    margin-top: 10%;
-    font-size: 90%;
-}
-
-#kommendeevents div:nth-child(2){
-    border-bottom: 2px solid white;
-    border-top: 2px solid white;
-    border-left: 0;
-    border-right: 0;
-    padding-top: 7%;
-    padding-bottom: 7%;
-}
-
-#kommendeevents div{
-    margin-bottom: 7%;
-    width: 100%;
-}
-
-#kommendeevents div p{
-    margin-top: 3%;
-}
-
-
-
-/* FOOTER */
-footer{
-    font-size: 50%;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  }
 
 
 

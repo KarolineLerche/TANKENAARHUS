@@ -28,68 +28,56 @@
 
 <body>
 <!-- ØL SPIL -->
-
-<div id="modalContainer">
-    <button id="hoverbox"><img src="images/arrowright.svg" alt="#"></button>
-    <button id="modalButton">For mange muligheder? <br> - Tryk her og lad Tanken vælge din næste øl!</button>
-        <div id="myModal" class="modal">
+    <div id="modalContainer">
+        <button id="hoverbox"><img src="images/arrowright.svg" alt="#"></button>
+        <button id="modalButton">For mange muligheder? <br> - Tryk her og lad Tanken vælge din næste øl!</button>
+            <div id="myModal" class="modal">
             
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <h1>Brug for hjælp til at vælge?</h1>
-                <h2>
-                    Hvis du går med tanken om at prøve noget nyt,
-                    så lad os vælge din næste øl for dig! <br>
-                </h2>
-                <p> Alt du skal gøre, er at trykke på knappen nedenunder,<br>
-                    så finder vi en øl til dit næste besøg på TANKEN </p>
-
-                   
-                <button id="btnBeer" class="cta_font">INSPIRER MIG</button>
-                <h2 id="yourBeer"></p>
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h1>Brug for hjælp til at vælge?</h1>
+                    <h2>Hvis du går med tanken om at prøve noget nyt,
+                        så lad os vælge din næste øl for dig! <br> </h2>
+                    <p> Alt du skal gøre, er at trykke på knappen nedenunder,<br>
+                        så finder vi en øl til dit næste besøg på TANKEN </p>
+                    <button id="btnBeer" class="cta_font">INSPIRER MIG</button>
+                    <h2 id="yourBeer"></p>
+                </div>
             </div>
-        </div>
     </div>
 
-
-<button onclick="topFunction()" id="myBtn" title="Go to top">TIL TOP</button>
-
-
-
+<!-- LINK TIL TOP -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">TIL TOP</button>
 
 <!-- HEADER -->
-<header>
-    <section class="mobile_hidden">
-        <a href="index.html"><img class="max_img" src="images/hvid_logo.png" alt="Forside Logo"></a>    
-        <nav>
-            <a href="om.html"> Om os</a>
-            <a href="menukort.html"> Menukort </a>
-            <a href="events.html"> Events </a>
-        </nav> 
-    </section>
-</header>
-    <section class="laptop_hidden" id="white_burger">
-        <div class="flexcontainer_row blue_box space_between">
-            <div class="sidenav_logo">
+    <header>
+        <section class="mobile_hidden blue_box">
+            <a href="index.html"><img class="max_img" src="images/hvid_logo.png" alt="Forside Logo"></a>    
+            <nav>
+                <a href="om.html"> Om os</a>
+                <a href="menukort.html"> Menukort </a>
+                <a href="events.html"> Events </a>
+            </nav> 
+        </section>
+    </header>
+
+    <section class="laptop_hidden blue_box">
+        <div class="flexcontainer_row space_between">
+            <div class="sidenav_logo" >
                 <a href="index.html"><img class="max_img" src="images/hvid_logo.png" alt="Forside Logo"></a>   
             </div>
-            <div>
-                <span onclick="openNav()"><i class="fa-solid fa-bars"></i></span>
+            <div id="white_burger"><span onclick="openNav()"><i class="fa-solid fa-bars"></i></span></div>
             </div>
-        </div>
-
-        <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="index.html"> Forside </a>
-            <a href="om.html"> Om os</a>
-            <a href="menukort.html"> Menukort </a>
-            <a href="events.html"> Events </a>
-        </div>
-
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="index.html"> Forside </a>
+                <a href="om.html"> Om os</a>
+                <a href="menukort.html"> Menukort </a>
+                <a href="events.html"> Events </a>
+            </div>
     </section>
 
-
-
+<!-- MAIN -->
 <main>
 
  <!-- FORSIDE -->
@@ -97,7 +85,7 @@
         <div class="flexcontainer_row" >
             <div class="blue_box" id="index_left">
                 <h1 id="overskrift_forside"> TANKEN<br>Aarhus C<br>Graven<br>26</h1>
-                <button class="cta_button whitebutton" id="omos_button" onclick=" window.open('om.html','_self')"> Om os </button>
+                <button class="cta_button whitebutton cta_font" id="omos_button" onclick=" window.open('om.html','_self')"> Om os </button>
             </div>
             <div id="index_right">
                 <div>
@@ -128,7 +116,7 @@
                     pizza, og den bliver leveret lige til dig på Tanken. 
                 </p>
 
-                <button class="cta_button bluebutton" id="læsmere_button" onclick=" window.open('menukort.html','_self')"> Læs mere </button>
+                <button class="cta_button bluebutton cta_font" id="læsmere_button" onclick=" window.open('menukort.html','_self')"> Læs mere </button>
             </div>  
             <div>
                 <img class="max_img" id="pizzaTurn" src="images/pizza.png" alt="Pizza Illustration">
@@ -190,7 +178,7 @@
             <h3>Instagram</h3>
             <br>
             <p class="p_size">
-                På vores Instagram <a href="#">@tankenigraven</a> hvor du kan følge <br>med i kommende events 
+                På vores Instagram <a href onclick=" window.open('https://www.instagram.com/tankenigraven/','_blank')">@tankenigraven</a> kan du følge med <br> i kommende events 
                 og deltage i fede konkurrencer.
             </p>
             <br>
@@ -199,10 +187,10 @@
     
     <!-- Instagram billeder -->
         <div class="flexcontainer_row" id="img_instagram">
-            <div><img class="max_img mobile_hidden" src="images/insta1.jpg" alt="Instagram billedesektion"></div>
-            <div><img class="max_img mobile_hidden" src="images/insta2.jpg" alt="Instagram billedesektion"></div>
-            <div><img class="max_img mobile_hidden" src="images/insta3.jpg" alt="Instagram billedesektion"></div>
-            <div><img class="max_img mobile_hidden" src="images/insta4.jpg" alt="Instagram billedesektion"></div>
+            <a href onclick=" window.open('https://www.instagram.com/tankenigraven/','_blank')"><div><img class="max_img mobile_hidden" src="images/insta1.jpg" alt="Instagram billedesektion"></div></a>
+            <a href onclick=" window.open('https://www.instagram.com/tankenigraven/','_blank')"><div><img class="max_img mobile_hidden" src="images/insta2.jpg" alt="Instagram billedesektion"></div></a>
+            <a href onclick=" window.open('https://www.instagram.com/tankenigraven/','_blank')"><div><img class="max_img mobile_hidden" src="images/insta3.jpg" alt="Instagram billedesektion"></div></a>
+            <a href onclick=" window.open('https://www.instagram.com/tankenigraven/','_blank')"><div><img class="max_img mobile_hidden" src="images/insta4.jpg" alt="Instagram billedesektion"></div></a>
         </div>
 
         <div class="mobile_image">
@@ -224,7 +212,7 @@
                 <img class="max_img" src="images/hvid_logo.png" alt="Forside Logo">
             </div>
             <div class="align_right">
-                <a href="#"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
+                <a href onclick=" window.open('https://www.instagram.com/tankenigraven/','_blank')"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
                 <a href="404.html"><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></a>
                 <h2> <a class="italic" href="#">tankenigraven@gmail.com</a></h2>
             </div>
