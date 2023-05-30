@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tanken</title>
+
+    <!-- FONTS -->
+    <link rel="stylesheet" href="https://use.typekit.net/iib5ftc.css">
+    <link rel="stylesheet" href="https://use.typekit.net/vkd2age.css">
+
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="stylesheet.css">
+
+    <!--JAVASCRIPT -->
+    <script src="script.js" defer></script>
+
+    <!--ANIMATIONER-->
+
+
+     <!-- FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/69e662559e.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+<!-- ØL SPIL -->
+    <div id="modalContainer">
+        <button id="hoverbox"><img src="images/arrowright.svg" alt="#"></button>
+        <button id="modalButton">For mange muligheder? <br> - Tryk her og lad Tanken vælge din næste øl!</button>
+            <div id="myModal" class="modal">
+            
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h1>Brug for hjælp til at vælge?</h1>
+                    <h2>Hvis du går med tanken om at prøve noget nyt,
+                        så lad os vælge din næste øl for dig! <br> </h2>
+                    <p> Alt du skal gøre, er at trykke på knappen nedenunder,<br>
+                        så finder vi en øl til dit næste besøg på TANKEN </p>
+                    <button id="btnBeer" class="cta_font">INSPIRER MIG</button>
+                    <h2 id="yourBeer"></p>
+                </div>
+            </div>
+    </div>
+
+<!-- LINK TIL TOP -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">TIL TOP</button>
+
+<!-- HEADER -->
+    <header>
+        <section class="mobile_hidden blue_box">
+            <a href="index.html"><img class="max_img" src="images/hvid_logo.png" alt="Forside Logo"></a>    
+            <nav>
+                <a href="om.html"> Om os</a>
+                <a href="menukort.html"> Menukort </a>
+                <a href="events.html"> Events </a>
+            </nav> 
+        </section>
+    </header>
+
+    <section class="laptop_hidden blue_box">
+        <div class="flexcontainer_row space_between">
+            <div class="sidenav_logo" >
+                <a href="index.html"><img class="max_img" src="images/hvid_logo.png" alt="Forside Logo"></a>   
+            </div>
+            <div id="white_burger"><span onclick="openNav()"><i class="fa-solid fa-bars"></i></span></div>
+            </div>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="index.html"> Forside </a>
+                <a href="om.html"> Om os</a>
+                <a href="menukort.html"> Menukort </a>
+                <a href="events.html"> Events </a>
+            </div>
+    </section>
+
+<!-- MAIN -->
+<main>
+
+ <!-- FORSIDE -->
+    <section>
+        <div class="flexcontainer_row" >
+            <div class="blue_box" id="index_left">
+                <h1 id="overskrift_forside"> TANKEN<br>Aarhus C<br>Graven<br>26</h1>
+                <button class="cta_button whitebutton cta_font" id="omos_button" onclick=" window.open('om.html','_self')"> Om os </button>
+            </div>
+            <div id="index_right">
+                <div>
+                    <img class="max_img" src="images/forside.jpg" alt="Forside Billede">
+                </div>
+                <div class="openclosed">
+                    <p id="openNow">Åben nu</p>
+                    <p id="closed">Åbner i morgen kl. 09:00</p>
+                    <h1 >SØN - ONS: 09:00 - 22:00<br>FRE - LØR: 09:00 - SENT</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+ <!-- PIZZA NYHED -->
+    <section class="line_container">
+        <h1 class="align_right black_headlines lines_responsive" id="overskrift_nyhed"> Nyhed </h1>
+        <div class="lines mobile_hidden" id="lines_index1"></div>
+        <div class="flexcontainer_row center" id="pizzanews">
+            <div>
+                <h2> TANKEN samarbejder med <br> Pizza & bar - By Mefisto </h2>
+                <p class="p_size">
+                    Det er nu muligt at nyde din yndlingspizza på TANKEN. <br> 
+                    I samarbejde med vores nabo Mefisto, er drømme gået <br>
+                    i opfyldelse. Fremadrettet kan du bestille friskbagt <br>
+                    pizza, og den bliver leveret lige til dig på Tanken. 
+                </p>
+
+                <button class="cta_button bluebutton cta_font" id="læsmere_button" onclick=" window.open('menukort.html','_self')"> Læs mere </button>
+            </div>  
+            <div>
+                <img class="max_img" id="pizzaTurn" src="images/pizza.png" alt="Pizza Illustration">
+            </div>
+        </div>
+
+    </section>
+
+ <!-- #TANKENDERTÆLLER -->
+    <section class="flexcontainer_row center" id="TANKENDERTÆLLER">
+        <div class="blue_box">
+            <h2> #TANKENDERTÆLLER </h2>
+            <p class="p_size">
+                TANKEN er dit nye stamsted beliggende i de skønneste omgivelser i Graven midt i Aarhus' latinerkvateret. <br> <br>
+                I vores kiosk har vi alle små nødvendigheder til hverdag og weekend, så om du står og mangler en fadøl eller en tandbørste kan du regne med Tanken! <br> <br>
+                
+                Vi serverer friskbagte boller om morgenen og kolde fadøl om aftenen, og sammen med dig håber vi at være med til at  
+                skabe rammerne for gode grin og hyggelige stunder. <br><br>
+                
+                Smut forbi til en sludder og brug vores hashtag #TANKENDERTÆLLER så vi kan følge med i jeres oplevelser. 
+            </p>
+        </div>  
+        <div id="TANKENDERTÆLLER_IMG"><img class="max_img mobile_hidden" src="images/mand.jpg" alt="Mand Hælder Drink"></div>
+        <div class="mobile_image "><img class="max_img laptop_hidden" src="images/mand.jpg" alt="Mand Hælder Drink Responsive"></div>
+    </section>
+
+ <!-- BOLLEKORT -->
+    <section class="line_container">
+        <h1 class="align_left black_headlines lines_responsive" id="overskrift_bollekort"> Tankens bollekort </h1>
+        <div class="lines mobile_hidden" id="lines_index2"></div>
+        <div class="flexcontainer_row" id="bollekort">
+            <div>
+                <img class="max_img" src="images/bollekort.png" alt="Bollekort">
+            </div>  
+            
+            <div class="blue_box">
+                <h2> Tænker du på rabat? </h2>
+
+                <p class="p_size">
+                    Hos TANKEN får du rabat hvis du køber et bollekort. <br>
+                    Ved køb af et bollekort får du 10 boller og 10 kopper <br>
+                    kaffe, som du kan indløse når du har lyst.
+                </p>  
+            </div>
+            <div> 
+                <img class="max_img mobile_hidden" src="images/sticker_bollekort.png" alt="Sticker Bollekort">
+                <img class="max_img laptop_hidden" src="images/sticker_bollekort.png" alt="Sticker Bollekort">
+            </div>
+        </div>
+    </section>
+
+
+<!-- INSTAGRAM -->
+<section class ="merchsection line_container">
+    <div class="double_lines mobile_hidden" id="double_lines_index"></div>
+    <div  id="instagramsection">
+        <div>
+            <h2 class="italic">Følg med på vores</h2> 
+            <h3>Instagram</h3>
+            <br>
+            <p class="p_size">
+                På vores Instagram <a href onclick=" window.open('https://www.instagram.com/tankenigraven/','_blank')">@tankenigraven</a> kan du følge med <br> i kommende events 
+                og deltage i fede konkurrencer.
+            </p>
+            <br>
+        </div>  
+    </div>
+    
+    <!-- Instagram billeder -->
+        <div class="flexcontainer_row" id="img_instagram">
+            <a href onclick=" window.open('https://www.instagram.com/tankenigraven/','_blank')"><div><img class="max_img mobile_hidden" src="images/insta1.jpg" alt="Instagram billedesektion"></div></a>
+            <a href onclick=" window.open('https://www.instagram.com/tankenigraven/','_blank')"><div><img class="max_img mobile_hidden" src="images/insta2.jpg" alt="Instagram billedesektion"></div></a>
+            <a href onclick=" window.open('https://www.instagram.com/tankenigraven/','_blank')"><div><img class="max_img mobile_hidden" src="images/insta3.jpg" alt="Instagram billedesektion"></div></a>
+            <a href onclick=" window.open('https://www.instagram.com/tankenigraven/','_blank')"><div><img class="max_img mobile_hidden" src="images/insta4.jpg" alt="Instagram billedesektion"></div></a>
+        </div>
+
+        <div class="mobile_image">
+            <div class="mobile_image"><img class="laptop_hidden max_img " src="images/insta1.jpg" alt="Instagram billedesektion responsive"></div>
+        </div>
+    </section>
+
+ <!-- FOOTER -->
+    <footer class="flexcontainer_row blue_box">
+            <div>
+                
+                <h1 class="italic"> 
+                    MAN - TOR: 09:00 - 22:00 <br>
+                    FRE - SØN: 09:00 - SENT    
+                </h1>
+                <h1><a href="https://www.google.com/maps/place/Tanken/@56.1588644,10.2074208,17z/data=!3m1!4b1!4m6!3m5!1s0x464c3fed6d8e6675:0xc4b3cf601aec155e!8m2!3d56.1588614!4d10.2099957!16s%2Fg%2F11kc2n7_gd?entry=ttu" target="_blank">Tanken <br> Graven 26 - Aarhus C</a></h1>
+            </div>
+            <div>
+                <img class="max_img" src="images/hvid_logo.png" alt="Forside Logo">
+            </div>
+            <div class="align_right">
+                <a href onclick=" window.open('https://www.instagram.com/tankenigraven/','_blank')"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
+                <a href="404.html"><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></a>
+                <h2> <a class="italic" href="#">tankenigraven@gmail.com</a></h2>
+            </div>
+    </footer>
+
+</main>    
+</body>
+</html>
