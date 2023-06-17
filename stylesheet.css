@@ -2,44 +2,44 @@
 /* 
 -- INDHOLDSFORTEGNELSE --
 
-1. GENERELT 
+1. GENERELT (ALLE)
 
-2. FONT 
+2. FONT (ALLE)
    - Font generelt
    - Font CTA knapper
    - Font overskrifter
    - Font modalvindue
 
-3. KLASSER
+3. KLASSER (ALLE)
 
-4. LINJER
+4. LINJER (ALLE)
 
-5. KNAPPER
+5. KNAPPER (ALLE)
    - CTA knapper
 
-6. JAVASCRIPT
+6. JAVASCRIPT (ALLE)
    - Javascript modalvindue
    - Javascript til top funktion
    - Javascript åben / lukket
 
-7. HEADER LAPTOP
+7. HEADER LAPTOP (ALLE)
 
-8. HEADER MOBIL
+8. HEADER MOBIL (ALLE)
 
-9. INDEX
+9. INDEX (ALLE)
    - Index landingpage
-   - Index pizza sektion
+   - Index pizza sektion 
    - Index #TANKENDERTÆLLER
    - Index bollekort
    - Index instagram
 
-10. OM OS
+10. OM OS (ALLE)
    - Om os video sektion
    - Om os merch sektion
    - Om os t-shirt sektion
    - Om os totebag sektion
 
-11. MENUKORT
+11. MENUKORT (ALLE)
    - Menukort links top
    - Menukort indhold
    - Menukort stickers
@@ -48,18 +48,18 @@
    - Menukort bollekort
    - Menukort overskrifter
 
-12. EVENTS
+12. EVENTS (ALLE)
    - Events denne uge
    - Events kommende events
    - Events billeder
 
-13. 404 FEJLSIDE
+13. 404 FEJLSIDE (ALLE)
 
-14. FOOTER
+14. FOOTER (ALLE)
 
-15. RESPONSIVE LAPTOP
+15. RESPONSIVE LAPTOP (ALLE)
 
-16. RESPONSIVE MOBILE
+16. RESPONSIVE MOBILE (ALLE)
    - Responsive display:none
 
    - Responsive klasser
@@ -815,8 +815,10 @@
     #video_laptop video{
         position: absolute;
         left: 40%;
-        bottom: 49%;
+        top: 100px;
         width: 50%;
+        max-width: 800px;
+        
     }
 
 /* OM OS - MERCH SEKTION */
@@ -1576,8 +1578,8 @@
 
     #sticker_bollekort{
         position: absolute;
-        height: 200px;
-        right: 0%;
+        width: 60%;
+        left: 50%;
         bottom: 86%; 
     }
 
