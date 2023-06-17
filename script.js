@@ -9,51 +9,12 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
 
-/* ÅBEN / LUKKET FUNKTION - UD FRA KLOKKESLÆT */
-/* Vi vælger den nuværende dag og får den nøjagtige time */
-let date = new Date();
-let hour = date.getHours();
+/* Åben - Lukket funktion baseret på klokkeslæt */
 
 /* Vi definere vores variabler */
-let openNow = document.getElementById("openNow");
+let open = document.getElementById("openNow");
 let closed = document.getElementById("closed");
 
-
-/* Funktion der viser "Åbent" når klokkeslættet er over den ottende time 
-dvs. klokken er 9 eller over og under 22. "else" viser "Lukket"*/
-function myTime(){
-
-  if (hour > 8, hour < 22) {
-    openNow.style.display = "block";
-  }
-  else{
-    closed.style.display = "block";
-  }
-}
-
-myTime();
-setInterval(myTime,100);
-
-
-// SCROLL TOP PIL //
-let mybutton = document.getElementById("myBtn");
-
-// Viser knappen, når brugeren scroller 500 px ned af siden //
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-
-// Tager brugeren til toppen, ved klik //
-function topFunction() {
-  document.body.scrollTop = 0; // Til Safari //
-  document.documentElement.scrollTop = 0; // Til Chrome, Firefox, IE and Opera //
-}
 
 /* MODALT VINDUE - RANGOM ØL GENERATOR */
 /* Vi definerer vores variabler med ID */
@@ -86,6 +47,67 @@ btnBeer.onclick = function random(){
   let randomBeer = Math.floor(Math.random() * beer.length);
   document.getElementById("yourBeer").innerHTML = beer[randomBeer];
 }
+
+
+// SCROLL TOP PIL //
+let mybutton = document.getElementById("myBtn");
+
+// Viser knappen, når brugeren scroller 500 px ned af siden //
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+/* Vi vælger den nuværende dag og får den nøjagtige time
+Efterfølgende bruger vi switch til at vælge de klokkeslæt hvor henholdsvis
+Lukket og Åben skal vise og ikke vise sig*/
+switch (new Date().getHours()){
+  case 9:
+    case 10:
+      case 11:
+        case 12:
+          case 13:
+            case 14:
+              case 15:
+                case 16:
+                  case 17:
+                    case 18:
+                      case 19:
+                        case 20:
+                          case 21:                     
+    openNow.style.display = "block";
+    break;
+    case 22:
+      case 23:
+        case 0:
+          case 1:
+            case 2:
+              case 3:
+                case 4:
+                  case 5:
+                    case 6:
+                      case 7:
+                        case 8:                   
+      closed.style.display = "block";
+
+}
+
+/* Her opdaterer vi funktionen hvert sekund */
+getHours();
+setInterval(myTime,1000);
+
+// Tager brugeren til toppen, ved klik //
+function topFunction() {
+  document.body.scrollTop = 0; // Til Safari //
+  document.documentElement.scrollTop = 0; // Til Chrome, Firefox, IE and Opera //
+}
+
+
 
 
 
